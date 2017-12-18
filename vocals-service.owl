@@ -1,0 +1,632 @@
+@prefix : <https://w3id.org/rsp/vocals-sd#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frmt: <http://www.w3.org/ns/formats/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vocals: <https://w3id.org/rsp/vocals#> .
+@base <https://w3id.org/rsp/vocals-sd> .
+
+<https://w3id.org/rsp/vocals-sd> rdf:type owl:Ontology ;
+                                  owl:versionIRI <https://w3id.org/rsp/vocals-sd> ;
+                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rsp/vocals-sd#" ;
+                                  <http://purl.org/dc/elements/1.1/creator> vocals:RiccardoTommasini ,
+                                                                            vocals:EmanueleDellaValle ;
+                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "vois-sd" ;
+                                  <http://purl.org/dc/terms/created> "2017-05-23T13:00:00"^^xsd:dateTime ;
+                                  <http://purl.org/dc/elements/1.1/creator> vocals:YehiaAboSedira .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/ns/sparql-service-description#name
+sd:name rdf:type owl:AnnotationProperty ;
+        rdfs:comment "Relates a named graph to the name by which it may be referenced in a FROM/FROM NAMED clause. The object of the sd:name property is an IRI." ;
+        rdfs:label "name" ;
+        rdfs:domain sd:NamedGraph .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/ns/sparql-service-description#availableGraphs
+sd:availableGraphs rdf:type owl:ObjectProperty ;
+                   rdfs:domain sd:Service ;
+                   rdfs:range sd:GraphCollection ;
+                   rdfs:comment "Relates an instance of sd:Service to a description of the graphs which are allowed in the construction of a dataset either via the SPARQL Protocol, with FROM/FROM NAMED clauses in a query, or with USING/USING NAMED in an update request, if the service limits the scope of dataset construction." ;
+                   rdfs:label "available graph descriptions" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#defaultDataset
+sd:defaultDataset rdf:type owl:ObjectProperty ,
+                           owl:InverseFunctionalProperty ;
+                  rdfs:domain sd:Service ;
+                  rdfs:range sd:Dataset ;
+                  rdfs:comment "Relates an instance of sd:Service to a description of the default dataset available when no explicit dataset is specified in the query, update request or via protocol parameters." ;
+                  rdfs:label "default dataset description" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#defaultEntailmentRegime
+sd:defaultEntailmentRegime rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf sd:feature ;
+                           rdfs:domain sd:Service ;
+                           rdfs:range sd:EntailmentRegime ;
+                           rdfs:comment "Relates an instance of sd:Service with a resource representing an entailment regime used for basic graph pattern matching. This property is intended for use when a single entailment regime by default applies to all graphs in the default dataset of the service. In situations where a different entailment regime applies to a specific graph in the dataset, the sd:entailmentRegime property should be used to indicate this fact in the description of that graph." ;
+                           rdfs:label "default entailment regime" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#defaultGraph
+sd:defaultGraph rdf:type owl:ObjectProperty ;
+                rdfs:domain sd:Dataset ;
+                rdfs:range sd:Graph ;
+                rdfs:comment "Relates an instance of sd:Dataset to the description of its default graph." ;
+                rdfs:label "default graph" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#defaultSupportedEntailmentProfile
+sd:defaultSupportedEntailmentProfile rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf sd:feature ;
+                                     rdfs:domain sd:Service ;
+                                     rdfs:range sd:EntailmentProfile ;
+                                     rdfs:comment "Relates an instance of sd:Service with a resource representing a supported profile of the default entailment regime (as declared by sd:defaultEntailmentRegime)." ;
+                                     rdfs:label "default supported entailment profile" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#endpoint
+sd:endpoint rdf:type owl:ObjectProperty ,
+                     owl:InverseFunctionalProperty ;
+            rdfs:domain sd:Service ;
+            rdfs:comment "The SPARQL endpoint of an sd:Service that implements the SPARQL Protocol service. The object of the sd:endpoint property is an IRI." ;
+            rdfs:label "endpoint" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#extensionAggregate
+sd:extensionAggregate rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf sd:feature ;
+                      rdfs:domain sd:Service ;
+                      rdfs:range sd:Aggregate ;
+                      rdfs:comment "Relates an instance of sd:Service to an aggregate that may be used in a SPARQL aggregate query (for instance in a HAVING clause or SELECT expression) besides the standard list of supported aggregates COUNT, SUM, MIN, MAX, AVG, GROUP_CONCAT, and SAMPLE" ;
+                      rdfs:label "extension aggregate" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#extensionFunction
+sd:extensionFunction rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf sd:feature ;
+                     rdfs:domain sd:Service ;
+                     rdfs:range sd:Function ;
+                     rdfs:comment "Relates an instance of sd:Service to a function that may be used in a SPARQL SELECT expression or a FILTER, HAVING, GROUP BY, ORDER BY, or BIND clause." ;
+                     rdfs:label "extension function" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#feature
+sd:feature rdf:type owl:ObjectProperty ;
+           rdfs:domain sd:Service ;
+           rdfs:range sd:Feature ;
+           rdfs:comment "Relates an instance of sd:Service with a resource representing a supported feature." ;
+           rdfs:label "feature" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#graph
+sd:graph rdf:type owl:ObjectProperty ;
+         rdfs:domain sd:NamedGraph ;
+         rdfs:range sd:Graph ;
+         rdfs:comment "Relates a named graph to its graph description." ;
+         rdfs:label "graph" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#inputFormat
+sd:inputFormat rdf:type owl:ObjectProperty ;
+               rdfs:domain sd:Service ;
+               rdfs:range frmt:Format ;
+               rdfs:comment "Relates an instance of sd:Service to a format that is supported for parsing RDF input; for example, via a SPARQL 1.1 Update LOAD statement, or when URIs are dereferenced in FROM/FROM NAMED/USING/USING NAMED clauses." ;
+               rdfs:label "input format" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#languageExtension
+sd:languageExtension rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf sd:feature ;
+                     rdfs:domain sd:Service ;
+                     rdfs:range sd:Feature ;
+                     rdfs:comment "Relates an instance of sd:Service to a resource representing an implemented extension to the SPARQL Query or Update language." ;
+                     rdfs:label "language extension" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#namedGraph
+sd:namedGraph rdf:type owl:ObjectProperty ;
+              rdfs:domain sd:GraphCollection ;
+              rdfs:range sd:NamedGraph ;
+              rdfs:comment "Relates an instance of sd:GraphCollection (or its subclass sd:Dataset) to the description of one of its named graphs. The description of such a named graph MUST include the sd:name property and MAY include the sd:graph property." ;
+              rdfs:label "named graph" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#propertyFeature
+sd:propertyFeature rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf sd:feature ;
+                   rdfs:domain sd:Service ;
+                   rdfs:range sd:Feature ;
+                   rdfs:comment "Relates an instance of sd:Service to a resource representing an implemented feature that extends the SPARQL Query or Update language and that is accessed by using the named property." ;
+                   rdfs:label "property feature" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#resultFormat
+sd:resultFormat rdf:type owl:ObjectProperty ;
+                rdfs:domain sd:Service ;
+                rdfs:range frmt:Format ;
+                rdfs:comment "Relates an instance of sd:Service to a format that is supported for serializing query results." ;
+                rdfs:label "result format" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#supportedLanguage
+sd:supportedLanguage rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf sd:feature ;
+                     rdfs:domain sd:Service ;
+                     rdfs:range sd:Language ;
+                     rdfs:comment "Relates an instance of sd:Service to a SPARQL language (e.g. Query and Update) that it implements." ;
+                     rdfs:label "supported language" .
+
+
+###  https://w3id.org/rsp/vocals-sd#availableGraphs
+:availableGraphs rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :RSService ;
+                 rdfs:range :Window .
+
+
+###  https://w3id.org/rsp/vocals-sd#defaultGraph
+:defaultGraph rdf:type owl:ObjectProperty ;
+              rdfs:domain vocals:RDFStream ;
+              rdfs:range sd:Graph ;
+              rdfs:comment "Relates an instance of vocals:RDFStream to the description of its default graph." .
+
+
+###  https://w3id.org/rsp/vocals-sd#describedBy
+:describedBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :CatalogingService ;
+             rdfs:range vocals:RDFStream ;
+             rdfs:comment "Points to an instance of vois-sd:CatalogingService that describes a certain vocals:RDFStream." .
+
+
+###  https://w3id.org/rsp/vocals-sd#endedAt
+:endedAt rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Window ;
+         rdfs:range time:Instant .
+
+
+###  https://w3id.org/rsp/vocals-sd#graph
+:graph rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       rdfs:domain sd:NamedGraph ;
+       rdfs:range sd:Graph ;
+       rdfs:comment "Relates a named graph to its graph description." .
+
+
+###  https://w3id.org/rsp/vocals-sd#hasReportingPolicy
+:hasReportingPolicy rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain :RSService ;
+                    rdfs:range :ReportingPolicy .
+
+
+###  https://w3id.org/rsp/vocals-sd#namedGraph
+:namedGraph rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Window ;
+            rdfs:range sd:NamedGraph ;
+            rdfs:comment "Relates an instance of vocals:Window to the description of one of its named graphs. The description of such a named graph MUST include the sd:name property." ;
+            rdfs:label "named graph" .
+
+
+###  https://w3id.org/rsp/vocals-sd#publishedBy
+:publishedBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain vocals:RDFStream ;
+             rdfs:range :PublishingService ;
+             rdfs:comment "Points to an instance of vois-sd:PublishingService that publishs a certain vocals:RDFStream." .
+
+
+###  https://w3id.org/rsp/vocals-sd#registeredBy
+:registeredBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain vocals:RDFStream ;
+              rdfs:range :ProcessingService ;
+              rdfs:comment "Points to an instance of vois-sd:ProcessingService that registers/ processes a certain vocals:RDFStream." .
+
+
+###  https://w3id.org/rsp/vocals-sd#resultFormat
+:resultFormat rdf:type owl:ObjectProperty ;
+              rdfs:domain :RSService ;
+              rdfs:range frmt:Format ;
+              rdfs:comment "Relates an instance of sd:Service to a format that is supported for serializing query results." ;
+              rdfs:label "result format" .
+
+
+###  https://w3id.org/rsp/vocals-sd#rspEndpoint
+:rspEndpoint rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :RSService ;
+             rdfs:comment "The RSP-QL endpoint of an vocals:RSPService that implements the RSP-QL Protocol service. The object of the vocals:rspEndpoint property is an IRI." ;
+             rdfs:label "RSP endpoint" .
+
+
+###  https://w3id.org/rsp/vocals-sd#startedAt
+:startedAt rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Window ;
+           rdfs:range time:Instant .
+
+
+###  https://w3id.org/rsp/vocals-sd#startingTime
+:startingTime rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:range time:Instant .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/rsp/vocals-sd#range
+:range rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:positiveInteger .
+
+
+###  https://w3id.org/rsp/vocals-sd#step
+:step rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:positiveInteger .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2006/time#Instant
+time:Instant rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/formats/Format
+frmt:Format rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sparql-service-description#Aggregate
+sd:Aggregate rdf:type owl:Class ;
+             rdfs:subClassOf sd:Feature ;
+             rdfs:comment "An instance of sd:Aggregate represents an aggregate that may be used in a SPARQL aggregate query (for instance in a HAVING clause or SELECT expression) besides the standard list of supported aggregates COUNT, SUM, MIN, MAX, AVG, GROUP_CONCAT, and SAMPLE." ;
+             rdfs:label "Aggregate" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#Dataset
+sd:Dataset rdf:type owl:Class ;
+           rdfs:subClassOf sd:GraphCollection ;
+           rdfs:comment "An instance of sd:Dataset represents a RDF Dataset comprised of a default graph and zero or more named graphs." ;
+           rdfs:label "Dataset" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#EntailmentProfile
+sd:EntailmentProfile rdf:type owl:Class ;
+                     rdfs:subClassOf sd:Feature ;
+                     rdfs:comment "An instance of sd:EntailmentProfile represents a profile of an entailment regime. An entailment profile MAY impose restrictions on what constitutes valid RDF with respect to entailment." ;
+                     rdfs:label "Entailment Profile" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#EntailmentRegime
+sd:EntailmentRegime rdf:type owl:Class ;
+                    rdfs:subClassOf sd:Feature ;
+                    rdfs:comment "An instance of sd:EntailmentRegime represents an entailment regime used in basic graph pattern matching (as described by SPARQL 1.1 Query Language)." ;
+                    rdfs:label "Entailment Regime" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#Feature
+sd:Feature rdf:type owl:Class ;
+           rdfs:comment "An instance of sd:Feature represents a feature of a SPARQL service. Specific types of features include functions, aggregates, languages, and entailment regimes and profiles. This document defines five instances of sd:Feature: sd:DereferencesURIs, sd:UnionDefaultGraph, sd:RequiresDataset, sd:EmptyGraphs, and sd:BasicFederatedQuery." ;
+           rdfs:label "Feature" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#Function
+sd:Function rdf:type owl:Class ;
+            rdfs:subClassOf sd:Feature ;
+            rdfs:comment "An instance of sd:Function represents a function that may be used in a SPARQL SELECT expression or a FILTER, HAVING, GROUP BY, ORDER BY, or BIND clause." ;
+            rdfs:label "Function" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#Graph
+sd:Graph rdf:type owl:Class ;
+         rdfs:comment "An instance of sd:Graph represents the description of an RDF graph." ;
+         rdfs:label "Graph" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#GraphCollection
+sd:GraphCollection rdf:type owl:Class ;
+                   rdfs:comment "An instance of sd:GraphCollection represents a collection of zero or more named graph descriptions. Each named graph description belonging to an sd:GraphCollection MUST be linked with the sd:namedGraph predicate." ;
+                   rdfs:label "Graph Collection" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#Language
+sd:Language rdf:type owl:Class ;
+            rdfs:subClassOf sd:Feature ;
+            rdfs:comment "An instance of sd:Language represents one of the SPARQL languages, including specific configurations providing particular features or extensions. This document defines three instances of sd:Language: sd:SPARQL10Query, sd:SPARQL11Query, and sd:SPARQL11Update." ;
+            rdfs:label "Language" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#NamedGraph
+sd:NamedGraph rdf:type owl:Class ;
+              rdfs:comment "An instance of sd:NamedGraph represents a named graph having a name (via sd:name) and an optional graph description (via sd:graph)." ;
+              rdfs:label "Named Graph" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#Service
+sd:Service rdf:type owl:Class ;
+           rdfs:comment "An instance of sd:Service represents a SPARQL service made available via the SPARQL Protocol." ;
+           rdfs:label "Service" .
+
+
+###  https://w3id.org/rsp/vocals#RDFStream
+vocals:RDFStream rdf:type owl:Class .
+
+
+###  https://w3id.org/rsp/vocals-sd#CatalogingService
+:CatalogingService rdf:type owl:Class ;
+                   rdfs:subClassOf :RSService ;
+                   rdfs:comment "An vois-sd:CatalogingService represents a stream description service." .
+
+
+###  https://w3id.org/rsp/vocals-sd#PhysicalWindow
+:PhysicalWindow rdf:type owl:Class ;
+                rdfs:subClassOf :Window ;
+                rdfs:comment "Window defined by an interval size (in units of RDF elements)" .
+
+
+###  https://w3id.org/rsp/vocals-sd#ProcessingService
+:ProcessingService rdf:type owl:Class ;
+                   rdfs:subClassOf :RSService ;
+                   rdfs:comment "An vois-sd:ProcessingService represents an RDF stream processing service." .
+
+
+###  https://w3id.org/rsp/vocals-sd#PublishingService
+:PublishingService rdf:type owl:Class ;
+                   rdfs:subClassOf :RSService ;
+                   rdfs:comment "An vois-sd:PublishingService represents a stream publishing service." .
+
+
+###  https://w3id.org/rsp/vocals-sd#R2ROperation
+:R2ROperation rdf:type owl:Class ;
+              rdfs:subClassOf :RSPFeature .
+
+
+###  https://w3id.org/rsp/vocals-sd#R2SOperation
+:R2SOperation rdf:type owl:Class ;
+              rdfs:subClassOf :RSPFeature .
+
+
+###  https://w3id.org/rsp/vocals-sd#RSPFeature
+:RSPFeature rdf:type owl:Class .
+
+
+###  https://w3id.org/rsp/vocals-sd#RSService
+:RSService rdf:type owl:Class ;
+           rdfs:subClassOf :StreamingService ;
+           rdfs:comment "An instance of vois-sd:Service represents a RDF streaming service made available via RSP-QL protocol." .
+
+
+###  https://w3id.org/rsp/vocals-sd#ReportingPolicy
+:ReportingPolicy rdf:type owl:Class ;
+                 rdfs:subClassOf :RSPFeature ;
+                 rdfs:label "Reporting Policy" .
+
+
+###  https://w3id.org/rsp/vocals-sd#S2ROperation
+:S2ROperation rdf:type owl:Class ;
+              rdfs:subClassOf :RSPFeature .
+
+
+###  https://w3id.org/rsp/vocals-sd#S2SOperation
+:S2SOperation rdf:type owl:Class ;
+              rdfs:subClassOf :RSPFeature .
+
+
+###  https://w3id.org/rsp/vocals-sd#SDS
+:SDS rdf:type owl:Class ;
+     rdfs:comment "A streaming dataset is a set composed by an (optional) default graph, n (n ≥ 0) named graphs and m (m ≥ 0) named time-varying graphs" ;
+     rdfs:label "SDS" .
+
+
+###  https://w3id.org/rsp/vocals-sd#SetOperation
+:SetOperation rdf:type owl:Class ;
+              rdfs:subClassOf :S2SOperation .
+
+
+###  https://w3id.org/rsp/vocals-sd#StreamingService
+:StreamingService rdf:type owl:Class ;
+                  rdfs:comment "An instance of vois-sd:StreamingService represents a streaming service made available via a certain streaming protocol." .
+
+
+###  https://w3id.org/rsp/vocals-sd#TimeBasedWindow
+:TimeBasedWindow rdf:type owl:Class ;
+                 rdfs:subClassOf :Window ;
+                 rdfs:comment "A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}" .
+
+
+###  https://w3id.org/rsp/vocals-sd#TimeControl
+:TimeControl rdf:type owl:Class ;
+             rdfs:subClassOf :RSPFeature .
+
+
+###  https://w3id.org/rsp/vocals-sd#TimeSemantics
+:TimeSemantics rdf:type owl:Class ;
+               rdfs:subClassOf :RSPFeature .
+
+
+###  https://w3id.org/rsp/vocals-sd#TimeVaryingGraph
+:TimeVaryingGraph rdf:type owl:Class ;
+                  rdfs:comment "A time-varying graph G is a function that relates time instants t ∈ T to RDF graphs: G : T → {g | g is an RDF graph}" .
+
+
+###  https://w3id.org/rsp/vocals-sd#Window
+:Window rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
+        rdfs:comment "A window W(S) is a set of RDF statements extracted from a stream S." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3.org/ns/sparql-service-description#BasicFederatedQuery
+sd:BasicFederatedQuery rdf:type owl:NamedIndividual ,
+                                sd:Feature ;
+                       rdfs:comment "sd:BasicFederatedQuery, when used as the object of the sd:feature property, indicates that the SPARQL service supports basic federated query using the SERVICE keyword as defined by SPARQL 1.1 Federation Extensions." ;
+                       rdfs:label "Basic Federated Query" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#DereferencesURIs
+sd:DereferencesURIs rdf:type owl:NamedIndividual ,
+                             sd:Feature ;
+                    rdfs:comment "sd:DereferencesURIs, when used as the object of the sd:feature property, indicates that a SPARQL service will dereference URIs used in FROM/FROM NAMED and USING/USING NAMED clauses and use the resulting RDF in the dataset during query evaluation." ;
+                    rdfs:label "Dereferences URIs" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#EmptyGraphs
+sd:EmptyGraphs rdf:type owl:NamedIndividual ,
+                        sd:Feature ;
+               rdfs:comment "sd:EmptyGraphs, when used as the object of the sd:feature property, indicates that the underlying graph store supports empty graphs. A graph store that supports empty graphs MUST NOT remove graphs that are left empty after triples are removed from them." ;
+               rdfs:label "Empty Graphs" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#RequiresDataset
+sd:RequiresDataset rdf:type owl:NamedIndividual ,
+                            sd:Feature ;
+                   rdfs:comment "sd:RequiresDataset, when used as the object of the sd:feature property, indicates that the SPARQL service requires an explicit dataset declaration (based on either FROM/FROM NAMED clauses in a query, USING/USING NAMED clauses in an update, or the appropriate SPARQL Protocol parameters)." ;
+                   rdfs:label "Requires Dataset" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#SPARQL10Query
+sd:SPARQL10Query rdf:type owl:NamedIndividual ,
+                          sd:Language ;
+                 rdfs:comment "sd:SPARQL10Query is an sd:Language representing the SPARQL 1.0 Query language." ;
+                 rdfs:label "SPARQL 1.0 Query" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#SPARQL11Query
+sd:SPARQL11Query rdf:type owl:NamedIndividual ,
+                          sd:Language ;
+                 rdfs:comment "sd:SPARQL11Query is an sd:Language representing the SPARQL 1.1 Query language." ;
+                 rdfs:label "SPARQL 1.1 Query" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#SPARQL11Update
+sd:SPARQL11Update rdf:type owl:NamedIndividual ,
+                           sd:Language ;
+                  rdfs:comment "sd:SPARQLUpdate is an sd:Language representing the SPARQL 1.1 Update language." ;
+                  rdfs:label "SPARQL 1.1 Update" .
+
+
+###  http://www.w3.org/ns/sparql-service-description#UnionDefaultGraph
+sd:UnionDefaultGraph rdf:type owl:NamedIndividual ,
+                              sd:Feature ;
+                     rdfs:comment "sd:UnionDefaultGraph, when used as the object of the sd:feature property, indicates that the default graph of the dataset used during query and update evaluation (when an explicit dataset is not specified) is comprised of the union of all the named graphs in that dataset." ;
+                     rdfs:label "Union Default Graph" .
+
+
+###  https://w3id.org/rsp/vocals-sd#RSPQL
+:RSPQL rdf:type owl:NamedIndividual ,
+                sd:Language .
+
+
+###  https://w3id.org/rsp/vocals-sd#difference
+:difference rdf:type owl:NamedIndividual ,
+                     :SetOperation .
+
+
+###  https://w3id.org/rsp/vocals-sd#event_time
+:event_time rdf:type owl:NamedIndividual ,
+                     :TimeSemantics .
+
+
+###  https://w3id.org/rsp/vocals-sd#external_time_control
+:external_time_control rdf:type owl:NamedIndividual ,
+                                :TimeControl .
+
+
+###  https://w3id.org/rsp/vocals-sd#filtering
+:filtering rdf:type owl:NamedIndividual ,
+                    :S2SOperation .
+
+
+###  https://w3id.org/rsp/vocals-sd#ingestion_time
+:ingestion_time rdf:type owl:NamedIndividual ,
+                         :TimeSemantics .
+
+
+###  https://w3id.org/rsp/vocals-sd#internal_time_control
+:internal_time_control rdf:type owl:NamedIndividual ,
+                                :TimeControl .
+
+
+###  https://w3id.org/rsp/vocals-sd#intersection
+:intersection rdf:type owl:NamedIndividual ,
+                       :SetOperation .
+
+
+###  https://w3id.org/rsp/vocals-sd#non_empty_content
+:non_empty_content rdf:type owl:NamedIndividual ,
+                            :ReportingPolicy .
+
+
+###  https://w3id.org/rsp/vocals-sd#on_content_change
+:on_content_change rdf:type owl:NamedIndividual ,
+                            :ReportingPolicy .
+
+
+###  https://w3id.org/rsp/vocals-sd#on_window_close
+:on_window_close rdf:type owl:NamedIndividual ,
+                          :ReportingPolicy .
+
+
+###  https://w3id.org/rsp/vocals-sd#periodic
+:periodic rdf:type owl:NamedIndividual ,
+                   :ReportingPolicy .
+
+
+###  https://w3id.org/rsp/vocals-sd#processing_time
+:processing_time rdf:type owl:NamedIndividual ,
+                          :TimeSemantics .
+
+
+###  https://w3id.org/rsp/vocals-sd#replaying
+:replaying rdf:type owl:NamedIndividual ,
+                    :R2SOperation .
+
+
+###  https://w3id.org/rsp/vocals-sd#union
+:union rdf:type owl:NamedIndividual ,
+                :SetOperation .
+
+
+###  https://w3id.org/rsp/vocals-sd#windowing
+:windowing rdf:type owl:NamedIndividual ,
+                    :S2ROperation .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CatalogingService
+                :ProcessingService
+                :PublishingService
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
