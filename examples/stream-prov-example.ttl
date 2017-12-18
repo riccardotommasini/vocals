@@ -98,7 +98,7 @@
 	vsd:hasFeature vsd:replaying ;
 	vsd:hasFeature vsd:filtering ;
 	vsd:hasFeature vsd:union ;
-	vsd:hasFeature vsd:external_time_controll ;
+	vsd:hasFeature vsd:external_time_control ;
 	vsd:resultFormat frmt:JSON-LD . 
 
 
