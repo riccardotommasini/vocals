@@ -78,13 +78,11 @@
 :OutStream a vocals:RDFStream ;
 	prov:wasGeneratedBy :R2SOp .
 
-
-
-:TrafficStream1 vsd:registeredBy :Engin1 ; 
+:TrafficStream1 vsd:registeredBy :Engine1 ; 
 	vsd:publishedBy :Triplewave ;
 	vsd:describedBy :TrafficStream1Descriptor .
 
-:Engin1 a :vocals:ProcessingService ; 
+:Engine1 a :vocals:ProcessingService ; 
 	vsd:hasFeature vsd:event_time ;
 	vsd:hasFeature vsd:internal_time_controll ;
 	vsd:hasFeature vsd:periodic ;
@@ -92,7 +90,7 @@
 	vsd:hasFeature vsd:windowing ;
 	vsd:availableGraphs :G11 , :G21 ;
 	vsd:resultFormat frmt:N3 ; 
-	vsd:rspEndpoin "http://example.org/rspEndpoin" .
+	vsd:rspEndpoint "http://example.org/rspEndpoint" .
 
 :Triplewave1 a :vocals:ProcessingService ; 
 	vsd:hasFeature vsd:replaying ;
