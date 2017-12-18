@@ -69,7 +69,8 @@
 
 ###  https://w3id.org/rsp/vocals#StreamDescriptor
 :StreamDescriptor rdf:type owl:Class ;
-                  rdfs:subClassOf foaf:Document .
+                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Catalog> ,
+                                  foaf:Document .
 
 
 ###  https://w3id.org/rsp/vocals#StreamDistribution

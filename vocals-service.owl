@@ -8,6 +8,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix vocals: <https://w3id.org/rsp/vocals#> .
+@prefix vocals-sd: <https://w3id.org/rsp/vocals-sd#> .
 @base <https://w3id.org/rsp/vocals-sd> .
 
 <https://w3id.org/rsp/vocals-sd> rdf:type owl:Ontology ;
@@ -171,101 +172,112 @@ sd:supportedLanguage rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/rsp/vocals-sd#availableGraphs
-:availableGraphs rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf owl:topObjectProperty ;
-                 rdfs:domain :RSService ;
-                 rdfs:range :Window .
+vocals-sd:availableGraphs rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:domain vocals-sd:RSService ;
+                          rdfs:range sd:Graph ,
+                                     vocals-sd:TimeVaryingGraph .
+
+
+###  https://w3id.org/rsp/vocals-sd#availableStreams
+vocals-sd:availableStreams rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/rsp/vocals-sd#defaultGraph
-:defaultGraph rdf:type owl:ObjectProperty ;
-              rdfs:domain vocals:RDFStream ;
-              rdfs:range sd:Graph ;
-              rdfs:comment "Relates an instance of vocals:RDFStream to the description of its default graph." .
+vocals-sd:defaultGraph rdf:type owl:ObjectProperty ;
+                       rdfs:domain vocals:RDFStream ;
+                       rdfs:range sd:Graph ;
+                       rdfs:comment "Relates an instance of vocals:RDFStream to the description of its default graph." .
 
 
 ###  https://w3id.org/rsp/vocals-sd#describedBy
-:describedBy rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain :CatalogingService ;
-             rdfs:range vocals:RDFStream ;
-             rdfs:comment "Points to an instance of vois-sd:CatalogingService that describes a certain vocals:RDFStream." .
+vocals-sd:describedBy rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain vocals-sd:CatalogService ;
+                      rdfs:range vocals:RDFStream ;
+                      rdfs:comment "Points to an instance of vois-sd:CatalogingService that describes a certain vocals:RDFStream." .
 
 
 ###  https://w3id.org/rsp/vocals-sd#endedAt
-:endedAt rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain :Window ;
-         rdfs:range time:Instant .
+vocals-sd:endedAt rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain vocals-sd:Window ;
+                  rdfs:range time:Instant .
 
 
 ###  https://w3id.org/rsp/vocals-sd#graph
-:graph rdf:type owl:ObjectProperty ;
-       rdfs:subPropertyOf owl:topObjectProperty ;
-       rdfs:domain sd:NamedGraph ;
-       rdfs:range sd:Graph ;
-       rdfs:comment "Relates a named graph to its graph description." .
+vocals-sd:graph rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain sd:NamedGraph ;
+                rdfs:range sd:Graph ;
+                rdfs:comment "Relates a named graph to its graph description." .
 
 
 ###  https://w3id.org/rsp/vocals-sd#hasReportingPolicy
-:hasReportingPolicy rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf owl:topObjectProperty ;
-                    rdfs:domain :RSService ;
-                    rdfs:range :ReportingPolicy .
+vocals-sd:hasReportingPolicy rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain vocals-sd:RSService ;
+                             rdfs:range vocals-sd:ReportingPolicy .
 
 
 ###  https://w3id.org/rsp/vocals-sd#namedGraph
-:namedGraph rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :Window ;
-            rdfs:range sd:NamedGraph ;
-            rdfs:comment "Relates an instance of vocals:Window to the description of one of its named graphs. The description of such a named graph MUST include the sd:name property." ;
-            rdfs:label "named graph" .
+vocals-sd:namedGraph rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain vocals-sd:SDS ;
+                     rdfs:range sd:NamedGraph ;
+                     rdfs:comment "Relates an instance of vocals:Window to the description of one of its named graphs. The description of such a named graph MUST include the sd:name property." ;
+                     rdfs:label "named graph" .
+
+
+###  https://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph
+vocals-sd:namedTimeVaryingGraph rdf:type owl:ObjectProperty ;
+                                rdfs:domain vocals-sd:SDS ;
+                                rdfs:range vocals-sd:TimeVaryingGraph .
 
 
 ###  https://w3id.org/rsp/vocals-sd#publishedBy
-:publishedBy rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain vocals:RDFStream ;
-             rdfs:range :PublishingService ;
-             rdfs:comment "Points to an instance of vois-sd:PublishingService that publishs a certain vocals:RDFStream." .
+vocals-sd:publishedBy rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain vocals:RDFStream ;
+                      rdfs:range vocals-sd:PublishingService ;
+                      rdfs:comment "Points to an instance of vois-sd:PublishingService that publishs a certain vocals:RDFStream." .
 
 
 ###  https://w3id.org/rsp/vocals-sd#registeredBy
-:registeredBy rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
-              rdfs:domain vocals:RDFStream ;
-              rdfs:range :ProcessingService ;
-              rdfs:comment "Points to an instance of vois-sd:ProcessingService that registers/ processes a certain vocals:RDFStream." .
+vocals-sd:registeredBy rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain vocals:RDFStream ;
+                       rdfs:range vocals-sd:ProcessingService ;
+                       rdfs:comment "Points to an instance of vois-sd:ProcessingService that registers/ processes a certain vocals:RDFStream." .
 
 
 ###  https://w3id.org/rsp/vocals-sd#resultFormat
-:resultFormat rdf:type owl:ObjectProperty ;
-              rdfs:domain :RSService ;
-              rdfs:range frmt:Format ;
-              rdfs:comment "Relates an instance of sd:Service to a format that is supported for serializing query results." ;
-              rdfs:label "result format" .
+vocals-sd:resultFormat rdf:type owl:ObjectProperty ;
+                       rdfs:domain vocals-sd:RSService ;
+                       rdfs:range frmt:Format ;
+                       rdfs:comment "Relates an instance of sd:Service to a format that is supported for serializing query results." ;
+                       rdfs:label "result format" .
 
 
 ###  https://w3id.org/rsp/vocals-sd#rspEndpoint
-:rspEndpoint rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain :RSService ;
-             rdfs:comment "The RSP-QL endpoint of an vocals:RSPService that implements the RSP-QL Protocol service. The object of the vocals:rspEndpoint property is an IRI." ;
-             rdfs:label "RSP endpoint" .
+vocals-sd:rspEndpoint rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain vocals-sd:RSService ;
+                      rdfs:comment "The RSP-QL endpoint of an vocals:RSPService that implements the RSP-QL Protocol service. The object of the vocals:rspEndpoint property is an IRI." ;
+                      rdfs:label "RSP endpoint" .
 
 
 ###  https://w3id.org/rsp/vocals-sd#startedAt
-:startedAt rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :Window ;
-           rdfs:range time:Instant .
+vocals-sd:startedAt rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain vocals-sd:Window ;
+                    rdfs:range time:Instant .
 
 
 ###  https://w3id.org/rsp/vocals-sd#startingTime
-:startingTime rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
-              rdfs:range time:Instant .
+vocals-sd:startingTime rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:range time:Instant .
 
 
 #################################################################
@@ -273,13 +285,13 @@ sd:supportedLanguage rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  https://w3id.org/rsp/vocals-sd#range
-:range rdf:type owl:DatatypeProperty ;
-       rdfs:range xsd:positiveInteger .
+vocals-sd:range rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:positiveInteger .
 
 
 ###  https://w3id.org/rsp/vocals-sd#step
-:step rdf:type owl:DatatypeProperty ;
-      rdfs:range xsd:positiveInteger .
+vocals-sd:step rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:positiveInteger .
 
 
 #################################################################
@@ -374,107 +386,113 @@ sd:Service rdf:type owl:Class ;
 vocals:RDFStream rdf:type owl:Class .
 
 
-###  https://w3id.org/rsp/vocals-sd#CatalogingService
-:CatalogingService rdf:type owl:Class ;
-                   rdfs:subClassOf :RSService ;
-                   rdfs:comment "An vois-sd:CatalogingService represents a stream description service." .
+###  https://w3id.org/rsp/vocals-sd#CatalogService
+vocals-sd:CatalogService rdf:type owl:Class ;
+                         rdfs:subClassOf vocals-sd:RSService ;
+                         rdfs:comment "An vois-sd:CatalogService is a service storing stream descriptions." ;
+                         rdfs:seeAlso "vocals:StreamDescriptor" .
+
+
+###  https://w3id.org/rsp/vocals-sd#Operation
+vocals-sd:Operation rdf:type owl:Class ;
+                    rdfs:subClassOf vocals-sd:RSPFeature .
 
 
 ###  https://w3id.org/rsp/vocals-sd#PhysicalWindow
-:PhysicalWindow rdf:type owl:Class ;
-                rdfs:subClassOf :Window ;
-                rdfs:comment "Window defined by an interval size (in units of RDF elements)" .
+vocals-sd:PhysicalWindow rdf:type owl:Class ;
+                         rdfs:subClassOf vocals-sd:Window ;
+                         rdfs:comment "Window defined by an interval size (in units of RDF elements)" .
 
 
 ###  https://w3id.org/rsp/vocals-sd#ProcessingService
-:ProcessingService rdf:type owl:Class ;
-                   rdfs:subClassOf :RSService ;
-                   rdfs:comment "An vois-sd:ProcessingService represents an RDF stream processing service." .
+vocals-sd:ProcessingService rdf:type owl:Class ;
+                            rdfs:subClassOf vocals-sd:RSService ;
+                            rdfs:comment "An vois-sd:ProcessingService represents an RDF stream processing service. Processing means any kind of transformation on streaming data, i.e., Querying, Reasoning, Filtering...etc" .
 
 
 ###  https://w3id.org/rsp/vocals-sd#PublishingService
-:PublishingService rdf:type owl:Class ;
-                   rdfs:subClassOf :RSService ;
-                   rdfs:comment "An vois-sd:PublishingService represents a stream publishing service." .
+vocals-sd:PublishingService rdf:type owl:Class ;
+                            rdfs:subClassOf vocals-sd:RSService ;
+                            rdfs:comment "An vois-sd:PublishingService represents a stream publishing service. Publishing has to be interpreted as in Linked Data domain, where is possible." .
 
 
 ###  https://w3id.org/rsp/vocals-sd#R2ROperation
-:R2ROperation rdf:type owl:Class ;
-              rdfs:subClassOf :RSPFeature .
+vocals-sd:R2ROperation rdf:type owl:Class ;
+                       rdfs:subClassOf vocals-sd:Operation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#R2SOperation
-:R2SOperation rdf:type owl:Class ;
-              rdfs:subClassOf :RSPFeature .
+vocals-sd:R2SOperation rdf:type owl:Class ;
+                       rdfs:subClassOf vocals-sd:Operation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#RSPFeature
-:RSPFeature rdf:type owl:Class .
+vocals-sd:RSPFeature rdf:type owl:Class .
 
 
 ###  https://w3id.org/rsp/vocals-sd#RSService
-:RSService rdf:type owl:Class ;
-           rdfs:subClassOf :StreamingService ;
-           rdfs:comment "An instance of vois-sd:Service represents a RDF streaming service made available via RSP-QL protocol." .
+vocals-sd:RSService rdf:type owl:Class ;
+                    rdfs:subClassOf vocals-sd:StreamingService ;
+                    rdfs:comment "An instance of vois-sd:Service represents a RDF streaming service made available via RSP-QL protocol." .
 
 
 ###  https://w3id.org/rsp/vocals-sd#ReportingPolicy
-:ReportingPolicy rdf:type owl:Class ;
-                 rdfs:subClassOf :RSPFeature ;
-                 rdfs:label "Reporting Policy" .
+vocals-sd:ReportingPolicy rdf:type owl:Class ;
+                          rdfs:subClassOf vocals-sd:RSPFeature ;
+                          rdfs:label "Reporting Policy" .
 
 
 ###  https://w3id.org/rsp/vocals-sd#S2ROperation
-:S2ROperation rdf:type owl:Class ;
-              rdfs:subClassOf :RSPFeature .
+vocals-sd:S2ROperation rdf:type owl:Class ;
+                       rdfs:subClassOf vocals-sd:Operation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#S2SOperation
-:S2SOperation rdf:type owl:Class ;
-              rdfs:subClassOf :RSPFeature .
+vocals-sd:S2SOperation rdf:type owl:Class ;
+                       rdfs:subClassOf vocals-sd:Operation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#SDS
-:SDS rdf:type owl:Class ;
-     rdfs:comment "A streaming dataset is a set composed by an (optional) default graph, n (n ≥ 0) named graphs and m (m ≥ 0) named time-varying graphs" ;
-     rdfs:label "SDS" .
+vocals-sd:SDS rdf:type owl:Class ;
+              rdfs:comment "A streaming dataset is a set composed by an (optional) default graph, n (n ≥ 0) named graphs and m (m ≥ 0) named time-varying graphs" ;
+              rdfs:label "SDS" .
 
 
 ###  https://w3id.org/rsp/vocals-sd#SetOperation
-:SetOperation rdf:type owl:Class ;
-              rdfs:subClassOf :S2SOperation .
+vocals-sd:SetOperation rdf:type owl:Class ;
+                       rdfs:subClassOf vocals-sd:S2SOperation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#StreamingService
-:StreamingService rdf:type owl:Class ;
-                  rdfs:comment "An instance of vois-sd:StreamingService represents a streaming service made available via a certain streaming protocol." .
+vocals-sd:StreamingService rdf:type owl:Class ;
+                           rdfs:comment "An instance of vois-sd:StreamingService represents a streaming service made available via a certain streaming protocol." .
 
 
 ###  https://w3id.org/rsp/vocals-sd#TimeBasedWindow
-:TimeBasedWindow rdf:type owl:Class ;
-                 rdfs:subClassOf :Window ;
-                 rdfs:comment "A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}" .
+vocals-sd:TimeBasedWindow rdf:type owl:Class ;
+                          rdfs:subClassOf vocals-sd:Window ;
+                          rdfs:comment "A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}" .
 
 
 ###  https://w3id.org/rsp/vocals-sd#TimeControl
-:TimeControl rdf:type owl:Class ;
-             rdfs:subClassOf :RSPFeature .
+vocals-sd:TimeControl rdf:type owl:Class ;
+                      rdfs:subClassOf vocals-sd:RSPFeature .
 
 
 ###  https://w3id.org/rsp/vocals-sd#TimeSemantics
-:TimeSemantics rdf:type owl:Class ;
-               rdfs:subClassOf :RSPFeature .
+vocals-sd:TimeSemantics rdf:type owl:Class ;
+                        rdfs:subClassOf vocals-sd:RSPFeature .
 
 
 ###  https://w3id.org/rsp/vocals-sd#TimeVaryingGraph
-:TimeVaryingGraph rdf:type owl:Class ;
-                  rdfs:comment "A time-varying graph G is a function that relates time instants t ∈ T to RDF graphs: G : T → {g | g is an RDF graph}" .
+vocals-sd:TimeVaryingGraph rdf:type owl:Class ;
+                           rdfs:comment "A time-varying graph G is a function that relates time instants t ∈ T to RDF graphs: G : T → {g | g is an RDF graph}" .
 
 
 ###  https://w3id.org/rsp/vocals-sd#Window
-:Window rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
-        rdfs:comment "A window W(S) is a set of RDF statements extracted from a stream S." .
+vocals-sd:Window rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
+                 rdfs:comment "A window W(S) is a set of RDF statements extracted from a stream S." .
 
 
 #################################################################
@@ -538,83 +556,83 @@ sd:UnionDefaultGraph rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/rsp/vocals-sd#RSPQL
-:RSPQL rdf:type owl:NamedIndividual ,
-                sd:Language .
+vocals-sd:RSPQL rdf:type owl:NamedIndividual ,
+                         sd:Language .
 
 
 ###  https://w3id.org/rsp/vocals-sd#difference
-:difference rdf:type owl:NamedIndividual ,
-                     :SetOperation .
+vocals-sd:difference rdf:type owl:NamedIndividual ,
+                              vocals-sd:SetOperation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#event_time
-:event_time rdf:type owl:NamedIndividual ,
-                     :TimeSemantics .
+vocals-sd:event_time rdf:type owl:NamedIndividual ,
+                              vocals-sd:TimeSemantics .
 
 
 ###  https://w3id.org/rsp/vocals-sd#external_time_control
-:external_time_control rdf:type owl:NamedIndividual ,
-                                :TimeControl .
+vocals-sd:external_time_control rdf:type owl:NamedIndividual ,
+                                         vocals-sd:TimeControl .
 
 
 ###  https://w3id.org/rsp/vocals-sd#filtering
-:filtering rdf:type owl:NamedIndividual ,
-                    :S2SOperation .
+vocals-sd:filtering rdf:type owl:NamedIndividual ,
+                             vocals-sd:S2SOperation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#ingestion_time
-:ingestion_time rdf:type owl:NamedIndividual ,
-                         :TimeSemantics .
+vocals-sd:ingestion_time rdf:type owl:NamedIndividual ,
+                                  vocals-sd:TimeSemantics .
 
 
 ###  https://w3id.org/rsp/vocals-sd#internal_time_control
-:internal_time_control rdf:type owl:NamedIndividual ,
-                                :TimeControl .
+vocals-sd:internal_time_control rdf:type owl:NamedIndividual ,
+                                         vocals-sd:TimeControl .
 
 
 ###  https://w3id.org/rsp/vocals-sd#intersection
-:intersection rdf:type owl:NamedIndividual ,
-                       :SetOperation .
+vocals-sd:intersection rdf:type owl:NamedIndividual ,
+                                vocals-sd:SetOperation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#non_empty_content
-:non_empty_content rdf:type owl:NamedIndividual ,
-                            :ReportingPolicy .
+vocals-sd:non_empty_content rdf:type owl:NamedIndividual ,
+                                     vocals-sd:ReportingPolicy .
 
 
 ###  https://w3id.org/rsp/vocals-sd#on_content_change
-:on_content_change rdf:type owl:NamedIndividual ,
-                            :ReportingPolicy .
+vocals-sd:on_content_change rdf:type owl:NamedIndividual ,
+                                     vocals-sd:ReportingPolicy .
 
 
 ###  https://w3id.org/rsp/vocals-sd#on_window_close
-:on_window_close rdf:type owl:NamedIndividual ,
-                          :ReportingPolicy .
+vocals-sd:on_window_close rdf:type owl:NamedIndividual ,
+                                   vocals-sd:ReportingPolicy .
 
 
 ###  https://w3id.org/rsp/vocals-sd#periodic
-:periodic rdf:type owl:NamedIndividual ,
-                   :ReportingPolicy .
+vocals-sd:periodic rdf:type owl:NamedIndividual ,
+                            vocals-sd:ReportingPolicy .
 
 
 ###  https://w3id.org/rsp/vocals-sd#processing_time
-:processing_time rdf:type owl:NamedIndividual ,
-                          :TimeSemantics .
+vocals-sd:processing_time rdf:type owl:NamedIndividual ,
+                                   vocals-sd:TimeSemantics .
 
 
 ###  https://w3id.org/rsp/vocals-sd#replaying
-:replaying rdf:type owl:NamedIndividual ,
-                    :R2SOperation .
+vocals-sd:replaying rdf:type owl:NamedIndividual ,
+                             vocals-sd:R2SOperation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#union
-:union rdf:type owl:NamedIndividual ,
-                :SetOperation .
+vocals-sd:union rdf:type owl:NamedIndividual ,
+                         vocals-sd:SetOperation .
 
 
 ###  https://w3id.org/rsp/vocals-sd#windowing
-:windowing rdf:type owl:NamedIndividual ,
-                    :S2ROperation .
+vocals-sd:windowing rdf:type owl:NamedIndividual ,
+                             vocals-sd:S2ROperation .
 
 
 #################################################################
@@ -622,9 +640,9 @@ sd:UnionDefaultGraph rdf:type owl:NamedIndividual ,
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :CatalogingService
-                :ProcessingService
-                :PublishingService
+  owl:members ( vocals-sd:CatalogService
+                vocals-sd:ProcessingService
+                vocals-sd:PublishingService
               )
 ] .
 

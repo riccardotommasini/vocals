@@ -42,16 +42,26 @@
             rdfs:comment "Points to the following vocals-prov:operator to be applied after the current one in a vocals-prov:Task." .
 
 
+###  https://w3id.org/rsp/vocals-prov#hasOutput
+:hasOutput rdf:type owl:ObjectProperty ;
+           rdfs:domain :Task ;
+           rdfs:range prov:Entity ;
+           rdfs:comment "Points to the output of a vocals-prov:operator to be applied before the current one in a vocals-prov:Task." .
+
+
+###  https://w3id.org/rsp/vocals-prov#performs
+:performs rdf:type owl:ObjectProperty ;
+          rdfs:domain :Operator ;
+          rdfs:comment "This property is meant to relate vocals-sd:RSPFeature to vocals-prov:Operator ." .
+
+
 ###  https://w3id.org/rsp/vocals-prov#precededBy
 :precededBy rdf:type owl:ObjectProperty ;
             rdfs:domain :Operator ;
             rdfs:range :Operator ;
             rdfs:comment "Points to the preceding vocals-prov:operator to be applied before the current one in a vocals-prov:Task." .
 
-:hasOutput  rdf:type owl:ObjectProperty ;
-            rdfs:domain :Task ;
-            rdfs:range prov:Entity ;
-            rdfs:comment "Points to the output of a vocals-prov:operator to be applied before the current one in a vocals-prov:Task." .
+
 #################################################################
 #    Data properties
 #################################################################
@@ -68,6 +78,10 @@
 
 ###  http://www.w3.org/ns/prov#Activity
 prov:Activity rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+prov:Entity rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/prov#SoftwareAgent
