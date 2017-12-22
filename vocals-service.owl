@@ -53,13 +53,15 @@ vsd:defaultGraph rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/rsp/vocals-sd#defaultSDS
 vsd:defaultSDS rdf:type owl:ObjectProperty ;
-               rdfs:comment "Relates an instance of sd:Service to a description of the default SDS available when no explicit dataset is specified in the query." .
+               rdfs:domain vsd:RSService ;
+               rdfs:range vsd:SDS ;
+               rdfs:comment "Relates an instance of vsd:RSService to a description of the default SDS available when no explicit dataset is specified in the query." .
 
 
 ###  https://w3id.org/rsp/vocals-sd#describedBy
 vsd:describedBy rdf:type owl:ObjectProperty ;
-                rdfs:domain vsd:CatalogService ;
-                rdfs:range vocals:RDFStream ;
+                rdfs:domain vocals:RDFStream ;
+                rdfs:range vsd:CatalogService ;
                 rdfs:comment "Points to an instance of vsd:CatalogingService that describes a certain vocals:RDFStream." .
 
 
