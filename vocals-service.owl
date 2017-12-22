@@ -77,6 +77,8 @@ vsd:graph rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/rsp/vocals-sd#hasFeature
 vsd:hasFeature rdf:type owl:ObjectProperty ;
+               rdfs:domain vsd:RSService ;
+               rdfs:range vsd:RSFeature ;
                rdfs:comment "Relates a vsd:RSService to an available feature" .
 
 
