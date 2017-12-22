@@ -26,17 +26,24 @@
 #    Object Properties
 #################################################################
 
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain vprov:Task ;
+                      rdfs:range vsd:Operation .
+
+
 ###  https://w3id.org/rsp/vocals-prov#containedIn
 vprov:containedIn rdf:type owl:ObjectProperty ;
                   owl:inverseOf vprov:contains ;
                   rdfs:domain vprov:Operator ;
-                  rdfs:range vprov:Task .
+                  rdfs:range vprov:Task ;
+                  rdfs:comment "Relates an operator to the containing task ." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#contains
 vprov:contains rdf:type owl:ObjectProperty ;
                rdfs:domain vprov:Task ;
-               rdfs:range vprov:Operator .
+               rdfs:range vprov:Operator ;
+               rdfs:comment "Relates task to operators used to finish the task." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#followedBy
@@ -44,27 +51,27 @@ vprov:followedBy rdf:type owl:ObjectProperty ;
                  owl:inverseOf vprov:precededBy ;
                  rdfs:domain vprov:Operator ;
                  rdfs:range vprov:Operator ;
-                 rdfs:comment "Points to the following vocals-prov:operator to be applied after the current one in a vocals-prov:Task." .
+                 rdfs:comment "Points to the following vprov:operator to be applied after the current one in a vprov:Task." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#hasOutput
 vprov:hasOutput rdf:type owl:ObjectProperty ;
                 rdfs:domain vprov:Task ;
                 rdfs:range prov:Entity ;
-                rdfs:comment "Points to the output of a vocals-prov:operator to be applied before the current one in a vocals-prov:Task." .
+                rdfs:comment "Points to the output of a vprov:operator to be applied before the current one in a vprov:Task." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#performs
 vprov:performs rdf:type owl:ObjectProperty ;
                rdfs:domain vprov:Operator ;
-               rdfs:comment "This property is meant to relate vocals-sd:RSPFeature to vocals-prov:Operator ." .
+               rdfs:isDefinedBy "Relate vsd:Operation to vprov:Operator ." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#precededBy
 vprov:precededBy rdf:type owl:ObjectProperty ;
                  rdfs:domain vprov:Operator ;
                  rdfs:range vprov:Operator ;
-                 rdfs:comment "Points to the preceding vocals-prov:operator to be applied before the current one in a vocals-prov:Task." .
+                 rdfs:comment "Points to the preceding vprov:operator to be applied before the current one in a vprov:Task." .
 
 
 #################################################################
@@ -167,6 +174,10 @@ vprov:Task rdf:type owl:Class ;
 vprov:TransformOperator rdf:type owl:Class ;
                         rdfs:subClassOf vprov:S2SOperator ;
                         rdfs:comment "An instance of vprov:TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)" .
+
+
+###  https://w3id.org/rsp/vocals-sd#Operation
+vsd:Operation rdf:type owl:Class .
 
 
 #################################################################
