@@ -94,7 +94,7 @@
 	vsd:resultFormat frmt:N3 ; 
 	vsd:rspEndpoin "http://example.org/rspEndpoin" .
 
-:Triplewave1 a :vocals:ProcessingService ; 
+:Triplewave1 a :vocals:PublishingService ; 
 	vsd:hasFeature vsd:replaying ;
 	vsd:hasFeature vsd:filtering ;
 	vsd:hasFeature vsd:union ;
