@@ -1,65 +1,70 @@
 @prefix : <https://w3id.org/rsp/vocals-prov#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vsd: <https://w3id.org/rsp/vocals-sd#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vois: <https://w3id.org/rsp/vocals#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vprov: <https://w3id.org/rsp/vocals-prov#> .
+@prefix vocals: <https://w3id.org/rsp/vocals#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/rsp/vocals-prov> .
 
 <https://w3id.org/rsp/vocals-prov> rdf:type owl:Ontology ;
                                     owl:versionIRI <https://w3id.org/rsp/vocals-prov> ;
-                                    <http://purl.org/dc/elements/1.1/creator> vois:RiccardoTommasini ,
-                                                                              vois:EmanueleDellaValle ;
-                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rsp/vocals-prov#" ;
-                                    <http://purl.org/dc/terms/created> "2017-05-23T13:00:00"^^xsd:dateTime ;
-                                    <http://purl.org/dc/elements/1.1/creator> vois:YehiaAboSedira ;
-                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "voisp" .
+                                    dcterms:created "2017-12-01T00:00:00"^^xsd:dateTime ;
+                                    dc:creator vocals:RiccardoTommasini ,
+                                               <http://w3id.org/people/jpcik/me> ;
+                                    vann:preferredNamespaceUri "https://w3id.org/rsp/vocals-prov#" ;
+                                    vann:preferredNamespacePrefix "vprov" ;
+                                    dc:creator vocals:YehiaAboSedira .
 
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  https://w3id.org/rsp/vocals-prov#containedIn
-:containedIn rdf:type owl:ObjectProperty ;
-             owl:inverseOf :contains ;
-             rdfs:domain :Operator ;
-             rdfs:range :Task .
+vprov:containedIn rdf:type owl:ObjectProperty ;
+                  owl:inverseOf vprov:contains ;
+                  rdfs:domain vprov:Operator ;
+                  rdfs:range vprov:Task .
 
 
 ###  https://w3id.org/rsp/vocals-prov#contains
-:contains rdf:type owl:ObjectProperty ;
-          rdfs:domain :Task ;
-          rdfs:range :Operator .
+vprov:contains rdf:type owl:ObjectProperty ;
+               rdfs:domain vprov:Task ;
+               rdfs:range vprov:Operator .
 
 
 ###  https://w3id.org/rsp/vocals-prov#followedBy
-:followedBy rdf:type owl:ObjectProperty ;
-            owl:inverseOf :precededBy ;
-            rdfs:domain :Operator ;
-            rdfs:range :Operator ;
-            rdfs:comment "Points to the following vocals-prov:operator to be applied after the current one in a vocals-prov:Task." .
+vprov:followedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf vprov:precededBy ;
+                 rdfs:domain vprov:Operator ;
+                 rdfs:range vprov:Operator ;
+                 rdfs:comment "Points to the following vocals-prov:operator to be applied after the current one in a vocals-prov:Task." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#hasOutput
-:hasOutput rdf:type owl:ObjectProperty ;
-           rdfs:domain :Task ;
-           rdfs:range prov:Entity ;
-           rdfs:comment "Points to the output of a vocals-prov:operator to be applied before the current one in a vocals-prov:Task." .
+vprov:hasOutput rdf:type owl:ObjectProperty ;
+                rdfs:domain vprov:Task ;
+                rdfs:range prov:Entity ;
+                rdfs:comment "Points to the output of a vocals-prov:operator to be applied before the current one in a vocals-prov:Task." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#performs
-:performs rdf:type owl:ObjectProperty ;
-          rdfs:domain :Operator ;
-          rdfs:comment "This property is meant to relate vocals-sd:RSPFeature to vocals-prov:Operator ." .
+vprov:performs rdf:type owl:ObjectProperty ;
+               rdfs:domain vprov:Operator ;
+               rdfs:comment "This property is meant to relate vocals-sd:RSPFeature to vocals-prov:Operator ." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#precededBy
-:precededBy rdf:type owl:ObjectProperty ;
-            rdfs:domain :Operator ;
-            rdfs:range :Operator ;
-            rdfs:comment "Points to the preceding vocals-prov:operator to be applied before the current one in a vocals-prov:Task." .
+vprov:precededBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain vprov:Operator ;
+                 rdfs:range vprov:Operator ;
+                 rdfs:comment "Points to the preceding vocals-prov:operator to be applied before the current one in a vocals-prov:Task." .
 
 
 #################################################################
@@ -67,9 +72,9 @@
 #################################################################
 
 ###  https://w3id.org/rsp/vocals-prov#query
-:query rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :RSPQLOperator .
+vprov:query rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain vprov:RSPQLOperator .
 
 
 #################################################################
@@ -88,72 +93,80 @@ prov:Entity rdf:type owl:Class .
 prov:SoftwareAgent rdf:type owl:Class .
 
 
+###  https://w3id.org/rsp/vocals-prov#FilterOperator
+vprov:FilterOperator rdf:type owl:Class ;
+                     rdfs:subClassOf vprov:S2SOperator ;
+                     rdfs:comment "A vprov:FilterOperator represents an operator that exclude data that doesn't match some specified criteria." .
+
+
 ###  https://w3id.org/rsp/vocals-prov#Operator
-:Operator rdf:type owl:Class ;
-          rdfs:subClassOf prov:Activity ;
-          rdfs:comment "Operator used to generate an entity from another enitity" .
+vprov:Operator rdf:type owl:Class ;
+               rdfs:subClassOf prov:Activity ;
+               rdfs:comment "Operator that operat on an entity to generate another entity." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#R2ROperator
-:R2ROperator rdf:type owl:Class ;
-             rdfs:subClassOf :Operator ;
-             rdfs:comment "Operators that produce relations from other relations." ;
-             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
+vprov:R2ROperator rdf:type owl:Class ;
+                  rdfs:subClassOf vprov:Operator ;
+                  rdfs:comment "Operators that produce relations from other relations." ;
+                  rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
 
 
 ###  https://w3id.org/rsp/vocals-prov#R2SOperator
-:R2SOperator rdf:type owl:Class ;
-             rdfs:subClassOf :Operator ;
-             rdfs:comment "Operators that produce a stream from a relation." ;
-             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
+vprov:R2SOperator rdf:type owl:Class ;
+                  rdfs:subClassOf vprov:Operator ;
+                  rdfs:comment "Operators that produce a stream from a relation." ;
+                  rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
 
 
 ###  https://w3id.org/rsp/vocals-prov#RSPQLOperator
-:RSPQLOperator rdf:type owl:Class ;
-               rdfs:subClassOf :S2SOperator ;
-               owl:disjointWith :SetOperator ;
-               rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another windowed stream." .
+vprov:RSPQLOperator rdf:type owl:Class ;
+                    rdfs:subClassOf vprov:S2SOperator ;
+                    owl:disjointWith vprov:SetOperator ;
+                    rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another windowed stream." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#Replay
-:Replay rdf:type owl:Class ;
-        rdfs:subClassOf :R2SOperator ;
-        rdfs:comment "Replay operator produce a stream from a static RDF dataset" ;
-        rdfs:isDefinedBy "https://link.springer.com/chapter/10.1007%2F978-3-319-46547-0_15" .
+vprov:Replay rdf:type owl:Class ;
+             rdfs:subClassOf vprov:R2SOperator ;
+             rdfs:comment "Replay operator produce a stream from a static RDF dataset" ;
+             rdfs:isDefinedBy "https://link.springer.com/chapter/10.1007%2F978-3-319-46547-0_15" .
 
 
 ###  https://w3id.org/rsp/vocals-prov#S2ROperator
-:S2ROperator rdf:type owl:Class ;
-             rdfs:subClassOf :Operator ;
-             rdfs:comment "Operators that produce a relation from a stream." ;
-             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
+vprov:S2ROperator rdf:type owl:Class ;
+                  rdfs:subClassOf vprov:Operator ;
+                  rdfs:comment "Operators that produce a relation from a stream." ;
+                  rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
 
 
 ###  https://w3id.org/rsp/vocals-prov#S2SOperator
-:S2SOperator rdf:type owl:Class ;
-             rdfs:subClassOf :Operator ;
-             rdfs:comment "Operators that produce a stream form another stream." .
+vprov:S2SOperator rdf:type owl:Class ;
+                  rdfs:subClassOf vprov:Operator ;
+                  rdfs:comment "Operators that produce a stream form another stream." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#SetOperator
-:SetOperator rdf:type owl:Class ;
-             rdfs:subClassOf :S2SOperator ;
-             rdfs:comment "Operator that produce a stream by applying set algebra operator on other streams." .
+vprov:SetOperator rdf:type owl:Class ;
+                  rdfs:subClassOf vprov:S2SOperator ;
+                  rdfs:comment "Operator that produce a stream by applying set algebra operator on other streams." .
 
 
-###  https://w3id.org/rsp/vocals-prov#StreamProcessor
-:StreamProcessor rdf:type owl:Class ;
-                 rdfs:subClassOf prov:SoftwareAgent .
+###  https://w3id.org/rsp/vocals-prov#StreamingAgent
+vprov:StreamingAgent rdf:type owl:Class ;
+                     rdfs:subClassOf prov:SoftwareAgent ;
+                     rdfs:comment "An instance of a vprov:StreamingAgent represent an actor that applies an vprov:Operator that consums and/or produce a stream." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#Task
-:Task rdf:type owl:Class ;
-      rdfs:comment "A task contains one or more activity to be applied on a prov:Entity." .
+vprov:Task rdf:type owl:Class ;
+           rdfs:comment "A task contains one or more activity to be applied on a prov:Entity." .
 
 
-###  https://w3id.org/rsp/vocals-prov#Transform
-:Transform rdf:type owl:Class ;
-           rdfs:subClassOf :S2SOperator .
+###  https://w3id.org/rsp/vocals-prov#TransformOperator
+vprov:TransformOperator rdf:type owl:Class ;
+                        rdfs:subClassOf vprov:S2SOperator ;
+                        rdfs:comment "An instance of vprov:TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)" .
 
 
 #################################################################
@@ -161,23 +174,23 @@ prov:SoftwareAgent rdf:type owl:Class .
 #################################################################
 
 ###  https://w3id.org/rsp/vocals-prov#TripleWave
-:TripleWave rdf:type owl:NamedIndividual ,
-                     prov:SoftwareAgent .
+vprov:TripleWave rdf:type owl:NamedIndividual ,
+                          vprov:StreamingAgent .
 
 
 ###  https://w3id.org/rsp/vocals-prov#difference_operator
-:difference_operator rdf:type owl:NamedIndividual ,
-                              :SetOperator .
+vprov:difference_operator rdf:type owl:NamedIndividual ,
+                                   vprov:SetOperator .
 
 
 ###  https://w3id.org/rsp/vocals-prov#intersect_operator
-:intersect_operator rdf:type owl:NamedIndividual ,
-                             :SetOperator .
+vprov:intersect_operator rdf:type owl:NamedIndividual ,
+                                  vprov:SetOperator .
 
 
 ###  https://w3id.org/rsp/vocals-prov#union_operator
-:union_operator rdf:type owl:NamedIndividual ,
-                         :SetOperator .
+vprov:union_operator rdf:type owl:NamedIndividual ,
+                              vprov:SetOperator .
 
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
