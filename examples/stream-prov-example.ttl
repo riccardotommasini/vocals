@@ -22,7 +22,7 @@
 :TrafficStream2 a vocals:RDFStream ;
 	dcat:distribution :StreamingEndpoint .
 
-:TrafficStream1Descriptor a vocals:StreamDescriptor , vsd:CatalogingService ;
+:TrafficStream1Descriptor a vocals:StreamDescriptor , vsd:CatalogService ;
 	dcat:dataset :TrafficStream1 .
 
 :TrafficStream2Descriptor a vocals:StreamDescriptor ;
