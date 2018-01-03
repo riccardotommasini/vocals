@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vprov: <https://w3id.org/rsp/vocals-prov#> .
 @prefix vocals: <https://w3id.org/rsp/vocals#> .
@@ -26,11 +27,6 @@
 #    Object Properties
 #################################################################
 
-###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty rdfs:domain vprov:Task ;
-                      rdfs:range vsd:Operation .
-
-
 ###  https://w3id.org/rsp/vocals-prov#containedIn
 vprov:containedIn rdf:type owl:ObjectProperty ;
                   owl:inverseOf vprov:contains ;
@@ -44,6 +40,12 @@ vprov:contains rdf:type owl:ObjectProperty ;
                rdfs:domain vprov:Task ;
                rdfs:range vprov:Operator ;
                rdfs:comment "Relates task to operators used to finish the task." .
+
+
+###  https://w3id.org/rsp/vocals-prov#endedAt
+vprov:endedAt rdf:type owl:ObjectProperty ;
+              rdfs:domain vprov:Window ;
+              rdfs:range time:Instant .
 
 
 ###  https://w3id.org/rsp/vocals-prov#followedBy
@@ -63,7 +65,7 @@ vprov:hasOutput rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/rsp/vocals-prov#performs
 vprov:performs rdf:type owl:ObjectProperty ;
-               rdfs:domain vprov:Operator ;
+               rdfs:range vsd:Operation ;
                rdfs:isDefinedBy "Relate vsd:Operation to vprov:Operator ." .
 
 
@@ -72,6 +74,18 @@ vprov:precededBy rdf:type owl:ObjectProperty ;
                  rdfs:domain vprov:Operator ;
                  rdfs:range vprov:Operator ;
                  rdfs:comment "Points to the preceding vprov:operator to be applied before the current one in a vprov:Task." .
+
+
+###  https://w3id.org/rsp/vocals-prov#startedAt
+vprov:startedAt rdf:type owl:ObjectProperty ;
+                rdfs:domain vprov:Window ;
+                rdfs:range time:Instant .
+
+
+###  https://w3id.org/rsp/vocals-prov#startingTime
+vprov:startingTime rdf:type owl:ObjectProperty ;
+                   rdfs:domain vprov:WindowOperator ;
+                   rdfs:range time:Instant .
 
 
 #################################################################
@@ -84,9 +98,29 @@ vprov:query rdf:type owl:DatatypeProperty ;
             rdfs:domain vprov:RSPQLOperator .
 
 
+###  https://w3id.org/rsp/vocals-prov#range
+vprov:range rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain vprov:WindowOperator .
+
+
+###  https://w3id.org/rsp/vocals-prov#step
+vprov:step rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain vprov:WindowOperator .
+
+
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.w3.org/2006/time#Instant
+time:Instant rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class .
+
 
 ###  http://www.w3.org/ns/prov#Activity
 prov:Activity rdf:type owl:Class .
@@ -112,6 +146,12 @@ vprov:Operator rdf:type owl:Class ;
                rdfs:comment "Operator that operat on an entity to generate another entity." .
 
 
+###  https://w3id.org/rsp/vocals-prov#PhysicalWindow
+vprov:PhysicalWindow rdf:type owl:Class ;
+                     rdfs:subClassOf vprov:Window ;
+                     rdfs:comment "Window defined by an interval size (in units of RDF elements)" .
+
+
 ###  https://w3id.org/rsp/vocals-prov#R2ROperator
 vprov:R2ROperator rdf:type owl:Class ;
                   rdfs:subClassOf vprov:Operator ;
@@ -130,7 +170,7 @@ vprov:R2SOperator rdf:type owl:Class ;
 vprov:RSPQLOperator rdf:type owl:Class ;
                     rdfs:subClassOf vprov:S2SOperator ;
                     owl:disjointWith vprov:SetOperator ;
-                    rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another windowed stream." .
+                    rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream." .
 
 
 ###  https://w3id.org/rsp/vocals-prov#Replay
@@ -170,10 +210,27 @@ vprov:Task rdf:type owl:Class ;
            rdfs:comment "A task contains one or more activity to be applied on a prov:Entity." .
 
 
+###  https://w3id.org/rsp/vocals-prov#TimeBasedWindow
+vprov:TimeBasedWindow rdf:type owl:Class ;
+                      rdfs:subClassOf vprov:Window ;
+                      rdfs:comment "A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}" .
+
+
 ###  https://w3id.org/rsp/vocals-prov#TransformOperator
 vprov:TransformOperator rdf:type owl:Class ;
                         rdfs:subClassOf vprov:S2SOperator ;
                         rdfs:comment "An instance of vprov:TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)" .
+
+
+###  https://w3id.org/rsp/vocals-prov#Window
+vprov:Window rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
+             rdfs:comment "A window W(S) is a set of RDF statements extracted from a stream S." .
+
+
+###  https://w3id.org/rsp/vocals-prov#WindowOperator
+vprov:WindowOperator rdf:type owl:Class ;
+                     rdfs:subClassOf vprov:S2ROperator .
 
 
 ###  https://w3id.org/rsp/vocals-sd#Operation

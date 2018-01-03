@@ -43,6 +43,18 @@
              rdfs:range :StreamEndpoint .
 
 
+###  https://w3id.org/rsp/vocals#hasPartition
+:hasPartition rdf:type owl:ObjectProperty ;
+              rdfs:domain :Stream ;
+              rdfs:range :FiniteStreamPartition .
+
+
+###  https://w3id.org/rsp/vocals#previous
+:previous rdf:type owl:ObjectProperty ;
+          rdfs:domain :FiniteStreamPartition ;
+          rdfs:range :FiniteStreamPartition .
+
+
 #################################################################
 #    Classes
 #################################################################
