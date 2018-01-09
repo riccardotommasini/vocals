@@ -1,0 +1,286 @@
+<h2  id="crossreference" class="list">Cross reference for VOIS2 ontology: A model for data streams and metadata classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by VOIS2 ontology: A model for data streams and metadata.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#RDFStream" title="https://w3id.org/rsp/vocals#RDFStream">RDFStream</a>
+      </li>
+      <li>
+         <a href="#Stream" title="https://w3id.org/rsp/vocals#Stream">Stream</a>
+      </li>
+      <li>
+         <a href="#StreamDescriptor" title="https://w3id.org/rsp/vocals#StreamDescriptor">StreamDescriptor</a>
+      </li>
+      <li>
+         <a href="#StreamDistribution" title="https://w3id.org/rsp/vocals#StreamDistribution">StreamDistribution</a>
+      </li>
+      <li>
+         <a href="#StreamEndpoint" title="https://w3id.org/rsp/vocals#StreamEndpoint">StreamEndpoint</a>
+      </li>
+      <li>
+         <a href="#StreamPartition" title="https://w3id.org/rsp/vocals#StreamPartition">StreamPartition</a>
+      </li>
+   </ul>
+   <div class="entity" id="RDFStream">
+      <h3>RDFStream<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#RDFStream</p>
+      <div class="comment">
+         <span class="markdown">A stream composed of RDF data elements, i.e. RDF graphs and/or triples.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Stream" title="https://w3id.org/rsp/vocals#Stream">Stream</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Stream">
+      <h3>Stream<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#Stream</p>
+      <div class="comment">
+         <span class="markdown">A potentially infinite sequence of data elements. A stream may be findable and accesible on the Web.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/dcat#Dataset">dataset</span>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#RDFStream" title="https://w3id.org/rsp/vocals#RDFStream">RDFStream</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasEndpoint" title="https://w3id.org/rsp/vocals#hasEndpoint">hasEndpoint</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPartition" title="https://w3id.org/rsp/vocals#hasPartition">hasPartition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StreamDescriptor">
+      <h3>StreamDescriptor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#StreamDescriptor</p>
+      <div class="comment">
+         <span class="markdown">A Stream Descriptor is a Web document that contains the description of a Stream.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/dcat#CatalogRecord">catalog record</span>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Document">document</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StreamDistribution">
+      <h3>StreamDistribution<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#StreamDistribution</p>
+      <div class="comment">
+         <span class="markdown">Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of distributions include a WebSocket endpoint, an HTTP endpint, a Server-Sent Events endpint, MQTT, etc.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#StreamEndpoint" title="https://w3id.org/rsp/vocals#StreamEndpoint">StreamEndpoint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/dcat#Distribution">distribution</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StreamEndpoint">
+      <h3>StreamEndpoint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#StreamEndpoint</p>
+      <div class="comment">
+         <span class="markdown">Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of endpoints include a WebSocket endpoint, an HTTP endpint, a Server-Sent Events endpint, MQTT, etc.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/dcat#Distribution">distribution</span>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasEndpoint" title="https://w3id.org/rsp/vocals#hasEndpoint">hasEndpoint</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StreamPartition">
+      <h3>StreamPartition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#StreamPartition</p>
+      <div class="comment">
+         <span class="markdown">A portion of the time-varying data items of a Stream</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/dcat#Dataset">dataset</span>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#previous" title="https://w3id.org/rsp/vocals#previous">previous</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPartition" title="https://w3id.org/rsp/vocals#hasPartition">hasPartition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#previous" title="https://w3id.org/rsp/vocals#previous">previous</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasEndpoint" title="https://w3id.org/rsp/vocals#hasEndpoint">hasEndpoint</a>
+      </li>
+      <li>
+         <a href="#hasPartition" title="https://w3id.org/rsp/vocals#hasPartition">hasPartition</a>
+      </li>
+      <li>
+         <a href="#previous" title="https://w3id.org/rsp/vocals#previous">previous</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasEndpoint">
+      <h3>hasEndpoint<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#hasEndpoint</p>
+      <div class="comment">
+         <span class="markdown">A relationship between a Stream and a StreamEndpoint. A stream may have several endpoints through which its contents can be accessible.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/dcat#distribution">distribution</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Stream" title="https://w3id.org/rsp/vocals#Stream">Stream</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#StreamEndpoint" title="https://w3id.org/rsp/vocals#StreamEndpoint">StreamEndpoint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPartition">
+      <h3>hasPartition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#hasPartition</p>
+      <div class="comment">
+         <span class="markdown">A relationship between a Stream and a partition, or portion of elements streamed</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Stream" title="https://w3id.org/rsp/vocals#Stream">Stream</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#StreamPartition" title="https://w3id.org/rsp/vocals#StreamPartition">StreamPartition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="previous">
+      <h3>previous<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#previous</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a stream partition and the previoous partition in the stream</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#StreamPartition" title="https://w3id.org/rsp/vocals#StreamPartition">StreamPartition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#StreamPartition" title="https://w3id.org/rsp/vocals#StreamPartition">StreamPartition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#" title="https://w3id.org/rsp/vocals#">
+            <span></span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="">
+      <h3>:<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals#</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/vocommons/voaf#Vocabulary">vocabulary</span>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
