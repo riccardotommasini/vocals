@@ -1,0 +1,665 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/rsp/vocals-sd#"
+     xml:base="https://w3id.org/rsp/vocals-sd"
+     xmlns:vocals-sd="https://w3id.org/rsp/vocals-sd#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/rsp/vocals-sd">
+        <owl:versionIRI rdf:resource="https://w3id.org/rsp/vocals-sd"/>
+        <dc:creator rdf:resource="http://w3id.org/people/jpcik/me"/>
+        <dc:creator rdf:resource="https://w3id.org/rsp/vocals#RiccardoTommasini"/>
+        <dc:creator rdf:resource="https://w3id.org/rsp/vocals#YehiaAboSedira"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-23T13:00:00</terms:created>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vsd</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/rsp/vocals-sd#</vann:preferredNamespaceUri>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#name -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/rsp/vocals-sd#name">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a named time varying graph to the name by which it may be referenced in a FROM/FROM NAMED clause. The object of the vsd:name property is an IRI.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#availableGraphs -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#availableGraphs">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an instance of vsd:RSService to the time varying graphs available by the vsd:RSService.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#availableStream -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#availableStream">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals#RDFStream"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#defaultGraph -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#defaultGraph">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#SDS"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an instance of vocals:RDFStream to the description of its default graph.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#defaultSDS -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#defaultSDS">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#SDS"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an instance of vsd:RSService to a description of the default SDS available when no explicit dataset is specified in the query.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#describedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#describedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals#RDFStream"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#CatalogService"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points to an instance of vsd:CatalogingService that describes a certain vocals:RDFStream.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#endedAt -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#endedAt">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#Window"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#graph -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#graph">
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a named time varying graph to its graph description.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#hasFeature -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#hasFeature">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#RSFeature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a vsd:RSService to an available feature</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#SDS"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an instance of vocals:SDS to the description of one of its named time varying graphs. The description of such a named time varying graph MUST include the vsd:name property.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#publishedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#publishedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals#RDFStream"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#PublishingService"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points to an instance of vsd:PublishingService that publishs a certain vocals:RDFStream.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#registerdTask -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#registerdTask">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an instance of vsd:RSService with instances of running tasks, e.g. RSP-QL Query .</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">registerd task</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#registeredBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#registeredBy">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals#RDFStream"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#ProcessingService"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points to an instance of vsd:ProcessingService that registers/ processes a certain vocals:RDFStream.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#registeredStreams -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#registeredStreams">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:range rdf:resource="https://w3id.org/rsp/vocals#RDFStream"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an instance of vsd:RSService to the streams registered on it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#resultFormat -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#resultFormat">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/formats/Format"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an instance of sd:Service to a format that is supported for serializing query results.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">result format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#rspEndpoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#rspEndpoint">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The RSP-QL endpoint of an vocals:RSPService that implements the RSP-QL Protocol service. The object of the vocals:rspEndpoint property is an IRI.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSP endpoint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#startedAt -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-sd#startedAt">
+        <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-sd#Window"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset"/>
+    
+
+
+    <!-- http://www.w3.org/ns/formats/Format -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/formats/Format"/>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals#RDFStream -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals#RDFStream"/>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#CatalogService -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#CatalogService">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An vsd:CatalogService is a service storing stream descriptions. (e.g. SPARQL endpoint, RDF file with stream description,...etc)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catalog service</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vocals:StreamDescriptor</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#Operation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#Operation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#RSFeature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vsd:Operation represents an available action/function that can be performed by vsd:RSService.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#PhysicalWindow -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#PhysicalWindow">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#Window"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Window defined by an interval size (in units of RDF elements)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#ProcessingService -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#ProcessingService">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An vsd:ProcessingService represents an RDF stream processing service. Processing means any kind of transformation on streaming data, i.e., Querying, Reasoning, Filtering...etc</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#PublishingService -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#PublishingService">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#RSService"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An vsd:PublishingService represents a stream publishing service. Publishing has to be interpreted as in Linked Data domain, where is possible.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#R2ROperation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#R2ROperation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#Operation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vsd:R2ROperation represent a realtion-to-relation operation that an vsd:RSService can perform. (e.g. filtering, aggregation)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relation-to-relation operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#R2SOperation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#R2SOperation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#Operation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vsd:R2SOperation represent a realtion-to-stream operation that an vsd:RSService can perform. (e.g. replay a static dataset as a stream)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relation-to-stream operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#RSFeature -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#RSFeature">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vsd:Feature represents a feature of a RDF Streaming service.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF Streaming Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#RSService -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#RSService">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#StreamingService"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vsd:Service represents a RDF streaming service made available via RDF streaming protocol.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF streaming service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#ReportingPolicy -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#ReportingPolicy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#RSFeature"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reporting Policy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#S2ROperation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#S2ROperation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#Operation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vsd:R2ROperation represent a stream-to-relation operation that an vsd:RSService can perform. (e.g. windowing)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stream-to-relation operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#S2SOperation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#S2SOperation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#Operation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vsd:R2ROperation represent a stream-to-stream operation that an vsd:RSService can perform. (e.g. transformation)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stream-to-stream operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#SDS -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#SDS">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A streaming dataset is a set composed by an (optional) default graph, n (n ≥ 0) named graphs and m (m ≥ 0) named time-varying graphs</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#SetOperation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#SetOperation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#S2SOperation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vsd:SetOperation represents an available set operator that can be performed by vsd:RSService. (e.g. union, intersection)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Set operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#StreamingService -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#StreamingService">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vsd:StreamingService represents a streaming service made available via a certain streaming protocol.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Streaming service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#TimeBasedWindow -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#TimeBasedWindow">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#Window"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#TimeControl -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#TimeControl">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#RSFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#TimeSemantics -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#TimeSemantics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#RSFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#TimeVaryingGraph -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time-varying graph G is a function that relates time instants t ∈ T to RDF graphs: G : T → {g | g is an RDF graph}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#Window -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#Window">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A window W(S) is a set of RDF statements extracted from a stream S.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#RSPQL -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#RSPQL">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#S2SOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#count -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#count">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#R2ROperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#difference -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#difference">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#SetOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#event_time -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#event_time">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#TimeSemantics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#external_time_control -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#external_time_control">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#TimeControl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#filtering -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#filtering">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#S2SOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#ingestion_time -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#ingestion_time">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#TimeSemantics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#internal_time_control -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#internal_time_control">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#TimeControl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#intersection -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#intersection">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#SetOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#non_empty_content -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#non_empty_content">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#ReportingPolicy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#on_content_change -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#on_content_change">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#ReportingPolicy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#on_window_close -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#on_window_close">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#ReportingPolicy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#periodic -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#periodic">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#ReportingPolicy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#processing_time -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#processing_time">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#TimeSemantics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#replaying -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#replaying">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#R2SOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#sum -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#sum">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#R2ROperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#transform -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#transform">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#S2SOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#union -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#union">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#SetOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/rsp/vocals-sd#windowing -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/rsp/vocals-sd#windowing">
+        <rdf:type rdf:resource="https://w3id.org/rsp/vocals-sd#S2ROperation"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

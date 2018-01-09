@@ -1,0 +1,14 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "VOIS2 ontology: A model for data streams and metadata";
+	 prov:wasAttributedTo <http://streamreasoning.org/vois#RiccardoTommasini>;
+	 dc:creator <http://streamreasoning.org/vois#RiccardoTommasini>;
+	 prov:wasAttributedTo <http://streamreasoning.org/vois#YehiaAboSedira>;
+	 dc:creator <http://streamreasoning.org/vois#YehiaAboSedira>;
+	 prov:wasAttributedTo <http://w3id.org/people/jpcik/me>;
+	 dc:creator <http://w3id.org/people/jpcik/me>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2017-12-10";
+.

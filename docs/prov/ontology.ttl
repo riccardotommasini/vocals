@@ -1,0 +1,256 @@
+@prefix : <https://w3id.org/rsp/vocals-prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/rsp/vocals-prov> .
+
+<https://w3id.org/rsp/vocals-prov> rdf:type owl:Ontology ;
+                                    owl:versionIRI <https://w3id.org/rsp/vocals-prov> ;
+                                    <http://purl.org/dc/elements/1.1/creator> <http://w3id.org/people/jpcik/me> ,
+                                                                              <https://w3id.org/rsp/vocals#RiccardoTommasini> ,
+                                                                              <https://w3id.org/rsp/vocals#YehiaAboSedira> ;
+                                    <http://purl.org/dc/terms/created> "2017-12-01T00:00:00"^^xsd:dateTime ;
+                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "vprov"^^xsd:string ;
+                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rsp/vocals-prov#"^^xsd:string .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/rsp/vocals-prov#containedIn
+:containedIn rdf:type owl:ObjectProperty ;
+             owl:inverseOf :contains ;
+             rdfs:domain :Operator ;
+             rdfs:range :Task ;
+             rdfs:comment "Relates an operator to the containing task ."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#contains
+:contains rdf:type owl:ObjectProperty ;
+          rdfs:domain :Task ;
+          rdfs:range :Operator ;
+          rdfs:comment "Relates task to operators used to finish the task."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#endedAt
+:endedAt rdf:type owl:ObjectProperty ;
+         rdfs:domain :Window ;
+         rdfs:range <http://www.w3.org/2006/time#Instant> .
+
+
+###  https://w3id.org/rsp/vocals-prov#followedBy
+:followedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :precededBy ;
+            rdfs:domain :Operator ;
+            rdfs:range :Operator ;
+            rdfs:comment "Points to the following vprov:operator to be applied after the current one in a vprov:Task."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#hasOutput
+:hasOutput rdf:type owl:ObjectProperty ;
+           rdfs:domain :Task ;
+           rdfs:range <http://www.w3.org/ns/prov#Entity> ;
+           rdfs:comment "Points to the output of a vprov:operator to be applied before the current one in a vprov:Task."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#performs
+:performs rdf:type owl:ObjectProperty ;
+          rdfs:range <https://w3id.org/rsp/vocals-sd#Operation> ;
+          rdfs:isDefinedBy "Relate vsd:Operation to vprov:Operator ."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#precededBy
+:precededBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Operator ;
+            rdfs:range :Operator ;
+            rdfs:comment "Points to the preceding vprov:operator to be applied before the current one in a vprov:Task."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#startedAt
+:startedAt rdf:type owl:ObjectProperty ;
+           rdfs:domain :Window ;
+           rdfs:range <http://www.w3.org/2006/time#Instant> .
+
+
+###  https://w3id.org/rsp/vocals-prov#startingTime
+:startingTime rdf:type owl:ObjectProperty ;
+              rdfs:domain :WindowOperator ;
+              rdfs:range <http://www.w3.org/2006/time#Instant> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/rsp/vocals-prov#query
+:query rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :RSPQLOperator .
+
+
+###  https://w3id.org/rsp/vocals-prov#range
+:range rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :WindowOperator .
+
+
+###  https://w3id.org/rsp/vocals-prov#step
+:step rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :WindowOperator .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> rdf:type owl:Class .
+
+
+###  https://w3id.org/rsp/vocals-prov#FilterOperator
+:FilterOperator rdf:type owl:Class ;
+                rdfs:subClassOf :S2SOperator ;
+                rdfs:comment "A vprov:FilterOperator represents an operator that exclude data that doesn't match some specified criteria."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#Operator
+:Operator rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+          rdfs:comment "Operator that operat on an entity to generate another entity."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#PhysicalWindow
+:PhysicalWindow rdf:type owl:Class ;
+                rdfs:subClassOf :Window ;
+                rdfs:comment "Window defined by an interval size (in units of RDF elements)"^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#R2ROperator
+:R2ROperator rdf:type owl:Class ;
+             rdfs:subClassOf :Operator ;
+             rdfs:comment "Operators that produce relations from other relations."^^xsd:string ;
+             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z"^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#R2SOperator
+:R2SOperator rdf:type owl:Class ;
+             rdfs:subClassOf :Operator ;
+             rdfs:comment "Operators that produce a stream from a relation."^^xsd:string ;
+             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z"^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#RSPQLOperator
+:RSPQLOperator rdf:type owl:Class ;
+               rdfs:subClassOf :S2SOperator ;
+               owl:disjointWith :SetOperator ;
+               rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#Replay
+:Replay rdf:type owl:Class ;
+        rdfs:subClassOf :R2SOperator ;
+        rdfs:comment "Replay operator produce a stream from a static RDF dataset"^^xsd:string ;
+        rdfs:isDefinedBy "https://link.springer.com/chapter/10.1007%2F978-3-319-46547-0_15"^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#S2ROperator
+:S2ROperator rdf:type owl:Class ;
+             rdfs:subClassOf :Operator ;
+             rdfs:comment "Operators that produce a relation from a stream."^^xsd:string ;
+             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z"^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#S2SOperator
+:S2SOperator rdf:type owl:Class ;
+             rdfs:subClassOf :Operator ;
+             rdfs:comment "Operators that produce a stream form another stream."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#SetOperator
+:SetOperator rdf:type owl:Class ;
+             rdfs:subClassOf :S2SOperator ;
+             rdfs:comment "Operator that produce a stream by applying set algebra operator on other streams."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#StreamingAgent
+:StreamingAgent rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#SoftwareAgent> ;
+                rdfs:comment "An instance of a vprov:StreamingAgent represent an actor that applies an vprov:Operator that consums and/or produce a stream."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#Task
+:Task rdf:type owl:Class ;
+      rdfs:comment "A task contains one or more activity to be applied on a prov:Entity."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#TimeBasedWindow
+:TimeBasedWindow rdf:type owl:Class ;
+                 rdfs:subClassOf :Window ;
+                 rdfs:comment "A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}"^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#TransformOperator
+:TransformOperator rdf:type owl:Class ;
+                   rdfs:subClassOf :S2SOperator ;
+                   rdfs:comment "An instance of vprov:TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)"^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#Window
+:Window rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
+        rdfs:comment "A window W(S) is a set of RDF statements extracted from a stream S."^^xsd:string .
+
+
+###  https://w3id.org/rsp/vocals-prov#WindowOperator
+:WindowOperator rdf:type owl:Class ;
+                rdfs:subClassOf :S2ROperator .
+
+
+###  https://w3id.org/rsp/vocals-sd#Operation
+<https://w3id.org/rsp/vocals-sd#Operation> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/rsp/vocals-prov#TripleWave
+:TripleWave rdf:type owl:NamedIndividual ,
+                     :StreamingAgent .
+
+
+###  https://w3id.org/rsp/vocals-prov#difference_operator
+:difference_operator rdf:type owl:NamedIndividual ,
+                              :SetOperator .
+
+
+###  https://w3id.org/rsp/vocals-prov#intersect_operator
+:intersect_operator rdf:type owl:NamedIndividual ,
+                             :SetOperator .
+
+
+###  https://w3id.org/rsp/vocals-prov#union_operator
+:union_operator rdf:type owl:NamedIndividual ,
+                         :SetOperator .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

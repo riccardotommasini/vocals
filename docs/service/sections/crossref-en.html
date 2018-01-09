@@ -1,0 +1,1422 @@
+<h2  id="crossreference" class="list">Cross reference for [Ontology Name] classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by [Ontology Name].
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#CatalogService" title="https://w3id.org/rsp/vocals-sd#CatalogService">Catalog service</a>
+      </li>
+      <li>
+         <a href="#Operation" title="https://w3id.org/rsp/vocals-sd#Operation">operation</a>
+      </li>
+      <li>
+         <a href="#PhysicalWindow" title="https://w3id.org/rsp/vocals-sd#PhysicalWindow">
+            <span>physical window</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ProcessingService" title="https://w3id.org/rsp/vocals-sd#ProcessingService">
+            <span>processing service</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PublishingService" title="https://w3id.org/rsp/vocals-sd#PublishingService">
+            <span>publishing service</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RSFeature" title="https://w3id.org/rsp/vocals-sd#RSFeature">RDF Streaming Feature</a>
+      </li>
+      <li>
+         <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+      </li>
+      <li>
+         <a href="#R2ROperation" title="https://w3id.org/rsp/vocals-sd#R2ROperation">relation-to-relation operation</a>
+      </li>
+      <li>
+         <a href="#R2SOperation" title="https://w3id.org/rsp/vocals-sd#R2SOperation">relation-to-stream operation</a>
+      </li>
+      <li>
+         <a href="#ReportingPolicy" title="https://w3id.org/rsp/vocals-sd#ReportingPolicy">Reporting Policy</a>
+      </li>
+      <li>
+         <a href="#SDS" title="https://w3id.org/rsp/vocals-sd#SDS">SDS</a>
+      </li>
+      <li>
+         <a href="#SetOperation" title="https://w3id.org/rsp/vocals-sd#SetOperation">Set operation</a>
+      </li>
+      <li>
+         <a href="#S2ROperation" title="https://w3id.org/rsp/vocals-sd#S2ROperation">stream-to-relation operation</a>
+      </li>
+      <li>
+         <a href="#S2SOperation" title="https://w3id.org/rsp/vocals-sd#S2SOperation">stream-to-stream operation</a>
+      </li>
+      <li>
+         <a href="#StreamingService" title="https://w3id.org/rsp/vocals-sd#StreamingService">Streaming service</a>
+      </li>
+      <li>
+         <a href="#TimeBasedWindow" title="https://w3id.org/rsp/vocals-sd#TimeBasedWindow">
+            <span>time based window</span>
+         </a>
+      </li>
+      <li>
+         <a href="#TimeControl" title="https://w3id.org/rsp/vocals-sd#TimeControl">
+            <span>time control</span>
+         </a>
+      </li>
+      <li>
+         <a href="#TimeSemantics" title="https://w3id.org/rsp/vocals-sd#TimeSemantics">
+            <span>time semantics</span>
+         </a>
+      </li>
+      <li>
+         <a href="#TimeVaryingGraph" title="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph">
+            <span>time varying graph</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Window" title="https://w3id.org/rsp/vocals-sd#Window">
+            <span>window</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="CatalogService">
+      <h3>Catalog service<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#CatalogService</p>
+      <div class="comment">
+         <span class="markdown">An vsd:CatalogService is a service storing stream descriptions. (e.g. SPARQL endpoint, RDF file with stream description,...etc)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#describedBy" title="https://w3id.org/rsp/vocals-sd#describedBy">described by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Operation">
+      <h3>operation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#Operation</p>
+      <div class="comment">
+         <span class="markdown">An instance of vsd:Operation represents an available action/function that can be performed by vsd:RSService.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RSFeature" title="https://w3id.org/rsp/vocals-sd#RSFeature">RDF Streaming Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#R2ROperation" title="https://w3id.org/rsp/vocals-sd#R2ROperation">relation-to-relation operation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#R2SOperation" title="https://w3id.org/rsp/vocals-sd#R2SOperation">relation-to-stream operation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#S2ROperation" title="https://w3id.org/rsp/vocals-sd#S2ROperation">stream-to-relation operation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#S2SOperation" title="https://w3id.org/rsp/vocals-sd#S2SOperation">stream-to-stream operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PhysicalWindow">
+      <h3>physical window<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#PhysicalWindow</p>
+      <div class="comment">
+         <span class="markdown">Window defined by an interval size (in units of RDF elements)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Window" title="https://w3id.org/rsp/vocals-sd#Window">window</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ProcessingService">
+      <h3>processing service<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#ProcessingService</p>
+      <div class="comment">
+         <span class="markdown">An vsd:ProcessingService represents an RDF stream processing service. Processing means any kind of transformation on streaming data, i.e., Querying, Reasoning, Filtering...etc</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#registeredBy" title="https://w3id.org/rsp/vocals-sd#registeredBy">registered by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PublishingService">
+      <h3>publishing service<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#PublishingService</p>
+      <div class="comment">
+         <span class="markdown">An vsd:PublishingService represents a stream publishing service. Publishing has to be interpreted as in Linked Data domain, where is possible.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#publishedBy" title="https://w3id.org/rsp/vocals-sd#publishedBy">published by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RSFeature">
+      <h3>RDF Streaming Feature<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#RSFeature</p>
+      <div class="comment">
+         <span class="markdown">An instance of vsd:Feature represents a feature of a RDF Streaming service.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ReportingPolicy" title="https://w3id.org/rsp/vocals-sd#ReportingPolicy">Reporting Policy</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Operation" title="https://w3id.org/rsp/vocals-sd#Operation">operation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TimeControl" title="https://w3id.org/rsp/vocals-sd#TimeControl">time control</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TimeSemantics" title="https://w3id.org/rsp/vocals-sd#TimeSemantics">time semantics</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasFeature" title="https://w3id.org/rsp/vocals-sd#hasFeature">has feature</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RSService">
+      <h3>RDF streaming service<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#RSService</p>
+      <div class="comment">
+         <span class="markdown">An instance of vsd:Service represents a RDF streaming service made available via RDF streaming protocol.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#StreamingService" title="https://w3id.org/rsp/vocals-sd#StreamingService">Streaming service</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#CatalogService" title="https://w3id.org/rsp/vocals-sd#CatalogService">Catalog service</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ProcessingService" title="https://w3id.org/rsp/vocals-sd#ProcessingService">processing service</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PublishingService" title="https://w3id.org/rsp/vocals-sd#PublishingService">publishing service</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#rspEndpoint" title="https://w3id.org/rsp/vocals-sd#rspEndpoint">RSP endpoint</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#availableGraphs" title="https://w3id.org/rsp/vocals-sd#availableGraphs">available graphs</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#availableStream" title="https://w3id.org/rsp/vocals-sd#availableStream">available stream</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#defaultSDS" title="https://w3id.org/rsp/vocals-sd#defaultSDS">default s d s</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFeature" title="https://w3id.org/rsp/vocals-sd#hasFeature">has feature</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#registerdTask" title="https://w3id.org/rsp/vocals-sd#registerdTask">registerd task</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#registeredStreams" title="https://w3id.org/rsp/vocals-sd#registeredStreams">registered streams</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#resultFormat" title="https://w3id.org/rsp/vocals-sd#resultFormat">result format</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="R2ROperation">
+      <h3>relation-to-relation operation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#R2ROperation</p>
+      <div class="comment">
+         <span class="markdown">An instance of vsd:R2ROperation represent a realtion-to-relation operation that an vsd:RSService can perform. (e.g. filtering, aggregation)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Operation" title="https://w3id.org/rsp/vocals-sd#Operation">operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#count" title="https://w3id.org/rsp/vocals-sd#count">count</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#sum" title="https://w3id.org/rsp/vocals-sd#sum">sum</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="R2SOperation">
+      <h3>relation-to-stream operation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#R2SOperation</p>
+      <div class="comment">
+         <span class="markdown">An instance of vsd:R2SOperation represent a realtion-to-stream operation that an vsd:RSService can perform. (e.g. replay a static dataset as a stream)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Operation" title="https://w3id.org/rsp/vocals-sd#Operation">operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#replaying" title="https://w3id.org/rsp/vocals-sd#replaying">replaying</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReportingPolicy">
+      <h3>Reporting Policy<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#ReportingPolicy</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RSFeature" title="https://w3id.org/rsp/vocals-sd#RSFeature">RDF Streaming Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#non_empty_content" title="https://w3id.org/rsp/vocals-sd#non_empty_content">non empty content</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#on_content_change" title="https://w3id.org/rsp/vocals-sd#on_content_change">on content change</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#on_window_close" title="https://w3id.org/rsp/vocals-sd#on_window_close">on window close</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#periodic" title="https://w3id.org/rsp/vocals-sd#periodic">periodic</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SDS">
+      <h3>SDS<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#SDS</p>
+      <div class="comment">
+         <span class="markdown">A streaming dataset is a set composed by an (optional) default graph, n (n ≥ 0) named graphs and m (m ≥ 0) named time-varying graphs</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#defaultGraph" title="https://w3id.org/rsp/vocals-sd#defaultGraph">default graph</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#namedTimeVaryingGraph"
+               title="https://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph">named time varying graph</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#defaultSDS" title="https://w3id.org/rsp/vocals-sd#defaultSDS">default s d s</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SetOperation">
+      <h3>Set operation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#SetOperation</p>
+      <div class="comment">
+         <span class="markdown">An instance of vsd:SetOperation represents an available set operator that can be performed by vsd:RSService. (e.g. union, intersection)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#S2SOperation" title="https://w3id.org/rsp/vocals-sd#S2SOperation">stream-to-stream operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#difference" title="https://w3id.org/rsp/vocals-sd#difference">difference</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#intersection" title="https://w3id.org/rsp/vocals-sd#intersection">intersection</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#union" title="https://w3id.org/rsp/vocals-sd#union">union</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="S2ROperation">
+      <h3>stream-to-relation operation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#S2ROperation</p>
+      <div class="comment">
+         <span class="markdown">An instance of vsd:R2ROperation represent a stream-to-relation operation that an vsd:RSService can perform. (e.g. windowing)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Operation" title="https://w3id.org/rsp/vocals-sd#Operation">operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#windowing" title="https://w3id.org/rsp/vocals-sd#windowing">windowing</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="S2SOperation">
+      <h3>stream-to-stream operation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#S2SOperation</p>
+      <div class="comment">
+         <span class="markdown">An instance of vsd:R2ROperation represent a stream-to-stream operation that an vsd:RSService can perform. (e.g. transformation)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Operation" title="https://w3id.org/rsp/vocals-sd#Operation">operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#SetOperation" title="https://w3id.org/rsp/vocals-sd#SetOperation">Set operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#filtering" title="https://w3id.org/rsp/vocals-sd#filtering">filtering</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#RSPQL" title="https://w3id.org/rsp/vocals-sd#RSPQL">r s p q l</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#transform" title="https://w3id.org/rsp/vocals-sd#transform">transform</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StreamingService">
+      <h3>Streaming service<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#StreamingService</p>
+      <div class="comment">
+         <span class="markdown">An instance of vsd:StreamingService represents a streaming service made available via a certain streaming protocol.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TimeBasedWindow">
+      <h3>time based window<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#TimeBasedWindow</p>
+      <div class="comment">
+         <span class="markdown">A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Window" title="https://w3id.org/rsp/vocals-sd#Window">window</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TimeControl">
+      <h3>time control<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#TimeControl</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RSFeature" title="https://w3id.org/rsp/vocals-sd#RSFeature">RDF Streaming Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#external_time_control"
+               title="https://w3id.org/rsp/vocals-sd#external_time_control">external time control</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#internal_time_control"
+               title="https://w3id.org/rsp/vocals-sd#internal_time_control">internal time control</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TimeSemantics">
+      <h3>time semantics<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#TimeSemantics</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RSFeature" title="https://w3id.org/rsp/vocals-sd#RSFeature">RDF Streaming Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#event_time" title="https://w3id.org/rsp/vocals-sd#event_time">event time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ingestion_time" title="https://w3id.org/rsp/vocals-sd#ingestion_time">ingestion time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#processing_time" title="https://w3id.org/rsp/vocals-sd#processing_time">processing time</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TimeVaryingGraph">
+      <h3>time varying graph<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#TimeVaryingGraph</p>
+      <div class="comment">
+         <span class="markdown">A time-varying graph G is a function that relates time instants t ∈ T to RDF graphs: G : T → {g | g is an RDF graph}</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/rsp/vocals-sd#name">name</span>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#availableGraphs" title="https://w3id.org/rsp/vocals-sd#availableGraphs">available graphs</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#defaultGraph" title="https://w3id.org/rsp/vocals-sd#defaultGraph">default graph</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#graph" title="https://w3id.org/rsp/vocals-sd#graph">graph</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#namedTimeVaryingGraph"
+               title="https://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph">named time varying graph</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Window">
+      <h3>window<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#Window</p>
+      <div class="comment">
+         <span class="markdown">A window W(S) is a set of RDF statements extracted from a stream S.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/dcat#Dataset">dataset</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PhysicalWindow" title="https://w3id.org/rsp/vocals-sd#PhysicalWindow">physical window</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TimeBasedWindow" title="https://w3id.org/rsp/vocals-sd#TimeBasedWindow">time based window</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#endedAt" title="https://w3id.org/rsp/vocals-sd#endedAt">ended at</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#startedAt" title="https://w3id.org/rsp/vocals-sd#startedAt">started at</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#availableGraphs" title="https://w3id.org/rsp/vocals-sd#availableGraphs">
+            <span>available graphs</span>
+         </a>
+      </li>
+      <li>
+         <a href="#availableStream" title="https://w3id.org/rsp/vocals-sd#availableStream">
+            <span>available stream</span>
+         </a>
+      </li>
+      <li>
+         <a href="#defaultGraph" title="https://w3id.org/rsp/vocals-sd#defaultGraph">
+            <span>default graph</span>
+         </a>
+      </li>
+      <li>
+         <a href="#defaultSDS" title="https://w3id.org/rsp/vocals-sd#defaultSDS">
+            <span>default s d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#describedBy" title="https://w3id.org/rsp/vocals-sd#describedBy">
+            <span>described by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#endedAt" title="https://w3id.org/rsp/vocals-sd#endedAt">
+            <span>ended at</span>
+         </a>
+      </li>
+      <li>
+         <a href="#graph" title="https://w3id.org/rsp/vocals-sd#graph">
+            <span>graph</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasFeature" title="https://w3id.org/rsp/vocals-sd#hasFeature">
+            <span>has feature</span>
+         </a>
+      </li>
+      <li>
+         <a href="#namedTimeVaryingGraph"
+            title="https://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph">
+            <span>named time varying graph</span>
+         </a>
+      </li>
+      <li>
+         <a href="#publishedBy" title="https://w3id.org/rsp/vocals-sd#publishedBy">
+            <span>published by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#registerdTask" title="https://w3id.org/rsp/vocals-sd#registerdTask">registerd task</a>
+      </li>
+      <li>
+         <a href="#registeredBy" title="https://w3id.org/rsp/vocals-sd#registeredBy">
+            <span>registered by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#registeredStreams" title="https://w3id.org/rsp/vocals-sd#registeredStreams">
+            <span>registered streams</span>
+         </a>
+      </li>
+      <li>
+         <a href="#resultFormat" title="https://w3id.org/rsp/vocals-sd#resultFormat">result format</a>
+      </li>
+      <li>
+         <a href="#rspEndpoint" title="https://w3id.org/rsp/vocals-sd#rspEndpoint">RSP endpoint</a>
+      </li>
+      <li>
+         <a href="#startedAt" title="https://w3id.org/rsp/vocals-sd#startedAt">
+            <span>started at</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="availableGraphs">
+      <h3>available graphs<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#availableGraphs</p>
+      <div class="comment">
+         <span class="markdown">Relates an instance of vsd:RSService to the time varying graphs available by the vsd:RSService.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TimeVaryingGraph" title="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph">time varying graph</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="availableStream">
+      <h3>available stream<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#availableStream</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/rsp/vocals#RDFStream">r d f stream</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="defaultGraph">
+      <h3>default graph<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#defaultGraph</p>
+      <div class="comment">
+         <span class="markdown">Relates an instance of vocals:RDFStream to the description of its default graph.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SDS" title="https://w3id.org/rsp/vocals-sd#SDS">SDS</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TimeVaryingGraph" title="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph">time varying graph</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="defaultSDS">
+      <h3>default s d s<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#defaultSDS</p>
+      <div class="comment">
+         <span class="markdown">Relates an instance of vsd:RSService to a description of the default SDS available when no explicit dataset is specified in the query.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SDS" title="https://w3id.org/rsp/vocals-sd#SDS">SDS</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="describedBy">
+      <h3>described by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#describedBy</p>
+      <div class="comment">
+         <span class="markdown">Points to an instance of vsd:CatalogingService that describes a certain vocals:RDFStream.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/rsp/vocals#RDFStream">r d f stream</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CatalogService" title="https://w3id.org/rsp/vocals-sd#CatalogService">Catalog service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="endedAt">
+      <h3>ended at<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#endedAt</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Window" title="https://w3id.org/rsp/vocals-sd#Window">window</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2006/time#Instant">instant</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="graph">
+      <h3>graph<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#graph</p>
+      <div class="comment">
+         <span class="markdown">Relates a named time varying graph to its graph description.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TimeVaryingGraph" title="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph">time varying graph</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFeature">
+      <h3>has feature<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#hasFeature</p>
+      <div class="comment">
+         <span class="markdown">Relates a vsd:RSService to an available feature</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#RSFeature" title="https://w3id.org/rsp/vocals-sd#RSFeature">RDF Streaming Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="namedTimeVaryingGraph">
+      <h3>named time varying graph<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph</p>
+      <div class="comment">
+         <span class="markdown">Relates an instance of vocals:SDS to the description of one of its named time varying graphs. The description of such a named time varying graph MUST include the vsd:name property.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SDS" title="https://w3id.org/rsp/vocals-sd#SDS">SDS</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TimeVaryingGraph" title="https://w3id.org/rsp/vocals-sd#TimeVaryingGraph">time varying graph</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="publishedBy">
+      <h3>published by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#publishedBy</p>
+      <div class="comment">
+         <span class="markdown">Points to an instance of vsd:PublishingService that publishs a certain vocals:RDFStream.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/rsp/vocals#RDFStream">r d f stream</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PublishingService" title="https://w3id.org/rsp/vocals-sd#PublishingService">publishing service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="registerdTask">
+      <h3>registerd task<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#registerdTask</p>
+      <div class="comment">
+         <span class="markdown">Relates an instance of vsd:RSService with instances of running tasks, e.g. RSP-QL Query .</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="registeredBy">
+      <h3>registered by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#registeredBy</p>
+      <div class="comment">
+         <span class="markdown">Points to an instance of vsd:ProcessingService that registers/ processes a certain vocals:RDFStream.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/rsp/vocals#RDFStream">r d f stream</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ProcessingService" title="https://w3id.org/rsp/vocals-sd#ProcessingService">processing service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="registeredStreams">
+      <h3>registered streams<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#registeredStreams</p>
+      <div class="comment">
+         <span class="markdown">Relates an instance of vsd:RSService to the streams registered on it.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/rsp/vocals#RDFStream">r d f stream</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="resultFormat">
+      <h3>result format<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#resultFormat</p>
+      <div class="comment">
+         <span class="markdown">Relates an instance of sd:Service to a format that is supported for serializing query results.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/formats/Format">format</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="rspEndpoint">
+      <h3>RSP endpoint<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#rspEndpoint</p>
+      <div class="comment">
+         <span class="markdown">The RSP-QL endpoint of an vocals:RSPService that implements the RSP-QL Protocol service. The object of the vocals:rspEndpoint property is an IRI.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RSService" title="https://w3id.org/rsp/vocals-sd#RSService">RDF streaming service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="startedAt">
+      <h3>started at<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#startedAt</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Window" title="https://w3id.org/rsp/vocals-sd#Window">window</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2006/time#Instant">instant</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#count" title="https://w3id.org/rsp/vocals-sd#count">
+            <span>count</span>
+         </a>
+      </li>
+      <li>
+         <a href="#difference" title="https://w3id.org/rsp/vocals-sd#difference">
+            <span>difference</span>
+         </a>
+      </li>
+      <li>
+         <a href="#event_time" title="https://w3id.org/rsp/vocals-sd#event_time">
+            <span>event time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#external_time_control"
+            title="https://w3id.org/rsp/vocals-sd#external_time_control">
+            <span>external time control</span>
+         </a>
+      </li>
+      <li>
+         <a href="#filtering" title="https://w3id.org/rsp/vocals-sd#filtering">
+            <span>filtering</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ingestion_time" title="https://w3id.org/rsp/vocals-sd#ingestion_time">
+            <span>ingestion time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#internal_time_control"
+            title="https://w3id.org/rsp/vocals-sd#internal_time_control">
+            <span>internal time control</span>
+         </a>
+      </li>
+      <li>
+         <a href="#intersection" title="https://w3id.org/rsp/vocals-sd#intersection">
+            <span>intersection</span>
+         </a>
+      </li>
+      <li>
+         <a href="#non_empty_content" title="https://w3id.org/rsp/vocals-sd#non_empty_content">
+            <span>non empty content</span>
+         </a>
+      </li>
+      <li>
+         <a href="#on_content_change" title="https://w3id.org/rsp/vocals-sd#on_content_change">
+            <span>on content change</span>
+         </a>
+      </li>
+      <li>
+         <a href="#on_window_close" title="https://w3id.org/rsp/vocals-sd#on_window_close">
+            <span>on window close</span>
+         </a>
+      </li>
+      <li>
+         <a href="#periodic" title="https://w3id.org/rsp/vocals-sd#periodic">
+            <span>periodic</span>
+         </a>
+      </li>
+      <li>
+         <a href="#processing_time" title="https://w3id.org/rsp/vocals-sd#processing_time">
+            <span>processing time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RSPQL" title="https://w3id.org/rsp/vocals-sd#RSPQL">
+            <span>r s p q l</span>
+         </a>
+      </li>
+      <li>
+         <a href="#replaying" title="https://w3id.org/rsp/vocals-sd#replaying">
+            <span>replaying</span>
+         </a>
+      </li>
+      <li>
+         <a href="#sum" title="https://w3id.org/rsp/vocals-sd#sum">
+            <span>sum</span>
+         </a>
+      </li>
+      <li>
+         <a href="#transform" title="https://w3id.org/rsp/vocals-sd#transform">
+            <span>transform</span>
+         </a>
+      </li>
+      <li>
+         <a href="#union" title="https://w3id.org/rsp/vocals-sd#union">
+            <span>union</span>
+         </a>
+      </li>
+      <li>
+         <a href="#windowing" title="https://w3id.org/rsp/vocals-sd#windowing">
+            <span>windowing</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="count">
+      <h3>count<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#count</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#R2ROperation" title="https://w3id.org/rsp/vocals-sd#R2ROperation">relation-to-relation operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="difference">
+      <h3>difference<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#difference</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SetOperation" title="https://w3id.org/rsp/vocals-sd#SetOperation">Set operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="event_time">
+      <h3>event time<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#event_time</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeSemantics" title="https://w3id.org/rsp/vocals-sd#TimeSemantics">time semantics</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="external_time_control">
+      <h3>external time control<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#external_time_control</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeControl" title="https://w3id.org/rsp/vocals-sd#TimeControl">time control</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="filtering">
+      <h3>filtering<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#filtering</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#S2SOperation" title="https://w3id.org/rsp/vocals-sd#S2SOperation">stream-to-stream operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ingestion_time">
+      <h3>ingestion time<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#ingestion_time</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeSemantics" title="https://w3id.org/rsp/vocals-sd#TimeSemantics">time semantics</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="internal_time_control">
+      <h3>internal time control<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#internal_time_control</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeControl" title="https://w3id.org/rsp/vocals-sd#TimeControl">time control</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="intersection">
+      <h3>intersection<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#intersection</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SetOperation" title="https://w3id.org/rsp/vocals-sd#SetOperation">Set operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="non_empty_content">
+      <h3>non empty content<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#non_empty_content</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ReportingPolicy" title="https://w3id.org/rsp/vocals-sd#ReportingPolicy">Reporting Policy</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="on_content_change">
+      <h3>on content change<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#on_content_change</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ReportingPolicy" title="https://w3id.org/rsp/vocals-sd#ReportingPolicy">Reporting Policy</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="on_window_close">
+      <h3>on window close<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#on_window_close</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ReportingPolicy" title="https://w3id.org/rsp/vocals-sd#ReportingPolicy">Reporting Policy</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="periodic">
+      <h3>periodic<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#periodic</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ReportingPolicy" title="https://w3id.org/rsp/vocals-sd#ReportingPolicy">Reporting Policy</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="processing_time">
+      <h3>processing time<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#processing_time</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeSemantics" title="https://w3id.org/rsp/vocals-sd#TimeSemantics">time semantics</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RSPQL">
+      <h3>r s p q l<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#RSPQL</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#S2SOperation" title="https://w3id.org/rsp/vocals-sd#S2SOperation">stream-to-stream operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="replaying">
+      <h3>replaying<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#replaying</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#R2SOperation" title="https://w3id.org/rsp/vocals-sd#R2SOperation">relation-to-stream operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="sum">
+      <h3>sum<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#sum</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#R2ROperation" title="https://w3id.org/rsp/vocals-sd#R2ROperation">relation-to-relation operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="transform">
+      <h3>transform<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#transform</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#S2SOperation" title="https://w3id.org/rsp/vocals-sd#S2SOperation">stream-to-stream operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="union">
+      <h3>union<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#union</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SetOperation" title="https://w3id.org/rsp/vocals-sd#SetOperation">Set operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="windowing">
+      <h3>windowing<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/rsp/vocals-sd#windowing</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#S2ROperation" title="https://w3id.org/rsp/vocals-sd#S2ROperation">stream-to-relation operation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
