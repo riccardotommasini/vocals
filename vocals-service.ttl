@@ -14,13 +14,29 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 <https://w3id.org/rsp/vocals-sd> a owl:Ontology ;
-	owl:versionIRI <https://w3id.org/rsp/vocals-sd> ;
+                               <http://purl.org/dc/elements/1.1/publisher> <http://aislab.hevs.ch/> ;
+                               <http://purl.org/dc/terms/description> "Esta ontología has sido diseñada para representar Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
+                               <http://purl.org/dc/terms/modified> "2017-12-30"^^xsd:date ;
+                               <http://purl.org/dc/terms/rights> "Copyright © 2017 Politecnico di Milano & HES-SO Valais-Wallis"^^xsd:string ;
+                               <http://purl.org/dc/terms/issued> "2017-12-29"^^xsd:date ;
+                               <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                               <http://purl.org/dc/terms/publisher> <http://w3id.org/hes-so/aislab> ;
+                               <http://purl.org/dc/terms/title> "VoCaLS: A Vocabulary and Catalog for Linked Streams"@en ;
+                               <http://purl.org/dc/terms/description> "This ontology aims to model RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
+                               <http://purl.org/dc/terms/title> "VoCaLS: Vocabulario y catálogo para Streams enlazados"@es ;
+                               rdfs:comment "Esta ontología has sido diseñada para representar Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
+                               owl:versionInfo "0.1.1"^^xsd:string ;
+                               rdfs:comment "This ontology aims to model RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
+                               <http://purl.org/dc/terms/title> "VoCaLS: ontologie de representation de données et metadonnées de streams"@fr ;
+                               rdfs:comment "Cette ontologie a été conçue pour representer des données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr ;
+                               <http://purl.org/dc/terms/description> "Cette ontologie a été conçue pour representer des données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr .	owl:versionIRI <https://w3id.org/rsp/vocals-sd> ;
 	vann:preferredNamespaceUri "https://w3id.org/rsp/vocals-sd#" ;
 	dc:creator vocals:RiccardoTommasini ;
-	vann:preferredNamespacePrefix "vsd" ;
+	vann:preferredNamespacePrefix "vocals-sd" ;
 	dc:creator <http://w3id.org/people/jpcik/me> ;
-	dcterms:created "2017-05-23T13:00:00"^^xsd:dateTime ;
+	dcterms:created "2017-12-23T13:00:00"^^xsd:dateTime ;
 	dc:creator vocals:YehiaAboSedira .
+
 # 
 # 
 # #################################################################
