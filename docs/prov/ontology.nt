@@ -1,11 +1,27 @@
-<https://w3id.org/rsp/vocals-prov> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/rsp/vocals-prov> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/rsp/vocals-prov> .
-<https://w3id.org/rsp/vocals-prov> <http://purl.org/dc/elements/1.1/creator> <http://w3id.org/people/jpcik/me> .
-<https://w3id.org/rsp/vocals-prov> <http://purl.org/dc/elements/1.1/creator> <https://w3id.org/rsp/vocals#RiccardoTommasini> .
-<https://w3id.org/rsp/vocals-prov> <http://purl.org/dc/elements/1.1/creator> <https://w3id.org/rsp/vocals#YehiaAboSedira> .
-<https://w3id.org/rsp/vocals-prov> <http://purl.org/dc/terms/created> "2017-12-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/rsp/vocals-prov> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vprov" .
-<https://w3id.org/rsp/vocals-prov> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rsp/vocals-prov#" .
+<https://w3id.org/rsp/vocals-prov#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/rsp/vocals-prov#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/rsp/vocals-prov> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/elements/1.1/creator> <http://w3id.org/people/jpcik/me> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/elements/1.1/creator> <https://w3id.org/rsp/vocals#RiccardoTommasini> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/elements/1.1/creator> <https://w3id.org/rsp/vocals#YehiaAboSedira> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/elements/1.1/publisher> <http://aislab.hevs.ch/> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/created> "2017-12-23T13:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/description> "Cette ontologie a \u00E9t\u00E9 con\u00E7ue pour representer la provenance de donn\u00E9es et meta-donn\u00E9es de streams RDF, ainsi que leurs points d'acc\u00E8s."@fr .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/description> "Esta ontolog\u00EDa has sido dise\u00F1ada para representar provenance de Streams de datos en RDF, as\u00ED como los endpoints a trav\u00E9s de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/description> "This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/issued> "2017-12-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/modified> "2017-12-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/publisher> <http://w3id.org/hes-so/aislab> .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/rights> "Copyright \u00A9 2017 Politecnico di Milano & HES-SO Valais-Wallis" .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/title> "VoCaLS-Prov: A Vocabulary and Catalog for Linked Streams, Provenance Module"@en .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/title> "VoCaLS-Prov: Vocabulario y cat\u00E1logo para Streams enlazados, m\u00F3dulo de Provenance"@es .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/dc/terms/title> "VoCaLS-Prov: ontologie de representation de provenance pour donn\u00E9es et metadonn\u00E9es de streams RDF"@fr .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vocals-prov" .
+<https://w3id.org/rsp/vocals-prov#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rsp/vocals-prov#" .
+<https://w3id.org/rsp/vocals-prov#> <http://www.w3.org/2000/01/rdf-schema#comment> "Cette ontologie a \u00E9t\u00E9 con\u00E7ue pour representer la provenance de donn\u00E9es et meta-donn\u00E9es de streams RDF, ainsi que leurs points d'acc\u00E8s."@fr .
+<https://w3id.org/rsp/vocals-prov#> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta ontolog\u00EDa has sido dise\u00F1ada para representar provenance de Streams de datos en RDF, as\u00ED como los endpoints a trav\u00E9s de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es .
+<https://w3id.org/rsp/vocals-prov#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en .
+<https://w3id.org/rsp/vocals-prov#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
 # 
 # 
 # #################################################################
@@ -20,13 +36,15 @@
 <https://w3id.org/rsp/vocals-prov#containedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/rsp/vocals-prov#contains> .
 <https://w3id.org/rsp/vocals-prov#containedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rsp/vocals-prov#Operator> .
 <https://w3id.org/rsp/vocals-prov#containedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/rsp/vocals-prov#Task> .
-<https://w3id.org/rsp/vocals-prov#containedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an operator to the containing task ." .
+<https://w3id.org/rsp/vocals-prov#containedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an Operator to the containing Task."@en .
+<https://w3id.org/rsp/vocals-prov#containedIn> <http://www.w3.org/2000/01/rdf-schema#label> "containedIn"@en .
 # 
 # https://w3id.org/rsp/vocals-prov#contains
 <https://w3id.org/rsp/vocals-prov#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/rsp/vocals-prov#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rsp/vocals-prov#Task> .
 <https://w3id.org/rsp/vocals-prov#contains> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/rsp/vocals-prov#Operator> .
-<https://w3id.org/rsp/vocals-prov#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates task to operators used to finish the task." .
+<https://w3id.org/rsp/vocals-prov#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Task to Operator used to finish the task."@en .
+<https://w3id.org/rsp/vocals-prov#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
 # 
 # https://w3id.org/rsp/vocals-prov#endedAt
 <https://w3id.org/rsp/vocals-prov#endedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -38,24 +56,24 @@
 <https://w3id.org/rsp/vocals-prov#followedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/rsp/vocals-prov#precededBy> .
 <https://w3id.org/rsp/vocals-prov#followedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rsp/vocals-prov#Operator> .
 <https://w3id.org/rsp/vocals-prov#followedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/rsp/vocals-prov#Operator> .
-<https://w3id.org/rsp/vocals-prov#followedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Points to the following vprov:operator to be applied after the current one in a vprov:Task." .
+<https://w3id.org/rsp/vocals-prov#followedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Points to the following :operator to be applied after the current one in a :Task." .
 # 
 # https://w3id.org/rsp/vocals-prov#hasOutput
 <https://w3id.org/rsp/vocals-prov#hasOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/rsp/vocals-prov#hasOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rsp/vocals-prov#Task> .
 <https://w3id.org/rsp/vocals-prov#hasOutput> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
-<https://w3id.org/rsp/vocals-prov#hasOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Points to the output of a vprov:operator to be applied before the current one in a vprov:Task." .
+<https://w3id.org/rsp/vocals-prov#hasOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Points to the output of a :operator to be applied before the current one in a :Task." .
 # 
 # https://w3id.org/rsp/vocals-prov#performs
 <https://w3id.org/rsp/vocals-prov#performs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/rsp/vocals-prov#performs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/rsp/vocals-sd#Operation> .
-<https://w3id.org/rsp/vocals-prov#performs> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Relate vsd:Operation to vprov:Operator ." .
+<https://w3id.org/rsp/vocals-prov#performs> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Relate vsd:Operation to :Operator ." .
 # 
 # https://w3id.org/rsp/vocals-prov#precededBy
 <https://w3id.org/rsp/vocals-prov#precededBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/rsp/vocals-prov#precededBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rsp/vocals-prov#Operator> .
 <https://w3id.org/rsp/vocals-prov#precededBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/rsp/vocals-prov#Operator> .
-<https://w3id.org/rsp/vocals-prov#precededBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Points to the preceding vprov:operator to be applied before the current one in a vprov:Task." .
+<https://w3id.org/rsp/vocals-prov#precededBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Points to the preceding :operator to be applied before the current one in a :Task." .
 # 
 # https://w3id.org/rsp/vocals-prov#startedAt
 <https://w3id.org/rsp/vocals-prov#startedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -118,7 +136,7 @@
 # https://w3id.org/rsp/vocals-prov#FilterOperator
 <https://w3id.org/rsp/vocals-prov#FilterOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals-prov#FilterOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/rsp/vocals-prov#S2SOperator> .
-<https://w3id.org/rsp/vocals-prov#FilterOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "A vprov:FilterOperator represents an operator that exclude data that doesn't match some specified criteria." .
+<https://w3id.org/rsp/vocals-prov#FilterOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "A :FilterOperator represents an operator that exclude data that doesn't match some specified criteria." .
 # 
 # https://w3id.org/rsp/vocals-prov#Operator
 <https://w3id.org/rsp/vocals-prov#Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -173,7 +191,8 @@
 # https://w3id.org/rsp/vocals-prov#StreamingAgent
 <https://w3id.org/rsp/vocals-prov#StreamingAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals-prov#StreamingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#SoftwareAgent> .
-<https://w3id.org/rsp/vocals-prov#StreamingAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of a vprov:StreamingAgent represent an actor that applies an vprov:Operator that consums and/or produce a stream." .
+<https://w3id.org/rsp/vocals-prov#StreamingAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of a :StreamingAgent represent an actor that applies an :Operator that consums and/or produce a stream." .
+<https://w3id.org/rsp/vocals-prov#StreamingAgent> <http://www.w3.org/2000/01/rdf-schema#label> "StreamingAgent"@en .
 # 
 # https://w3id.org/rsp/vocals-prov#Task
 <https://w3id.org/rsp/vocals-prov#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -187,7 +206,7 @@
 # https://w3id.org/rsp/vocals-prov#TransformOperator
 <https://w3id.org/rsp/vocals-prov#TransformOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals-prov#TransformOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/rsp/vocals-prov#S2SOperator> .
-<https://w3id.org/rsp/vocals-prov#TransformOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of vprov:TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)" .
+<https://w3id.org/rsp/vocals-prov#TransformOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of :TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)" .
 # 
 # https://w3id.org/rsp/vocals-prov#Window
 <https://w3id.org/rsp/vocals-prov#Window> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

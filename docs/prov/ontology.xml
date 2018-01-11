@@ -9,14 +9,30 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://w3id.org/rsp/vocals-prov">
+    <owl:Ontology rdf:about="https://w3id.org/rsp/vocals-prov#">
         <owl:versionIRI rdf:resource="https://w3id.org/rsp/vocals-prov"/>
         <dc:creator rdf:resource="http://w3id.org/people/jpcik/me"/>
         <dc:creator rdf:resource="https://w3id.org/rsp/vocals#RiccardoTommasini"/>
         <dc:creator rdf:resource="https://w3id.org/rsp/vocals#YehiaAboSedira"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-01T00:00:00</terms:created>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vprov</vann:preferredNamespacePrefix>
+        <dc:publisher rdf:resource="http://aislab.hevs.ch/"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-23T13:00:00</terms:created>
+        <terms:description xml:lang="fr">Cette ontologie a été conçue pour representer la provenance de données et meta-données de streams RDF, ainsi que leurs points d&apos;accès.</terms:description>
+        <terms:description xml:lang="es">Esta ontología has sido diseñada para representar provenance de Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes.</terms:description>
+        <terms:description xml:lang="en">This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-29</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-30</terms:modified>
+        <terms:publisher rdf:resource="http://w3id.org/hes-so/aislab"/>
+        <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2017 Politecnico di Milano &amp; HES-SO Valais-Wallis</terms:rights>
+        <terms:title xml:lang="en">VoCaLS-Prov: A Vocabulary and Catalog for Linked Streams, Provenance Module</terms:title>
+        <terms:title xml:lang="es">VoCaLS-Prov: Vocabulario y catálogo para Streams enlazados, módulo de Provenance</terms:title>
+        <terms:title xml:lang="fr">VoCaLS-Prov: ontologie de representation de provenance pour données et metadonnées de streams RDF</terms:title>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vocals-prov</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/rsp/vocals-prov#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="fr">Cette ontologie a été conçue pour representer la provenance de données et meta-données de streams RDF, ainsi que leurs points d&apos;accès.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Esta ontología has sido diseñada para representar provenance de Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -40,7 +56,8 @@
         <owl:inverseOf rdf:resource="https://w3id.org/rsp/vocals-prov#contains"/>
         <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-prov#Operator"/>
         <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-prov#Task"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an operator to the containing task .</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an Operator to the containing Task.</rdfs:comment>
+        <rdfs:label xml:lang="en">containedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -51,7 +68,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-prov#contains">
         <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-prov#Task"/>
         <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-prov#Operator"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates task to operators used to finish the task.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a Task to Operator used to finish the task.</rdfs:comment>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -73,7 +91,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/rsp/vocals-prov#precededBy"/>
         <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-prov#Operator"/>
         <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-prov#Operator"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points to the following vprov:operator to be applied after the current one in a vprov:Task.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points to the following :operator to be applied after the current one in a :Task.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -84,7 +102,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-prov#hasOutput">
         <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-prov#Task"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points to the output of a vprov:operator to be applied before the current one in a vprov:Task.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points to the output of a :operator to be applied before the current one in a :Task.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -94,7 +112,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-prov#performs">
         <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-sd#Operation"/>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relate vsd:Operation to vprov:Operator .</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relate vsd:Operation to :Operator .</rdfs:isDefinedBy>
     </owl:ObjectProperty>
     
 
@@ -105,7 +123,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals-prov#precededBy">
         <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals-prov#Operator"/>
         <rdfs:range rdf:resource="https://w3id.org/rsp/vocals-prov#Operator"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points to the preceding vprov:operator to be applied before the current one in a vprov:Task.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points to the preceding :operator to be applied before the current one in a :Task.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -224,7 +242,7 @@
 
     <owl:Class rdf:about="https://w3id.org/rsp/vocals-prov#FilterOperator">
         <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-prov#S2SOperator"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vprov:FilterOperator represents an operator that exclude data that doesn&apos;t match some specified criteria.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A :FilterOperator represents an operator that exclude data that doesn&apos;t match some specified criteria.</rdfs:comment>
     </owl:Class>
     
 
@@ -329,7 +347,8 @@
 
     <owl:Class rdf:about="https://w3id.org/rsp/vocals-prov#StreamingAgent">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a vprov:StreamingAgent represent an actor that applies an vprov:Operator that consums and/or produce a stream.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a :StreamingAgent represent an actor that applies an :Operator that consums and/or produce a stream.</rdfs:comment>
+        <rdfs:label xml:lang="en">StreamingAgent</rdfs:label>
     </owl:Class>
     
 
@@ -358,7 +377,7 @@
 
     <owl:Class rdf:about="https://w3id.org/rsp/vocals-prov#TransformOperator">
         <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-prov#S2SOperator"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of vprov:TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of :TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)</rdfs:comment>
     </owl:Class>
     
 

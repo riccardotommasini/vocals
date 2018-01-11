@@ -1,0 +1,1173 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "fr", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/ns/formats", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/rsp/vocals-sd", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/rsp/vocals", "http://www.w3.org/ns/dcat", "http://www.w3.org/2006/time" ],
+    "title" : {
+      "en" : "VoCaLS-SD: A Vocabulary and Catalog for Linked Streams, Service Description Module",
+      "fr" : "VoCaLS: ontologie de representation de services pour données et metadonnées de streams RDF",
+      "es" : "VoCaLS-SD: Vocabulario y catálogo para Streams enlazados, módulo de descripción de servicios"
+    },
+    "iri" : "https://w3id.org/rsp/vocals-sd#",
+    "version" : "0.1.1",
+    "author" : [ "https://w3id.org/rsp/vocals#YehiaAboSedira", "https://w3id.org/rsp/vocals#RiccardoTommasini", "http://w3id.org/people/jpcik/me" ],
+    "description" : {
+      "en" : "This ontology aims to model Services for publishing and consuming RDF streams, their metadata, and access endpoints for publishing and consuming these streams",
+      "fr" : "Cette ontologie a été conçue pour representer des services qui genèrent ou consomment données et meta-données de streams RDF, ainsi que leurs points d'accès.",
+      "es" : "Esta ontología has sido diseñada para representar servicios que proveen o manipulan Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."
+    },
+    "comments" : {
+      "en" : "This ontology aims to model Services for publishing and consuming RDF streams, their metadata, and access endpoints for publishing and consuming these streams",
+      "fr" : "Cette ontologie a été conçue pour representer des services qui genèrent ou consomment données et meta-données de streams RDF, ainsi que leurs points d'accès.",
+      "es" : "Esta ontología has sido diseñada para representar servicios que proveen o manipulan Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals#RiccardoTommasini",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://w3id.org/people/jpcik/me",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals#YehiaAboSedira",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2017-12-23T13:00:00",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright © 2017 Politecnico di Milano & HES-SO Valais-Wallis",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "vocals-sd",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2017-12-30",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "http://aislab.hevs.ch/",
+        "type" : "iri"
+      }, {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "http://w3id.org/hes-so/aislab",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "VoCaLS-SD: A Vocabulary and Catalog for Linked Streams, Service Description Module",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "fr",
+        "value" : "VoCaLS: ontologie de representation de services pour données et metadonnées de streams RDF",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "VoCaLS-SD: Vocabulario y catálogo para Streams enlazados, módulo de descripción de servicios",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2017-12-29",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 24,
+    "objectPropertyCount" : 17,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 19
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/rsp/vocals-sd#ReportingPolicy",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#Window",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ReportingPolicy",
+      "en" : "ReportingPolicy"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/rsp/vocals-sd#on_window_close",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "on_window_close"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#periodic",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "periodic"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#on_content_change",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "on_content_change"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#non_empty_content",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "non_empty_content"
+      }
+    } ],
+    "comment" : {
+      "en" : "The reporting policy establishes a strategy according to which data items are reported, typically within a window. E.g. report data items when teh window closes, periodically, when the window contents change, etc."
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#S2ROperation",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "S2ROperation",
+      "en" : "S2ROperation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/rsp/vocals-sd#windowing",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "windowing"
+      }
+    } ],
+    "comment" : {
+      "en" : "An S2ROperation represents a stream-to-relation operation that an RDFStreamService can perform. It takes as input an RDF steam and putputs RDF data mapping, for instance windowing operators."
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#TimeVaryingGraph",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeVaryingGraph",
+      "en" : "TimeVaryingGraph"
+    },
+    "comment" : {
+      "en" : "A TimeVaryingGraph represents and RDF graph that changes over time. Formally, A time-varying graph G is a function that relates time instants t ∈ T to RDF graphs: G : T → {g | g is an RDF graph}, where T is the time domain."
+    },
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDFStreamService",
+      "en" : "RDFStreamService"
+    },
+    "subClasses" : [ "14", "15", "16" ],
+    "comment" : {
+      "en" : "An RDFStreamService represents a service that allows producing and/or consuming and/or processing RDF streams, and made available via an RDF streaming protocol."
+    },
+    "id" : "1",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#TimeBasedWindow",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#Window",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TimeBasedWindow",
+      "en" : "TimeBasedWindow"
+    },
+    "comment" : {
+      "en" : "A TimeBasedWindow is a Window defined in terms of time. More formally, it is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}"
+    },
+    "id" : "17",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#TimeSemantics",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TimeSemantics",
+      "en" : "TimeSemantics"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/rsp/vocals-sd#ingestion_time",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "ingestion_time"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#processing_time",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "processing_time"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#event_time",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "event_time"
+      }
+    } ],
+    "comment" : {
+      "en" : "TimeSemantics are features that describe the type of time semantics provided by an RDF Stream Service."
+    },
+    "id" : "28",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#S2SOperation",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "S2SOperation",
+      "en" : "S2SOperation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/rsp/vocals-sd#filtering",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "filtering"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#RSPQL",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "RSPQL"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#transform",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "transform"
+      }
+    } ],
+    "subClasses" : [ "30" ],
+    "comment" : {
+      "en" : "An S2SOperation represents a stream-to-stream operation that an RDFStreamService can perform. It takes as input and output RDF streams (e.g. transformation operations over RDF streams)."
+    },
+    "id" : "29",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/formats/Format",
+    "baseIri" : "http://www.w3.org/ns/formats",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Format"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#R2ROperation",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R2ROperation",
+      "en" : "R2ROperation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/rsp/vocals-sd#count",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "count"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#sum",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "sum"
+      }
+    } ],
+    "comment" : {
+      "en" : "An R2ROperation represents a realtion-to-relation operation that an RDF Stream Service can perform, such as filtering, aggregation, projection, join, etc. It takes as input a relation (e.g. RDF data mappings) and outputs also a relation (e.g. RDF data mappings)."
+    },
+    "id" : "31",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#CatalogService",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "vocals:StreamDescriptor",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CatalogService",
+      "en" : "CatalogService"
+    },
+    "comment" : {
+      "en" : "An CatalogService is a service providing access to stream descriptions. (e.g. SPARQL endpoint, RDF filse with stream descriptions, etc.)"
+    },
+    "id" : "16",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#PublishingService",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublishingService",
+      "en" : "PublishingService"
+    },
+    "comment" : {
+      "en" : "A PublishingService represents an RDF stream service for publishing purposes. Publishing can to be interpreted as Linked Data publishing, where possible, but it may support other types of RDF stream publishing mechanisms as well."
+    },
+    "id" : "14",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals#RDFStream",
+    "baseIri" : "https://w3id.org/rsp/vocals",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RDFStream"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#PhysicalWindow",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#Window",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PhysicalWindow",
+      "en" : "PhysicalWindow"
+    },
+    "comment" : {
+      "en" : "A PhysicalWindow is a Window defined by an interval size (in units of RDF elements), e.g. a window of n RDF elements."
+    },
+    "id" : "44",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#Window",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals#RDFStream",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Window",
+      "en" : "Window"
+    },
+    "subClasses" : [ "17", "44" ],
+    "comment" : {
+      "en" : "A Window represents a finite protion of a stream, consisting of a set of RDF statements. Formally, a window W(S) is a set of RDF statements extracted from a stream S."
+    },
+    "id" : "6",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#StreamingDataset",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#TimeVaryingGraph",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StreamingDataset",
+      "en" : "StreamingDataset"
+    },
+    "comment" : {
+      "en" : "A Streaming Dataset provides the input data (from stream and time-varying graphs) for an RDF stream service. A Streaming Dataset is a set composed by an (optional) default graph, n (n ≥ 0) named graphs and m (m ≥ 0) named time-varying graphs."
+    },
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#SetOperation",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SetOperation",
+      "undefined" : "Set operation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/rsp/vocals-sd#intersection",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "intersection"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#union",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "union"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#difference",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "difference"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An instance of vsd:SetOperation represents an available set operator that can be performed by vsd:RSService. (e.g. union, intersection)"
+    },
+    "id" : "30",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#StreamingService",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StreamingService",
+      "en" : "StreamingService"
+    },
+    "subClasses" : [ "1" ],
+    "comment" : {
+      "en" : "A StreamingService represents a service made available via a certain streaming protocol. The service may provide features such as stream processing, publishing, provisioning, etc."
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "52",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#R2SOperation",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "R2SOperation",
+      "en" : "R2SOperation"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/rsp/vocals-sd#replaying",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "replaying"
+      }
+    } ],
+    "comment" : {
+      "en" : "An R2SOperation represents a realtion-to-stream operation that an RDF Stream Service can perform. It takes as input a relation (e.g. RDF data mappings), and ouputs RDF Stream elements, e.g. for instance an operation that replays a static dataset as a stream, or an Istream, Rstream or Dstream operation."
+    },
+    "id" : "43",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#Operation",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Operation",
+      "en" : "Operation"
+    },
+    "subClasses" : [ "29", "43", "31", "8" ],
+    "comment" : {
+      "en" : "An operation represents an available action/function that can be performed by an RDF Stream Service. An operation may ingest stream items or static data items, and output either of them."
+    },
+    "id" : "9",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#ProcessingService",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessingService",
+      "en" : "ProcessingService"
+    },
+    "comment" : {
+      "en" : "A ProcessingService represents an RDF stream service that provides processing features over RDF streams. Processing refers to any kind of transformation on streaming data, i.e., querying, reasoning, filtering, etc."
+    },
+    "id" : "15",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Dataset",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#Instant",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Instant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#RDFStreamingFeature",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RDFStreamingFeature",
+      "en" : "RDFStreamingFeature"
+    },
+    "subClasses" : [ "28", "3", "9", "27" ],
+    "comment" : {
+      "en" : "Represents a feature of a RDF Streaming service. Features may include operations over RDF streams, policies, time handling mechanisms, etc."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#TimeControl",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeControl",
+      "en" : "TimeControl"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/rsp/vocals-sd#internal_time_control",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "internal_time_control"
+      }
+    }, {
+      "iri" : "https://w3id.org/rsp/vocals-sd#external_time_control",
+      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "labels" : {
+        "IRI-based" : "external_time_control"
+      }
+    } ],
+    "comment" : {
+      "en" : "TimeControl is a feature that establishes the type of timing control in the RDF stream Service, e.g. time managed internally, externally, etc."
+    },
+    "id" : "27",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/rsp/vocals-sd#registeredStreams",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "registeredStreams",
+      "en" : "registeredStream"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates an instance of RDFStreamService to the Stream(s) registered on it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#endedAt",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "endedAt",
+      "en" : "endedAt"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#resultFormat",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "resultFormat",
+      "en" : "resultFormat"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates an instance of RDFStreamService to a format that is supported for serializing streaming results."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#describedBy",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "describedBy",
+      "en" : "describedBy"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Points to an instance of a CatalogingService that describes a certain RDFStream."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#registerdTask",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "registerdTask",
+      "en" : "registerdTask"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates an instance of RDFStreamService with instances of running tasks, e.g. RSP-QL Query, other RDF stream processing tasks"
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "22",
+    "subproperty" : [ "23" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  }, {
+    "range" : "4",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "4",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#availableStream",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "availableStream",
+      "en" : "availableStream"
+    },
+    "superproperty" : [ "21" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates an RDFStreamService with the RDF streams available in the service"
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "namedTimeVaryingGraph",
+      "en" : "namedTimeVaryingGraph"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Relates an instance of StreamingDataset to the description of one of its named time varying graphs. The description of such a named time varying graph MUST include the name property."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "range" : "35",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#defaultGraph",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "defaultGraph",
+      "en" : "defaultGraph"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Relates an instance of a Streaming Data Set to the description of its default graph."
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "range" : "4",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "9",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "13",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "9",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "9",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "29",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "6",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "6",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#defaultStreamingDataset",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "defaultStreamingDataset",
+      "en" : "defaultStreamingDataset"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates an instance of an RDFStreamService to a description of the default Streaming Dataset available when no explicit dataset is specified."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "range" : "8",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "43",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#rspEndpoint",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "rspEndpoint",
+      "en" : "rspEndpoint"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The RSP-QL endpoint of an vocals:RSPService that implements the RSP-QL Protocol service. The object of the rspEndpoint property is an IRI."
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "range" : "1",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "35",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "31",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#hasFeature",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasFeature",
+      "en" : "hasFeature"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates an RDF Stream Service to an available RDF Streaming Feature. This relationship describe the features that the service provides."
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#registeredBy",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "registeredBy",
+      "en" : "registeredBy"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Points to an instance of ProcessingService that registers/ processes a certain RDFStream."
+    },
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#startedAt",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "startedAt",
+      "en" : "startedAt"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Relates a window and the time instant when it started"
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#graph",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "graph",
+      "en" : "graph"
+    },
+    "domain" : "52",
+    "comment" : {
+      "undefined" : "Relates a named time varying graph to its graph description."
+    },
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#availableGraph",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "availableGraph",
+      "en" : "availableGraph"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates an instance of RDFStreamService to the time varying graphs available by the RDFStreamService."
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/rsp/vocals-sd#publishedBy",
+    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "publishedBy",
+      "en" : "publishedBy"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Points to an instance of PublishingService that publishs a certain (or certains) RDFStream."
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  } ]
+}
