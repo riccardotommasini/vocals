@@ -13,7 +13,7 @@
 @prefix vocals: <https://w3id.org/rsp/vocals#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<https://w3id.org/rsp/vocals-sd> a owl:Ontology ;
+<https://w3id.org/rsp/vocals-sd#> a owl:Ontology ;
 	owl:versionIRI <https://w3id.org/rsp/vocals-sd> ;
 	dc:publisher <http://aislab.hevs.ch/> ;
 	vann:preferredNamespaceUri "https://w3id.org/rsp/vocals-sd#" ;
