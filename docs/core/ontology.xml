@@ -12,28 +12,28 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://w3id.org/rsp/vocals">
-        <owl:imports rdf:resource="http://www.w3.org/ns/dcat"/>
+    <owl:Ontology rdf:about="https://w3id.org/rsp/vocals#">
+        <owl:imports rdf:resource="http://www.w3.org/ns/dcat#"/>
         <dc:publisher rdf:resource="http://aislab.hevs.ch/"/>
         <terms:creator rdf:resource="http://streamreasoning.org/vois#RiccardoTommasini"/>
         <terms:creator rdf:resource="http://streamreasoning.org/vois#YehiaAboSedira"/>
         <terms:creator rdf:resource="http://w3id.org/people/jpcik/me"/>
-        <terms:description xml:lang="fr">Cette ontologie a été conçue pour representer des Instruments pour l&apos;aquisition de données cliniques, dans le contexte du projet MedRed project (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)</terms:description>
-        <terms:description xml:lang="es">Esta ontología has sido diseñada para representar Instrumentos de captura de datos clínicos, dentro del contexto del proyecto MedRed (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)</terms:description>
-        <terms:description xml:lang="en">This ontology aims to model generic Medical Data Acquisition Instruments, which can be interoperable across different clinical data management systems. The ontology is developed in the context of the MedRed project (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)</terms:description>
+        <terms:description xml:lang="fr">Cette ontologie a été conçue pour representer des données et meta-données de streams RDF, ainsi que leurs points d&apos;accès.</terms:description>
+        <terms:description xml:lang="es">Esta ontología has sido diseñada para representar Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams y los meta datos correspondientes.</terms:description>
+        <terms:description xml:lang="en">This ontology aims to model RDF streams, their metadata, and access endpoints for publishing and consuming these streams</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-01</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-10</terms:modified>
         <terms:publisher rdf:resource="http://w3id.org/hes-so/aislab"/>
         <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2017 Politecnico di Milano &amp; HES-SO Valais-Wallis</terms:rights>
-        <terms:title xml:lang="fr">Ontologie VOIS2: modèle de representation de données et metadonnées de streams</terms:title>
-        <terms:title xml:lang="es">Ontología VOIS2: modelo de representación de data y metadata de streams</terms:title>
-        <terms:title xml:lang="en">VOIS2 ontology: A model for data streams and metadata</terms:title>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vois2</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/rsp/voisplus#</vann:preferredNamespaceUri>
-        <rdfs:comment xml:lang="fr">Cette ontologie a été conçue pour representer des Instruments pour l&apos;aquisition de données cliniques, dans le contexte du projet MedRed project (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)</rdfs:comment>
-        <rdfs:comment xml:lang="es">Esta ontología has sido diseñada para representar Instrumentos de captura de datos clínicos, dentro del contexto del proyecto MedRed (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)</rdfs:comment>
-        <rdfs:comment xml:lang="en">This ontology aims to model generic Medical Data Acquisition Instruments, which can be interoperable across different clinical data management systems. The ontology is developed in the context of the MedRed project (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)</rdfs:comment>
+        <terms:title xml:lang="en">VoCaLS: A Vocabulary and Catalog for Linked Streams</terms:title>
+        <terms:title xml:lang="es">VoCaLS: Vocabulario y catálogo para Streams enlazados</terms:title>
+        <terms:title xml:lang="fr">VoCaLS: ontologie de representation de données et metadonnées de streams</terms:title>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vocals</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/rsp/vocals#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="fr">Cette ontologie a été conçue pour representer des données et meta-données de streams RDF, ainsi que leurs points d&apos;accès.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Esta ontología has sido diseñada para representar Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This ontology aims to model RDF streams, their metadata, and access endpoints for publishing and consuming these streams</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1.1</owl:versionInfo>
     </owl:Ontology>
     
@@ -51,6 +51,13 @@
     
 
 
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#distribution"/>
+    
+
+
     <!-- https://w3id.org/rsp/vocals#hasEndpoint -->
 
 
@@ -59,7 +66,10 @@
         <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals#Stream"/>
         <rdfs:range rdf:resource="https://w3id.org/rsp/vocals#StreamEndpoint"/>
         <rdfs:comment xml:lang="en">A relationship between a Stream and a StreamEndpoint. A stream may have several endpoints through which its contents can be accessible.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/rsp/vocals#"/>
         <rdfs:label xml:lang="en">hasEndpoint</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#Stream"/>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#StreamEndpoint"/>
     </owl:ObjectProperty>
     
 
@@ -71,7 +81,10 @@
         <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals#Stream"/>
         <rdfs:range rdf:resource="https://w3id.org/rsp/vocals#StreamPartition"/>
         <rdfs:comment xml:lang="en">A relationship between a Stream and a partition, or portion of elements streamed</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/rsp/vocals#"/>
         <rdfs:label xml:lang="en">hasPartition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#Stream"/>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#StreamPartition"/>
     </owl:ObjectProperty>
     
 
@@ -82,8 +95,10 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/rsp/vocals#previous">
         <rdfs:domain rdf:resource="https://w3id.org/rsp/vocals#StreamPartition"/>
         <rdfs:range rdf:resource="https://w3id.org/rsp/vocals#StreamPartition"/>
-        <rdfs:comment xml:lang="en">Relationship between a stream partition and the previoous partition in the stream</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship between a stream partition and the previous partition in the stream</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/rsp/vocals#"/>
         <rdfs:label xml:lang="en">previous</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#StreamPartition"/>
     </owl:ObjectProperty>
     
 
@@ -100,13 +115,50 @@
     
 
 
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#CatalogRecord -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#CatalogRecord"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Distribution"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
     <!-- https://w3id.org/rsp/vocals#RDFStream -->
 
 
     <owl:Class rdf:about="https://w3id.org/rsp/vocals#RDFStream">
         <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals#Stream"/>
         <rdfs:comment xml:lang="en">A stream composed of RDF data elements, i.e. RDF graphs and/or triples.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/rsp/vocals#"/>
         <rdfs:label xml:lang="en">RDFStream</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#Stream"/>
     </owl:Class>
     
 
@@ -117,7 +169,9 @@
     <owl:Class rdf:about="https://w3id.org/rsp/vocals#Stream">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <rdfs:comment xml:lang="en">A potentially infinite sequence of data elements. A stream may be findable and accesible on the Web.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/rsp/vocals#"/>
         <rdfs:label xml:lang="en">Stream</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#StreamDistribution"/>
     </owl:Class>
     
 
@@ -129,7 +183,9 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <rdfs:comment xml:lang="en">A Stream Descriptor is a Web document that contains the description of a Stream.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/rsp/vocals#"/>
         <rdfs:label xml:lang="en">StreamDescriptor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#Stream"/>
     </owl:Class>
     
 
@@ -140,8 +196,10 @@
     <owl:Class rdf:about="https://w3id.org/rsp/vocals#StreamDistribution">
         <owl:equivalentClass rdf:resource="https://w3id.org/rsp/vocals#StreamEndpoint"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-        <rdfs:comment xml:lang="en">Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of distributions include a WebSocket endpoint, an HTTP endpint, a Server-Sent Events endpint, MQTT, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of distributions include a WebSocket endpoint, an HTTP endpoint, a Server-Sent Events endpoint, MQTT, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/rsp/vocals#"/>
         <rdfs:label xml:lang="en">StreamDistribution</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#Stream"/>
     </owl:Class>
     
 
@@ -151,7 +209,8 @@
 
     <owl:Class rdf:about="https://w3id.org/rsp/vocals#StreamEndpoint">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-        <rdfs:comment xml:lang="en">Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of endpoints include a WebSocket endpoint, an HTTP endpint, a Server-Sent Events endpint, MQTT, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of endpoints include a WebSocket endpoint, an HTTP endpoint, a Server-Sent Events endpoint, MQTT, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/rsp/vocals#"/>
         <rdfs:label xml:lang="en">StreamEndpoint</rdfs:label>
     </owl:Class>
     
@@ -163,7 +222,9 @@
     <owl:Class rdf:about="https://w3id.org/rsp/vocals#StreamPartition">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <rdfs:comment xml:lang="en">A portion of the time-varying data items of a Stream</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/rsp/vocals#"/>
         <rdfs:label xml:lang="en">StreamPartition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals#Stream"/>
     </owl:Class>
     
 

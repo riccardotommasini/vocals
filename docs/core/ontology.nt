@@ -1,26 +1,26 @@
-<https://w3id.org/rsp/vocals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/rsp/vocals> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat> .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/elements/1.1/publisher> <http://aislab.hevs.ch/> .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/creator> <http://streamreasoning.org/vois#RiccardoTommasini> .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/creator> <http://streamreasoning.org/vois#YehiaAboSedira> .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/creator> <http://w3id.org/people/jpcik/me> .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/description> "Cette ontologie a \u00E9t\u00E9 con\u00E7ue pour representer des Instruments pour l'aquisition de donn\u00E9es cliniques, dans le contexte du projet MedRed project (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)"@fr .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/description> "Esta ontolog\u00EDa has sido dise\u00F1ada para representar Instrumentos de captura de datos cl\u00EDnicos, dentro del contexto del proyecto MedRed (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)"@es .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/description> "This ontology aims to model generic Medical Data Acquisition Instruments, which can be interoperable across different clinical data management systems. The ontology is developed in the context of the MedRed project (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)"@en .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/issued> "2017-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/modified> "2017-12-10"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/publisher> <http://w3id.org/hes-so/aislab> .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/rights> "Copyright \u00A9 2017 Politecnico di Milano & HES-SO Valais-Wallis" .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/title> "Ontologie VOIS2: mod\u00E8le de representation de donn\u00E9es et metadonn\u00E9es de streams"@fr .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/title> "Ontolog\u00EDa VOIS2: modelo de representaci\u00F3n de data y metadata de streams"@es .
-<https://w3id.org/rsp/vocals> <http://purl.org/dc/terms/title> "VOIS2 ontology: A model for data streams and metadata"@en .
-<https://w3id.org/rsp/vocals> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vois2" .
-<https://w3id.org/rsp/vocals> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rsp/voisplus#" .
-<https://w3id.org/rsp/vocals> <http://www.w3.org/2000/01/rdf-schema#comment> "Cette ontologie a \u00E9t\u00E9 con\u00E7ue pour representer des Instruments pour l'aquisition de donn\u00E9es cliniques, dans le contexte du projet MedRed project (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)"@fr .
-<https://w3id.org/rsp/vocals> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta ontolog\u00EDa has sido dise\u00F1ada para representar Instrumentos de captura de datos cl\u00EDnicos, dentro del contexto del proyecto MedRed (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)"@es .
-<https://w3id.org/rsp/vocals> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology aims to model generic Medical Data Acquisition Instruments, which can be interoperable across different clinical data management systems. The ontology is developed in the context of the MedRed project (https://www.hevs.ch/en/rad-institutes/institute-of-information-systems/projects/medical-research-data-acquisition-platform-14092)"@en .
-<https://w3id.org/rsp/vocals> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+<https://w3id.org/rsp/vocals#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/rsp/vocals#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat#> .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/elements/1.1/publisher> <http://aislab.hevs.ch/> .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/creator> <http://streamreasoning.org/vois#RiccardoTommasini> .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/creator> <http://streamreasoning.org/vois#YehiaAboSedira> .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/creator> <http://w3id.org/people/jpcik/me> .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/description> "Cette ontologie a \u00E9t\u00E9 con\u00E7ue pour representer des donn\u00E9es et meta-donn\u00E9es de streams RDF, ainsi que leurs points d'acc\u00E8s."@fr .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/description> "Esta ontolog\u00EDa has sido dise\u00F1ada para representar Streams de datos en RDF, as\u00ED como los endpoints a trav\u00E9s de los cuales se puede acceder a los datos de estos streams y los meta datos correspondientes."@es .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/description> "This ontology aims to model RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/issued> "2017-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/modified> "2017-12-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/publisher> <http://w3id.org/hes-so/aislab> .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/rights> "Copyright \u00A9 2017 Politecnico di Milano & HES-SO Valais-Wallis" .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/title> "VoCaLS: A Vocabulary and Catalog for Linked Streams"@en .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/title> "VoCaLS: Vocabulario y cat\u00E1logo para Streams enlazados"@es .
+<https://w3id.org/rsp/vocals#> <http://purl.org/dc/terms/title> "VoCaLS: ontologie de representation de donn\u00E9es et metadonn\u00E9es de streams"@fr .
+<https://w3id.org/rsp/vocals#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vocals" .
+<https://w3id.org/rsp/vocals#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rsp/vocals#" .
+<https://w3id.org/rsp/vocals#> <http://www.w3.org/2000/01/rdf-schema#comment> "Cette ontologie a \u00E9t\u00E9 con\u00E7ue pour representer des donn\u00E9es et meta-donn\u00E9es de streams RDF, ainsi que leurs points d'acc\u00E8s."@fr .
+<https://w3id.org/rsp/vocals#> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta ontolog\u00EDa has sido dise\u00F1ada para representar Streams de datos en RDF, as\u00ED como los endpoints a trav\u00E9s de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es .
+<https://w3id.org/rsp/vocals#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology aims to model RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en .
+<https://w3id.org/rsp/vocals#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
 # 
 # 
 # #################################################################
@@ -30,27 +30,38 @@
 # #################################################################
 # 
 # 
+# http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # https://w3id.org/rsp/vocals#hasEndpoint
 <https://w3id.org/rsp/vocals#hasEndpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/rsp/vocals#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/dcat#distribution> .
 <https://w3id.org/rsp/vocals#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rsp/vocals#Stream> .
 <https://w3id.org/rsp/vocals#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/rsp/vocals#StreamEndpoint> .
 <https://w3id.org/rsp/vocals#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Stream and a StreamEndpoint. A stream may have several endpoints through which its contents can be accessible."@en .
+<https://w3id.org/rsp/vocals#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#label> "hasEndpoint"@en .
+<https://w3id.org/rsp/vocals#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#Stream> .
+<https://w3id.org/rsp/vocals#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#StreamEndpoint> .
 # 
 # https://w3id.org/rsp/vocals#hasPartition
 <https://w3id.org/rsp/vocals#hasPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/rsp/vocals#hasPartition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rsp/vocals#Stream> .
 <https://w3id.org/rsp/vocals#hasPartition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/rsp/vocals#StreamPartition> .
 <https://w3id.org/rsp/vocals#hasPartition> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Stream and a partition, or portion of elements streamed"@en .
+<https://w3id.org/rsp/vocals#hasPartition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#hasPartition> <http://www.w3.org/2000/01/rdf-schema#label> "hasPartition"@en .
+<https://w3id.org/rsp/vocals#hasPartition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#Stream> .
+<https://w3id.org/rsp/vocals#hasPartition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#StreamPartition> .
 # 
 # https://w3id.org/rsp/vocals#previous
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rsp/vocals#StreamPartition> .
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/rsp/vocals#StreamPartition> .
-<https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a stream partition and the previoous partition in the stream"@en .
+<https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a stream partition and the previous partition in the stream"@en .
+<https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#label> "previous"@en .
+<https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#StreamPartition> .
 # 
 # 
 # 
@@ -61,43 +72,69 @@
 # #################################################################
 # 
 # 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#CatalogRecord
+<http://www.w3.org/ns/dcat#CatalogRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/rsp/vocals#RDFStream
 <https://w3id.org/rsp/vocals#RDFStream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals#RDFStream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/rsp/vocals#Stream> .
 <https://w3id.org/rsp/vocals#RDFStream> <http://www.w3.org/2000/01/rdf-schema#comment> "A stream composed of RDF data elements, i.e. RDF graphs and/or triples."@en .
+<https://w3id.org/rsp/vocals#RDFStream> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#RDFStream> <http://www.w3.org/2000/01/rdf-schema#label> "RDFStream"@en .
+<https://w3id.org/rsp/vocals#RDFStream> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#Stream> .
 # 
 # https://w3id.org/rsp/vocals#Stream
 <https://w3id.org/rsp/vocals#Stream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals#Stream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
 <https://w3id.org/rsp/vocals#Stream> <http://www.w3.org/2000/01/rdf-schema#comment> "A potentially infinite sequence of data elements. A stream may be findable and accesible on the Web."@en .
+<https://w3id.org/rsp/vocals#Stream> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#Stream> <http://www.w3.org/2000/01/rdf-schema#label> "Stream"@en .
+<https://w3id.org/rsp/vocals#Stream> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#StreamDistribution> .
 # 
 # https://w3id.org/rsp/vocals#StreamDescriptor
 <https://w3id.org/rsp/vocals#StreamDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals#StreamDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#CatalogRecord> .
 <https://w3id.org/rsp/vocals#StreamDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Document> .
 <https://w3id.org/rsp/vocals#StreamDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "A Stream Descriptor is a Web document that contains the description of a Stream."@en .
+<https://w3id.org/rsp/vocals#StreamDescriptor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#StreamDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "StreamDescriptor"@en .
+<https://w3id.org/rsp/vocals#StreamDescriptor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#Stream> .
 # 
 # https://w3id.org/rsp/vocals#StreamDistribution
 <https://w3id.org/rsp/vocals#StreamDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals#StreamDistribution> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/rsp/vocals#StreamEndpoint> .
 <https://w3id.org/rsp/vocals#StreamDistribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Distribution> .
-<https://w3id.org/rsp/vocals#StreamDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of distributions include a WebSocket endpoint, an HTTP endpint, a Server-Sent Events endpint, MQTT, etc."@en .
+<https://w3id.org/rsp/vocals#StreamDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of distributions include a WebSocket endpoint, an HTTP endpoint, a Server-Sent Events endpoint, MQTT, etc."@en .
+<https://w3id.org/rsp/vocals#StreamDistribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#StreamDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "StreamDistribution"@en .
+<https://w3id.org/rsp/vocals#StreamDistribution> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#Stream> .
 # 
 # https://w3id.org/rsp/vocals#StreamEndpoint
 <https://w3id.org/rsp/vocals#StreamEndpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals#StreamEndpoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Distribution> .
-<https://w3id.org/rsp/vocals#StreamEndpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of endpoints include a WebSocket endpoint, an HTTP endpint, a Server-Sent Events endpint, MQTT, etc."@en .
+<https://w3id.org/rsp/vocals#StreamEndpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of endpoints include a WebSocket endpoint, an HTTP endpoint, a Server-Sent Events endpoint, MQTT, etc."@en .
+<https://w3id.org/rsp/vocals#StreamEndpoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#StreamEndpoint> <http://www.w3.org/2000/01/rdf-schema#label> "StreamEndpoint"@en .
 # 
 # https://w3id.org/rsp/vocals#StreamPartition
 <https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
 <https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#comment> "A portion of the time-varying data items of a Stream"@en .
+<https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#label> "StreamPartition"@en .
+<https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#Stream> .
 # 
 # 
 # 
