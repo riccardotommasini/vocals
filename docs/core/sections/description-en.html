@@ -1,3 +1,12 @@
 <h2 id="desc" class="list">VoCaLS: A Vocabulary and Catalog for Linked Streams: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+The core module introduces the basic abstractions to represent
+streams. A (i) vocals:Stream represents a Web stream, i.e. an unbounded
+sequence of time-varying data elements, that might be findable and accessible
+on the Web, and which can be consumed via a (ii) vocals:StreamEndpoint.
+A (iii) vocals:StreamDescriptor is a document accessible via HTTP that
+holds metadata about the stream and its contents. Last but not least, a (iv) vocals:FiniteStreamPartition
+is a portion of the stream that available for
+regular Linked Data services to access and process its content.
+</span>
+<img src='./images/vcore.png'>

@@ -65,7 +65,7 @@
 <https://w3id.org/rsp/vocals#previous> rdf:type owl:ObjectProperty ;
                                        rdfs:domain <https://w3id.org/rsp/vocals#StreamPartition> ;
                                        rdfs:range <https://w3id.org/rsp/vocals#StreamPartition> ;
-                                       rdfs:comment "Relationship between a stream partition and the previous partition in the stream"@en ;
+                                       rdfs:comment "Relationship between a stream partition and the previous partition in the stream. it connects stream partitions in order"@en ;
                                        rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
                                        rdfs:label "previous"@en ;
                                        rdfs:seeAlso <https://w3id.org/rsp/vocals#StreamPartition> .
@@ -144,10 +144,11 @@
 ###  https://w3id.org/rsp/vocals#StreamPartition
 <https://w3id.org/rsp/vocals#StreamPartition> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
-                                              rdfs:comment "A portion of the time-varying data items of a Stream"@en ;
+                                              rdfs:comment "A finite subset of the stream that are made available to be accessed and consumed by standard Linked Data services."@en ;
                                               rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
                                               rdfs:label "StreamPartition"@en ;
-                                              rdfs:seeAlso <https://w3id.org/rsp/vocals#Stream> .
+                                              rdfs:seeAlso <https://w3id.org/rsp/vocals#Stream> ,
+                                                           <https://w3id.org/rsp/vocals#previous> .
 
 
 #################################################################

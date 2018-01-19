@@ -31,17 +31,17 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "http://streamreasoning.org/vois#YehiaAboSedira",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "http://streamreasoning.org/vois#RiccardoTommasini",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "http://w3id.org/people/jpcik/me",
-        "type" : "iri"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "http://streamreasoning.org/vois#YehiaAboSedira",
         "type" : "iri"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -56,27 +56,21 @@
         "value" : "Copyright © 2017 Politecnico di Milano & HES-SO Valais-Wallis",
         "type" : "label"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2017-12-10",
-        "type" : "label"
-      } ],
       "publisher" : [ {
-        "identifier" : "publisher",
-        "language" : "undefined",
-        "value" : "http://w3id.org/hes-so/aislab",
-        "type" : "iri"
-      }, {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "http://aislab.hevs.ch/",
         "type" : "iri"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
+      }, {
+        "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "0.1.1",
+        "value" : "http://w3id.org/hes-so/aislab",
+        "type" : "iri"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2017-12-10",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -85,12 +79,19 @@
         "value" : "https://w3id.org/rsp/vocals#",
         "type" : "label"
       } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "es",
-        "value" : "VoCaLS: Vocabulario y catálogo para Streams enlazados",
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.1",
         "type" : "label"
-      }, {
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2017-12-01",
+        "type" : "label"
+      } ],
+      "title" : [ {
         "identifier" : "title",
         "language" : "en",
         "value" : "VoCaLS: A Vocabulary and Catalog for Linked Streams",
@@ -100,11 +101,10 @@
         "language" : "fr",
         "value" : "VoCaLS: ontologie de representation de données et metadonnées de streams",
         "type" : "label"
-      } ],
-      "issued" : [ {
-        "identifier" : "issued",
-        "language" : "undefined",
-        "value" : "2017-12-01",
+      }, {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "VoCaLS: Vocabulario y catálogo para Streams enlazados",
         "type" : "label"
       } ]
     }
@@ -218,6 +218,11 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals#previous",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
         "value" : "https://w3id.org/rsp/vocals#Stream",
         "type" : "iri"
       } ]
@@ -227,7 +232,7 @@
       "en" : "StreamPartition"
     },
     "comment" : {
-      "en" : "A portion of the time-varying data items of a Stream"
+      "en" : "A finite subset of the stream that are made available to be accessed and consumed by standard Linked Data services."
     },
     "id" : "2",
     "superClasses" : [ "4" ]
@@ -260,7 +265,7 @@
     "comment" : {
       "undefined" : "represents a downloadable distribution of a dataset. This term has been deprecated"
     },
-    "attributes" : [ "deprecated", "external" ],
+    "attributes" : [ "external", "deprecated" ],
     "id" : "9",
     "superClasses" : [ "10" ]
   }, {
@@ -279,8 +284,8 @@
     "annotations" : {
       "usageNote" : [ {
         "identifier" : "usageNote",
-        "language" : "el",
-        "value" : "Συνήθως, ένας κατάλογος δεδομένων στον Παγκόσμιο Ιστό αναπαρίσταται ως ένα στιγμιότυπο αυτής της κλάσης.",
+        "language" : "en",
+        "value" : "Typically, a web-based data catalog is represented as a single instance of this class.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -294,8 +299,8 @@
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "en",
-        "value" : "Typically, a web-based data catalog is represented as a single instance of this class.",
+        "language" : "el",
+        "value" : "Συνήθως, ένας κατάλογος δεδομένων στον Παγκόσμιο Ιστό αναπαρίσταται ως ένα στιγμιότυπο αυτής της κλάσης.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -308,8 +313,8 @@
     "label" : {
       "ar" : "فهرس قوائم البيانات",
       "IRI-based" : "Catalog",
-      "el" : "Κατάλογος",
       "ja" : "カタログ",
+      "el" : "Κατάλογος",
       "en" : "Catalog",
       "fr" : "Catalogue",
       "es" : "Catálogo"
@@ -466,8 +471,8 @@
     "annotations" : {
       "usageNote" : [ {
         "identifier" : "usageNote",
-        "language" : "fr",
-        "value" : "Ceci représente une disponibilité générale du jeu de données, et implique qu'il n'existe pas d'information\n\t\t\t\t\tsur la méthode d'accès réelle des données, par exple, si c'est un lien de téléchargement direct ou à travers une page Web. ",
+        "language" : "el",
+        "value" : "Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα,\n\t\t\t\t\t  μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -476,13 +481,13 @@
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "ja",
-        "value" : "これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。",
+        "language" : "fr",
+        "value" : "Ceci représente une disponibilité générale du jeu de données, et implique qu'il n'existe pas d'information\n\t\t\t\t\tsur la méthode d'accès réelle des données, par exple, si c'est un lien de téléchargement direct ou à travers une page Web. ",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "el",
-        "value" : "Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα,\n\t\t\t\t\t  μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές.",
+        "language" : "ja",
+        "value" : "これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -509,8 +514,8 @@
     "subClasses" : [ "9", "21", "45", "33", "20" ],
     "comment" : {
       "ar" : "شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك.",
-      "el" : "Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε \n\t\t\t\t\tδιαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης.\n\t\t\t\t\tΠαραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed.",
       "ja" : "データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。",
+      "el" : "Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε \n\t\t\t\t\tδιαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης.\n\t\t\t\t\tΠαραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed.",
       "en" : "Represents a specific available form of a dataset. Each dataset might be available in \n          different forms, these forms might represent different formats of the dataset or different \n          endpoints. Examples of distributions include a downloadable CSV file, an API or an RSS feed",
       "fr" : "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible\n\t\t\t\t\tsous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution\n\t\t\t\t\tsont des fichirs CSV, des API ou des flux RSS.",
       "es" : "Representa una forma disponible y específica a un conjunto de datos. Cada conjunto de datos puede estar disponible en\n          formas diferentes, estas formas pueden representar formatos diferentes del conjunto de datos o puntos de acceso diferentes."
@@ -574,7 +579,7 @@
     "comment" : {
       "undefined" : "represents availability of a dataset as a feed. This term has been deprecated"
     },
-    "attributes" : [ "deprecated", "external" ],
+    "attributes" : [ "external", "deprecated" ],
     "id" : "33",
     "superClasses" : [ "10" ]
   }, {
@@ -630,6 +635,11 @@
     "annotations" : {
       "usageNote" : [ {
         "identifier" : "usageNote",
+        "language" : "ja",
+        "value" : "このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
         "language" : "fr",
         "value" : "Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son \n\t\t\t\t\t  entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier. ",
         "type" : "label"
@@ -640,18 +650,13 @@
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "ja",
-        "value" : "このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。",
+        "language" : "el",
+        "value" : "Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ'εαυτό, όπως έχει δημοσιευθεί από τον εκδότη.\n          Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) \n          η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
         "language" : "es",
         "value" : "Esta clase representa el conjunto de datos publicado por el editor del conjunto de datos. En los casos donde es necesaria una distinción entre el\n\t\t\t\t\tconjunto de datos y su entrada en el catálogo de datos",
-        "type" : "label"
-      }, {
-        "identifier" : "usageNote",
-        "language" : "el",
-        "value" : "Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ'εαυτό, όπως έχει δημοσιευθεί από τον εκδότη.\n          Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) \n          η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -664,8 +669,8 @@
     "label" : {
       "ar" : "قائمة بيانات",
       "IRI-based" : "Dataset",
-      "ja" : "データセット",
       "el" : "Σύνολο Δεδομένων",
+      "ja" : "データセット",
       "en" : "Dataset",
       "fr" : "Jeu de données",
       "es" : "Conjunto de datos"
@@ -701,7 +706,7 @@
     "comment" : {
       "undefined" : "represents a web service that enables access to the data of a dataset. This term has been deprecated"
     },
-    "attributes" : [ "deprecated", "external" ],
+    "attributes" : [ "external", "deprecated" ],
     "id" : "45",
     "superClasses" : [ "10" ]
   }, {
@@ -710,11 +715,6 @@
     "instances" : 0,
     "annotations" : {
       "usageNote" : [ {
-        "identifier" : "usageNote",
-        "language" : "en",
-        "value" : "This class is optional and not all catalogs will use it. It exists for \n            catalogs where a distinction is made between metadata about a dataset and \n            metadata about the dataset's entry in the catalog. For example, the publication \n            date property of the dataset reflects the date when the information was originally \n            made available by the publishing agency, while the publication date of the catalog \n            record is the date when the dataset was added to the catalog. In cases where both\n            dates differ, or where only the latter is known, the publication date should only \n            be specified for the catalog record. Notice that the W3C PROV Ontology allows \n            describing further provenance information such as the details of the process and the \n            agent involved in a particular change to a dataset.",
-        "type" : "label"
-      }, {
         "identifier" : "usageNote",
         "language" : "el",
         "value" : "Αυτή η κλάση είναι προαιρετική και δεν χρησιμοποιείται από όλους τους καταλόγους. Υπάρχει για τις περιπτώσεις καταλόγων όπου \n\t\t\t\t\t  γίνεται διαχωρισμός μεταξύ των μεταδεδομένων για το σύνολο των δεδομένων και των μεταδεδομένων για την καταγραφή του συνόλου δεδομένων εντός του καταλόγου.\n\t\t\t\t\t  Για παράδειγμα, η ιδιότητα της ημερομηνίας δημοσίευσης του συνόλου δεδομένων δείχνει την ημερομηνία κατά την οποία οι πληροφορίες έγιναν διαθέσιμες από τον φορέα δημοσίευσης, \n\t\t\t\t\t  ενώ η ημερομηνία δημοσίευσης της καταγραφής του καταλόγου δείχνει την ημερομηνία που το σύνολο δεδομένων προστέθηκε στον κατάλογο.\n\t\t\t\t\t  Σε περιπτώσεις που οι δύο ημερομηνίες διαφέρουν, ή που μόνο η τελευταία είναι γνωστή, η ημερομηνία δημοσίευσης θα πρέπει να δίνεται για την καταγραφή του καταλόγου. \n\t\t\t\t\t  Να σημειωθεί πως η οντολογία W3C PROV επιτρέπει την περιγραφή επιπλέον πληροφοριών ιστορικού όπως λεπτομέρειες για τη διαδικασία και τον δράστη που εμπλέκονται σε μία συγκεκριμένη αλλαγή εντός του συνόλου δεδομένων.",
@@ -728,6 +728,11 @@
         "identifier" : "usageNote",
         "language" : "es",
         "value" : "Esta clase es opcional y no todos los catálogos la utilizarán. Esta clase existe para catálogos\n\t\t\t\t\t\tque hacen una distinción entre los metadatos acerca de un conjunto de datos y los metadatos\n\t\t\t\t\t\tacerca de una entrada en ese conjunto de datos en el catálogo. ",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
+        "language" : "en",
+        "value" : "This class is optional and not all catalogs will use it. It exists for \n            catalogs where a distinction is made between metadata about a dataset and \n            metadata about the dataset's entry in the catalog. For example, the publication \n            date property of the dataset reflects the date when the information was originally \n            made available by the publishing agency, while the publication date of the catalog \n            record is the date when the dataset was added to the catalog. In cases where both\n            dates differ, or where only the latter is known, the publication date should only \n            be specified for the catalog record. Notice that the W3C PROV Ontology allows \n            describing further provenance information such as the details of the process and the \n            agent involved in a particular change to a dataset.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -753,8 +758,8 @@
     },
     "subClasses" : [ "30" ],
     "comment" : {
-      "el" : "Μία καταγραφή ενός καταλόγου, η οποία περιγράφει ένα συγκεκριμένο σύνολο δεδομένων.",
       "ja" : "1つのデータセットを記述したデータ・カタログ内のレコード。",
+      "el" : "Μία καταγραφή ενός καταλόγου, η οποία περιγράφει ένα συγκεκριμένο σύνολο δεδομένων.",
       "en" : "A record in a data catalog, describing a single dataset.",
       "fr" : "Un registre du catalogue ou une entrée du catalogue, décrivant un seul jeu de données",
       "es" : "Un registro en un catálogo de datos que describe un solo conjunto de datos."
@@ -879,12 +884,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#Stream",
+        "value" : "https://w3id.org/rsp/vocals#StreamPartition",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#StreamPartition",
+        "value" : "https://w3id.org/rsp/vocals#Stream",
         "type" : "iri"
       } ]
     },
@@ -905,13 +910,13 @@
     "annotations" : {
       "usageNote" : [ {
         "identifier" : "usageNote",
-        "language" : "ja",
-        "value" : "データセットを分類するために用いられるskos:Conceptの集合は、カタログのすべてのカテゴリーとそれらの関係を記述しているskos:ConceptSchemeで組織化されます。",
+        "language" : "fr",
+        "value" : "Un ensemble de skos:Concepts utilisés pour catégoriser un jeu de données sont organisés en \n\t\t\t\t\t\tun skos:ConceptScheme décrivqnt toutes les catégories et ses relations dans le catalogue. ",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "fr",
-        "value" : "Un ensemble de skos:Concepts utilisés pour catégoriser un jeu de données sont organisés en \n\t\t\t\t\t\tun skos:ConceptScheme décrivqnt toutes les catégories et ses relations dans le catalogue. ",
+        "language" : "es",
+        "value" : "El conjunto de skos:Concepts utilizados para categorizar el conjunto de datos están organizados en\n          un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -925,8 +930,8 @@
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "es",
-        "value" : "El conjunto de skos:Concepts utilizados para categorizar el conjunto de datos están organizados en\n          un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo",
+        "language" : "ja",
+        "value" : "データセットを分類するために用いられるskos:Conceptの集合は、カタログのすべてのカテゴリーとそれらの関係を記述しているskos:ConceptSchemeで組織化されます。",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -939,8 +944,8 @@
     "label" : {
       "ar" : "التصنيف",
       "IRI-based" : "theme",
-      "el" : "Θέμα",
       "ja" : "テーマ/カテゴリー",
+      "el" : "Θέμα",
       "en" : "theme",
       "fr" : "thème",
       "es" : "tema"
@@ -955,7 +960,7 @@
       "fr" : "La catégorie principale du jeu de données. Un jeu de données peut avoir plusieurs thèmes.",
       "es" : "La categoría principal del conjunto de datos. Un conjunto de datos puede tener varios temas."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "6"
   }, {
     "iri" : "https://w3id.org/rsp/vocals#previous",
@@ -981,7 +986,7 @@
     },
     "domain" : "2",
     "comment" : {
-      "en" : "Relationship between a stream partition and the previous partition in the stream"
+      "en" : "Relationship between a stream partition and the previous partition in the stream. it connects stream partitions in order"
     },
     "attributes" : [ "object" ],
     "id" : "8"
@@ -994,7 +999,7 @@
     },
     "domain" : "11",
     "subproperty" : [ "6", "12" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "7"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Page",
@@ -1005,7 +1010,7 @@
     },
     "domain" : "11",
     "subproperty" : [ "14" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "13"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#mediaType",
@@ -1022,8 +1027,8 @@
     "label" : {
       "ar" : "نوع الميديا",
       "IRI-based" : "mediaType",
-      "el" : "τύπος μέσου",
       "ja" : "メディア・タイプ",
+      "el" : "τύπος μέσου",
       "en" : "media type",
       "fr" : "type de média",
       "es" : "tipo de media"
@@ -1032,13 +1037,13 @@
     "domain" : "10",
     "comment" : {
       "ar" : "يجب استخدام هذه الخاصية إذا كان نوع الملف معرف ضمن IANA",
-      "ja" : "このプロパティーは、配信のメディア・タイプがIANAで定義されているときに使用すべきで（SHOULD）、そうでない場合には、dct:formatを様々な値と共に使用できます（MAY）。",
       "el" : "Η ιδιότητα αυτή ΘΑ ΠΡΕΠΕΙ να χρησιμοποιείται όταν ο τύπος μέσου μίας διανομής είναι ορισμένος στο IANA, αλλιώς \n          η ιδιότητα dct:format ΔΥΝΑΤΑΙ να χρησιμοποιηθεί με διαφορετικές τιμές.",
+      "ja" : "このプロパティーは、配信のメディア・タイプがIANAで定義されているときに使用すべきで（SHOULD）、そうでない場合には、dct:formatを様々な値と共に使用できます（MAY）。",
       "en" : "This property SHOULD be used when the media type of the distribution is defined \n          in IANA, otherwise dct:format MAY be used with different values.",
       "fr" : "Cette propriété doit être utilisée quand c'est définit le type de média de la distribution\n\t\t\t\t\ten IANA, sinon dct:format DOIT être utilisé avec différentes valeurs.",
       "es" : "Esta propiedad debe ser usada cuando está definido el tipo de media de la distribución \n\t\t\t\t\ten IANA, de otra manera dct:format puede ser utilizado con diferentes valores"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "17"
   }, {
     "iri" : "http://purl.org/dc/terms/hasPart",
@@ -1049,7 +1054,7 @@
     },
     "domain" : "11",
     "subproperty" : [ "24" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "23"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#distribution",
@@ -1076,13 +1081,13 @@
     "subproperty" : [ "26" ],
     "comment" : {
       "ar" : "تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات",
-      "el" : "Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του.",
       "ja" : "データセットを、その利用可能な配信に接続します。",
+      "el" : "Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του.",
       "en" : "Connects a dataset to one of its available distributions.",
       "fr" : "Connecte un jeu de données à des distributions disponibles.",
       "es" : "Conecta un conjunto de datos a una de sus distribuciones disponibles"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "25"
   }, {
     "range" : "4",
@@ -1128,12 +1133,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#Stream",
+        "value" : "https://w3id.org/rsp/vocals#StreamEndpoint",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#StreamEndpoint",
+        "value" : "https://w3id.org/rsp/vocals#Stream",
         "type" : "iri"
       } ]
     },
@@ -1155,18 +1160,8 @@
     "annotations" : {
       "usageNote" : [ {
         "identifier" : "usageNote",
-        "language" : "fr",
-        "value" : "La valeur est une URL.\n\t\t\t\t\t\tSi la distribution est accessible seulement au travers d'une page d'atterrissage (c-à-dire on n'ignore une URL de téléchargement direct) ,\n\t\t\t\t\t\talors le lien à la page d'atterrissage doit être dupliqué comee accessURL sur la distribution.",
-        "type" : "label"
-      }, {
-        "identifier" : "usageNote",
-        "language" : "el",
-        "value" : "Η τιμή είναι ένα URL.\n\t\t\t\t\tΑν η/οι διανομή/ές είναι προσβάσιμη/ες μόνο μέσω μίας ιστοσελίδας αρχικής πρόσβασης (δηλαδή αν δεν υπάρχουν γνωστές διευθύνσεις άμεσης μεταφόρτωσης), τότε ο σύνδεσμος της ιστοσελίδας αρχικής πρόσβασης πρέπει να αναπαραχθεί ως accessURL σε μία διανομή.",
-        "type" : "label"
-      }, {
-        "identifier" : "usageNote",
-        "language" : "ja",
-        "value" : "確実にダウンロードでない場合や、ダウンロードかどうかが不明である場合は、downloadURLではなく、accessURLを用いてください。\nランディング・ページを通じてしか配信にアクセスできない場合（つまり、直接的なダウンロードURLが不明）は、配信におけるaccessURLとしてランディング・ページのリンクをコピーすべきです（SHOULD）。",
+        "language" : "en",
+        "value" : "The value is a URL.\n          If the distribution(s) are accessible only through a landing page (i.e. direct download URLs are \n          not known), then the landing page link should be duplicated as accessURL on a distribution.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -1175,8 +1170,18 @@
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "en",
-        "value" : "The value is a URL.\n          If the distribution(s) are accessible only through a landing page (i.e. direct download URLs are \n          not known), then the landing page link should be duplicated as accessURL on a distribution.",
+        "language" : "fr",
+        "value" : "La valeur est une URL.\n\t\t\t\t\t\tSi la distribution est accessible seulement au travers d'une page d'atterrissage (c-à-dire on n'ignore une URL de téléchargement direct) ,\n\t\t\t\t\t\talors le lien à la page d'atterrissage doit être dupliqué comee accessURL sur la distribution.",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
+        "language" : "ja",
+        "value" : "確実にダウンロードでない場合や、ダウンロードかどうかが不明である場合は、downloadURLではなく、accessURLを用いてください。\nランディング・ページを通じてしか配信にアクセスできない場合（つまり、直接的なダウンロードURLが不明）は、配信におけるaccessURLとしてランディング・ページのリンクをコピーすべきです（SHOULD）。",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
+        "language" : "el",
+        "value" : "Η τιμή είναι ένα URL.\n\t\t\t\t\tΑν η/οι διανομή/ές είναι προσβάσιμη/ες μόνο μέσω μίας ιστοσελίδας αρχικής πρόσβασης (δηλαδή αν δεν υπάρχουν γνωστές διευθύνσεις άμεσης μεταφόρτωσης), τότε ο σύνδεσμος της ιστοσελίδας αρχικής πρόσβασης πρέπει να αναπαραχθεί ως accessURL σε μία διανομή.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -1189,8 +1194,8 @@
     "label" : {
       "ar" : "رابط وصول",
       "IRI-based" : "accessURL",
-      "el" : "URL πρόσβασης",
       "ja" : "アクセスURL",
+      "el" : "URL πρόσβασης",
       "en" : "access URL",
       "fr" : "URL d'accès",
       "es" : "URL de acceso"
@@ -1204,7 +1209,7 @@
       "fr" : "Ceci peut être tout type d'URL qui donne accès à une distribution du jeu de données. Par exemple, un lien à une page HTML contenant un lien au jeu de données, \n\t\t\t\t\tun Flux RSS, un point d'accès SPARQL. Utilisez le lorsque votre catalogue ne contient pas d'information sur quoi il est ou quand ce n'est pas téléchargeable.",
       "es" : "Puede ser cualquier tipo de URL que de acceso a una distribución del conjunto de datos, e.g., página de aterrizaje, descarga,\n\t\t\t\t\tURL feed, punto de acceso SPARQL. Utilizado cuando su catálogo de datos no tiene información sobre donde está o cuando no se puede descargar"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "39"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#byteSize",
@@ -1213,18 +1218,18 @@
     "annotations" : {
       "usageNote" : [ {
         "identifier" : "usageNote",
+        "language" : "en",
+        "value" : "The size in bytes can be approximated when the precise size is not known. \n          The literal value of dcat:byteSize should by typed as xsd:decimal",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
+        "language" : "ar",
+        "value" : "الحجم يمكن أن يكون تقريبي إذا كان الحجم الدقيق غير معروف",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
         "language" : "es",
         "value" : "El tamaño en bytes puede ser aproximado cuando no es conocido el tamaño exacto.\n          El valor literal de dcat:byteSize debe ser tipado como xsd:decimal",
-        "type" : "label"
-      }, {
-        "identifier" : "usageNote",
-        "language" : "el",
-        "value" : "Το μέγεθος σε bytes μπορεί να προσεγγιστεί όταν η ακριβής τιμή δεν είναι γνωστή.\n          Η τιμή της dcat:byteSize θα πρέπει να δίνεται με τύπο δεδομένων xsd:decimal",
-        "type" : "label"
-      }, {
-        "identifier" : "usageNote",
-        "language" : "ja",
-        "value" : "正確なサイズが不明である場合、サイズは、バイトによる近似値を示すことができます。",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -1233,13 +1238,13 @@
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "en",
-        "value" : "The size in bytes can be approximated when the precise size is not known. \n          The literal value of dcat:byteSize should by typed as xsd:decimal",
+        "language" : "ja",
+        "value" : "正確なサイズが不明である場合、サイズは、バイトによる近似値を示すことができます。",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "ar",
-        "value" : "الحجم يمكن أن يكون تقريبي إذا كان الحجم الدقيق غير معروف",
+        "language" : "el",
+        "value" : "Το μέγεθος σε bytes μπορεί να προσεγγιστεί όταν η ακριβής τιμή δεν είναι γνωστή.\n          Η τιμή της dcat:byteSize θα πρέπει να δίνεται με τύπο δεδομένων xsd:decimal",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -1267,7 +1272,7 @@
       "fr" : "La taille de la distribution en octects",
       "es" : "El tamaño de una distribución en bytes"
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "41"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#themeTaxonomy",
@@ -1284,8 +1289,8 @@
     "label" : {
       "ar" : "قائمة التصنيفات",
       "IRI-based" : "themeTaxonomy",
-      "ja" : "テーマ",
       "el" : "Ταξινομία θεματικών κατηγοριών.",
+      "ja" : "テーマ",
       "en" : "theme taxonomy",
       "fr" : "taxonomie de thèmes",
       "es" : "taxonomía de temas"
@@ -1299,7 +1304,7 @@
       "fr" : "Le systhème d'ogranisation de connaissances utilisé pour classifier les jeux de données du catalogue.",
       "es" : "El sistema de organización del conocimiento utilizado para clasificar conjuntos de datos de catálogos."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "43"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#record",
@@ -1331,7 +1336,7 @@
       "fr" : "Relie un catalogue à ses registres",
       "es" : "Enlaza un catálogo a sus registros."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "46"
   }, {
     "range" : "5",
@@ -1373,8 +1378,8 @@
     "label" : {
       "ar" : "كلمة  مفتاحية ",
       "IRI-based" : "keyword",
-      "el" : "λέξη-κλειδί",
       "ja" : "キーワード/タグ",
+      "el" : "λέξη-κλειδί",
       "en" : "keyword",
       "fr" : "mot-clés ",
       "es" : "palabra clave"
@@ -1389,7 +1394,7 @@
       "fr" : "Un mot-clé ou étiquette décrivant un jeu de donnnées.",
       "es" : "Una palabra clave o etiqueta que describa al conjunto de datos."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "12"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#downloadURL",
@@ -1403,11 +1408,6 @@
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "el",
-        "value" : "Η τιμή είναι ένα URL.",
-        "type" : "label"
-      }, {
-        "identifier" : "usageNote",
         "language" : "en",
         "value" : "The value is a URL.",
         "type" : "label"
@@ -1415,6 +1415,11 @@
         "identifier" : "usageNote",
         "language" : "fr",
         "value" : "La valeur est une URL.",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
+        "language" : "el",
+        "value" : "Η τιμή είναι ένα URL.",
         "type" : "label"
       } ],
       "isDefinedBy" : [ {
@@ -1427,8 +1432,8 @@
     "label" : {
       "ar" : "رابط تحميل",
       "IRI-based" : "downloadURL",
-      "ja" : "ダウンロードURL",
       "el" : "URL μεταφόρτωσης",
+      "ja" : "ダウンロードURL",
       "en" : "download URL",
       "fr" : "URL de téléchargement",
       "es" : "URL de descarga"
@@ -1436,13 +1441,13 @@
     "domain" : "10",
     "comment" : {
       "ar" : "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dc:format dcat:mediaType ",
-      "ja" : "dcat:downloadURLはdcat:accessURLの特定の形式です。しかし、DCATプロファイルが非ダウンロード・ロケーションに対してのみaccessURLを用いる場合には、より強い分離を課すことを望む可能性があるため、この含意を強化しないように、DCATは、dcat:downloadURLをdcat:accessURLのサブプロパティーであると定義しません。",
       "el" : "Είναι ένας σύνδεσμος άμεσης μεταφόρτωσης ενός αρχείου σε μια δεδομένη μορφή. Π.χ. ένα αρχείο CSV ή RDF. \n\t\t\t\t\tΗ μορφη αρχείου περιγράφεται από τις ιδιότητες dc:format ή/και dcat:mediaType της διανομής",
+      "ja" : "dcat:downloadURLはdcat:accessURLの特定の形式です。しかし、DCATプロファイルが非ダウンロード・ロケーションに対してのみaccessURLを用いる場合には、より強い分離を課すことを望む可能性があるため、この含意を強化しないように、DCATは、dcat:downloadURLをdcat:accessURLのサブプロパティーであると定義しません。",
       "en" : "This is a direct link to a downloadable file in a given format. E.g. CSV file or RDF file. The \n          format is described by the distribution's dc:format and/or dcat:mediaType",
       "fr" : "Ceci est un lien direct à un fichier téléchargeable en un format donnée. Exple fichier CSV ou RDF. Le format\n\t\t\t\t\test décrit par les propriétés de distribution dc:format et/ou dcat:mediaType",
       "es" : "Este es un enlace directo a un fichero descargable en un formato dado, e.g., fichero CSV o RDF. El \n          formato es descrito por las propiedades de la distribución dc:format y/o dcat:mediaType"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "52"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#contactPoint",
@@ -1468,13 +1473,13 @@
     "domain" : "4",
     "comment" : {
       "ar" : "تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard",
-      "ja" : "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。",
       "el" : "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard.",
+      "ja" : "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。",
       "en" : "Links a dataset to relevant contact information which is provided using VCard.",
       "fr" : "Relie un jeu de données à une information de contact utile en utilisant VCard.",
       "es" : "Enlaza un conjunto de datos a información de contacto relevante utilizando VCard"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "54"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#landingPage",
@@ -1483,13 +1488,13 @@
     "annotations" : {
       "usageNote" : [ {
         "identifier" : "usageNote",
-        "language" : "en",
-        "value" : "If the distribution(s) are accessible only through a landing page (i.e. direct download \n          URLs are not known), then the landing page link should be duplicated as accessURL on a distribution.",
+        "language" : "el",
+        "value" : "Αν η/οι διανομή/ές είναι προσβάσιμη/ες μόνο μέσω μίας ιστοσελίδας αρχικής πρόσβασης (δηλαδή αν δεν υπάρχουν γνωστές διευθύνσεις άμεσης μεταφόρτωσης), τότε ο σύνδεσμος της ιστοσελίδας αρχικής πρόσβασης πρέπει να αναπαραχθεί ως accessURL σε μία διανομή.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "ja",
-        "value" : "ランディング・ページを通じてしか配信にアクセスできない場合（つまり、直接的なダウンロードURLが不明）には、配信におけるaccessURLとしてランディング・ページのリンクをコピーすべきです（SHOULD）。",
+        "language" : "en",
+        "value" : "If the distribution(s) are accessible only through a landing page (i.e. direct download \n          URLs are not known), then the landing page link should be duplicated as accessURL on a distribution.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -1498,8 +1503,8 @@
         "type" : "label"
       }, {
         "identifier" : "usageNote",
-        "language" : "el",
-        "value" : "Αν η/οι διανομή/ές είναι προσβάσιμη/ες μόνο μέσω μίας ιστοσελίδας αρχικής πρόσβασης (δηλαδή αν δεν υπάρχουν γνωστές διευθύνσεις άμεσης μεταφόρτωσης), τότε ο σύνδεσμος της ιστοσελίδας αρχικής πρόσβασης πρέπει να αναπαραχθεί ως accessURL σε μία διανομή.",
+        "language" : "ja",
+        "value" : "ランディング・ページを通じてしか配信にアクセスできない場合（つまり、直接的なダウンロードURLが不明）には、配信におけるaccessURLとしてランディング・ページのリンクをコピーすべきです（SHOULD）。",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -1517,8 +1522,8 @@
     "label" : {
       "ar" : "صفحة وصول",
       "IRI-based" : "landingPage",
-      "el" : "ιστοσελίδα αρχικής πρόσβασης",
       "ja" : "ランディング・ページ",
+      "el" : "ιστοσελίδα αρχικής πρόσβασης",
       "en" : "landing page",
       "fr" : "page d'atterrissage",
       "es" : "página de aterrizaje"
@@ -1527,13 +1532,13 @@
     "domain" : "4",
     "comment" : {
       "ar" : "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها ",
-      "el" : "Μία ιστοσελίδα πλοηγίσιμη μέσω ενός φυλλομετρητή (Web browser) που δίνει πρόσβαση στο σύνολο δεδομένων, τις διανομές αυτού ή/και επιπρόσθετες πληροφορίες.",
       "ja" : "データセット、その配信および（または）追加情報にアクセスするためにウエブ・ブラウザでナビゲートできるウェブページ。",
+      "el" : "Μία ιστοσελίδα πλοηγίσιμη μέσω ενός φυλλομετρητή (Web browser) που δίνει πρόσβαση στο σύνολο δεδομένων, τις διανομές αυτού ή/και επιπρόσθετες πληροφορίες.",
       "en" : "A Web page that can be navigated to in a Web browser to gain access to the dataset, its distributions and/or additional information.",
       "fr" : "Une page Web accessible par un navigateur Web donnant accès au jeu de données, ses distributions et/ou des informations additionnelles.",
       "es" : "Una página Web que puede ser visitada en un explorador Web para tener acceso al conjunto de datos, sus distribuciones y/o información adicional"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "14"
   }, {
     "iri" : "http://purl.org/dc/terms/format",
@@ -1544,7 +1549,7 @@
     },
     "domain" : "11",
     "subproperty" : [ "17" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "19"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#dataset",
@@ -1561,8 +1566,8 @@
     "label" : {
       "ar" : "قائمة بيانات",
       "IRI-based" : "dataset",
-      "el" : "σύνολο δεδομένων",
       "ja" : "データセット",
+      "el" : "σύνολο δεδομένων",
       "en" : "dataset",
       "fr" : "jeu de données",
       "es" : "conjunto de datos"
@@ -1577,7 +1582,7 @@
       "fr" : "Relie un catalogue à un jeu de données faisant partie de ce catalogue",
       "es" : "Enlaza un catálogo a un conjunto de datos que es parte de ese catálogo"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "24"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#bytes",
@@ -1599,7 +1604,7 @@
     "comment" : {
       "undefined" : "describe size of resource in bytes. This term has been deprecated"
     },
-    "attributes" : [ "deprecated", "external", "datatype" ],
+    "attributes" : [ "datatype", "external", "deprecated" ],
     "id" : "56"
   } ]
 }

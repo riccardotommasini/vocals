@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 <..\index-en.html> a prov:Entity;
-	 dc:title "VOIS2 ontology: A model for data streams and metadata";
+	 dc:title "VoCaLS: A Vocabulary and Catalog for Linked Streams";
 	 prov:wasAttributedTo <http://streamreasoning.org/vois#RiccardoTommasini>;
 	 dc:creator <http://streamreasoning.org/vois#RiccardoTommasini>;
 	 prov:wasAttributedTo <http://streamreasoning.org/vois#YehiaAboSedira>;

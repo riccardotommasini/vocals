@@ -58,7 +58,7 @@
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rsp/vocals#StreamPartition> .
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/rsp/vocals#StreamPartition> .
-<https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a stream partition and the previous partition in the stream"@en .
+<https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a stream partition and the previous partition in the stream. it connects stream partitions in order"@en .
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#label> "previous"@en .
 <https://w3id.org/rsp/vocals#previous> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#StreamPartition> .
@@ -131,10 +131,11 @@
 # https://w3id.org/rsp/vocals#StreamPartition
 <https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
-<https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#comment> "A portion of the time-varying data items of a Stream"@en .
+<https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#comment> "A finite subset of the stream that are made available to be accessed and consumed by standard Linked Data services."@en .
 <https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/rsp/vocals#> .
 <https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#label> "StreamPartition"@en .
 <https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#Stream> .
+<https://w3id.org/rsp/vocals#StreamPartition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals#previous> .
 # 
 # 
 # 
