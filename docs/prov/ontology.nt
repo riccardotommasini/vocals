@@ -141,7 +141,7 @@
 # https://w3id.org/rsp/vocals-prov#Operator
 <https://w3id.org/rsp/vocals-prov#Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals-prov#Operator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
-<https://w3id.org/rsp/vocals-prov#Operator> <http://www.w3.org/2000/01/rdf-schema#comment> "Operator that operat on an entity to generate another entity." .
+<https://w3id.org/rsp/vocals-prov#Operator> <http://www.w3.org/2000/01/rdf-schema#comment> "Operator that use a resource - stream, relation - to generate another resource." .
 # 
 # https://w3id.org/rsp/vocals-prov#PhysicalWindow
 <https://w3id.org/rsp/vocals-prov#PhysicalWindow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -165,6 +165,7 @@
 <https://w3id.org/rsp/vocals-prov#RSPQLOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/rsp/vocals-prov#S2SOperator> .
 <https://w3id.org/rsp/vocals-prov#RSPQLOperator> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/rsp/vocals-prov#SetOperator> .
 <https://w3id.org/rsp/vocals-prov#RSPQLOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream." .
+<https://w3id.org/rsp/vocals-prov#RSPQLOperator> <http://www.w3.org/2000/01/rdf-schema#label> "RSPQL operator" .
 # 
 # https://w3id.org/rsp/vocals-prov#Replay
 <https://w3id.org/rsp/vocals-prov#Replay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -216,6 +217,7 @@
 # https://w3id.org/rsp/vocals-prov#WindowOperator
 <https://w3id.org/rsp/vocals-prov#WindowOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals-prov#WindowOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/rsp/vocals-prov#S2ROperator> .
+<https://w3id.org/rsp/vocals-prov#WindowOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of window operator represent an operator that use a stream and generate multiple windows according to a certain criteria" .
 # 
 # https://w3id.org/rsp/vocals-sd#Operation
 <https://w3id.org/rsp/vocals-sd#Operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -1,3 +1,15 @@
 <h2 id="desc" class="list">VoCaLS-Prov: A Vocabulary and Catalog for Linked Streams, Provenance Module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+VoCaLS Provenance module focuses on tracking the provenance of stream processing
+services, i.e., tracing the consequences of operations performed over the
+streams. To this extent, the module defines four classes: (i) vprov:R2ROperator
+refers to operators that produce RDF mappings (relations) from other RDF
+mappings [2], e.g., sum and count. (ii) vprov:R2SOperator represents operators
+that produce a stream from a relation [2], for instance replaying a static
+dataset as a stream. (iii) vprov:S2ROperator refers to operators that produces
+relations from streams, e.g., windowing. Finally, (iv) vprov:S2SOperator allows
+describing operators that produce a stream from another stream. To represent
+the most common operators VoCaLS Provenance already contains several subclasses
+of the four generic ones presented above, e.g., vprov:WidowOperator,
+vprov:SetOperator and vprov:FilterOperator.
+</span>

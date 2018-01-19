@@ -252,7 +252,7 @@
 
     <owl:Class rdf:about="https://w3id.org/rsp/vocals-prov#Operator">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operator that operat on an entity to generate another entity.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operator that use a resource - stream, relation - to generate another resource.</rdfs:comment>
     </owl:Class>
     
 
@@ -296,6 +296,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-prov#S2SOperator"/>
         <owl:disjointWith rdf:resource="https://w3id.org/rsp/vocals-prov#SetOperator"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSPQL operator</rdfs:label>
     </owl:Class>
     
 
@@ -397,6 +398,7 @@
 
     <owl:Class rdf:about="https://w3id.org/rsp/vocals-prov#WindowOperator">
         <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-prov#S2ROperator"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of window operator represent an operator that use a stream and generate multiple windows according to a certain criteria</rdfs:comment>
     </owl:Class>
     
 

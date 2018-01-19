@@ -65,12 +65,12 @@
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "http://w3id.org/hes-so/aislab",
+        "value" : "http://aislab.hevs.ch/",
         "type" : "iri"
       }, {
         "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "http://aislab.hevs.ch/",
+        "value" : "http://w3id.org/hes-so/aislab",
         "type" : "iri"
       } ],
       "modified" : [ {
@@ -99,13 +99,13 @@
       } ],
       "title" : [ {
         "identifier" : "title",
-        "language" : "en",
-        "value" : "VoCaLS-Prov: A Vocabulary and Catalog for Linked Streams, Provenance Module",
+        "language" : "es",
+        "value" : "VoCaLS-Prov: Vocabulario y catálogo para Streams enlazados, módulo de Provenance",
         "type" : "label"
       }, {
         "identifier" : "title",
-        "language" : "es",
-        "value" : "VoCaLS-Prov: Vocabulario y catálogo para Streams enlazados, módulo de Provenance",
+        "language" : "en",
+        "value" : "VoCaLS-Prov: A Vocabulary and Catalog for Linked Streams, Provenance Module",
         "type" : "label"
       }, {
         "identifier" : "title",
@@ -358,7 +358,7 @@
     },
     "subClasses" : [ "0", "38", "29", "35" ],
     "comment" : {
-      "undefined" : "Operator that operat on an entity to generate another entity."
+      "undefined" : "Operator that use a resource - stream, relation - to generate another resource."
     },
     "id" : "1",
     "superClasses" : [ "6" ]
@@ -423,7 +423,8 @@
     "baseIri" : "https://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "RSPQLOperator"
+      "IRI-based" : "RSPQLOperator",
+      "undefined" : "RSPQL operator"
     },
     "comment" : {
       "undefined" : "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream."
@@ -443,6 +444,9 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "WindowOperator"
+    },
+    "comment" : {
+      "undefined" : "An instance of window operator represent an operator that use a stream and generate multiple windows according to a certain criteria"
     },
     "id" : "21",
     "superClasses" : [ "38" ]
@@ -869,7 +873,7 @@
       "IRI-based" : "topDataProperty"
     },
     "domain" : "45",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "55"
   }, {
     "iri" : "https://w3id.org/rsp/vocals-prov#hasOutput",

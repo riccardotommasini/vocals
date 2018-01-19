@@ -153,7 +153,7 @@
 ###  https://w3id.org/rsp/vocals-prov#Operator
 <https://w3id.org/rsp/vocals-prov#Operator> rdf:type owl:Class ;
                                             rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
-                                            rdfs:comment "Operator that operat on an entity to generate another entity."^^xsd:string .
+                                            rdfs:comment "Operator that use a resource - stream, relation - to generate another resource."^^xsd:string .
 
 
 ###  https://w3id.org/rsp/vocals-prov#PhysicalWindow
@@ -180,7 +180,8 @@
 <https://w3id.org/rsp/vocals-prov#RSPQLOperator> rdf:type owl:Class ;
                                                  rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#S2SOperator> ;
                                                  owl:disjointWith <https://w3id.org/rsp/vocals-prov#SetOperator> ;
-                                                 rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream."^^xsd:string .
+                                                 rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream."^^xsd:string ;
+                                                 rdfs:label "RSPQL operator"^^xsd:string .
 
 
 ###  https://w3id.org/rsp/vocals-prov#Replay
@@ -241,7 +242,8 @@
 
 ###  https://w3id.org/rsp/vocals-prov#WindowOperator
 <https://w3id.org/rsp/vocals-prov#WindowOperator> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#S2ROperator> .
+                                                  rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#S2ROperator> ;
+                                                  rdfs:comment "An instance of window operator represent an operator that use a stream and generate multiple windows according to a certain criteria"^^xsd:string .
 
 
 ###  https://w3id.org/rsp/vocals-sd#Operation
