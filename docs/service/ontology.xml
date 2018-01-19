@@ -371,6 +371,7 @@
         <owl:disjointWith rdf:resource="https://w3id.org/rsp/vocals-sd#S2ROperation"/>
         <owl:disjointWith rdf:resource="https://w3id.org/rsp/vocals-sd#S2SOperation"/>
         <rdfs:comment xml:lang="en">An R2ROperation represents a realtion-to-relation operation that an RDF Stream Service can perform, such as filtering, aggregation, projection, join, etc. It takes as input a relation (e.g. RDF data mappings) and outputs also a relation (e.g. RDF data mappings).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dell&apos;Aglio, Daniele, et al. &quot;RSP-QL semantics: a unifying query model to explain heterogeneity of RDF stream processing systems.&quot; International Journal on Semantic Web and Information Systems (IJSWIS) 10.4 (2014): 17-44.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">R2ROperation</rdfs:label>
     </owl:Class>
     
@@ -382,6 +383,7 @@
     <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#R2SOperation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#Operation"/>
         <rdfs:comment xml:lang="en">An R2SOperation represents a realtion-to-stream operation that an RDF Stream Service can perform. It takes as input a relation (e.g. RDF data mappings), and ouputs RDF Stream elements, e.g. for instance an operation that replays a static dataset as a stream, or an Istream, Rstream or Dstream operation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dell&apos;Aglio, Daniele, et al. &quot;RSP-QL semantics: a unifying query model to explain heterogeneity of RDF stream processing systems.&quot; International Journal on Semantic Web and Information Systems (IJSWIS) 10.4 (2014): 17-44.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">R2SOperation</rdfs:label>
     </owl:Class>
     
@@ -427,6 +429,7 @@
     <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#S2ROperation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#Operation"/>
         <rdfs:comment xml:lang="en">An S2ROperation represents a stream-to-relation operation that an RDFStreamService can perform. It takes as input an RDF steam and putputs RDF data mapping, for instance windowing operators.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dell&apos;Aglio, Daniele, et al. &quot;RSP-QL semantics: a unifying query model to explain heterogeneity of RDF stream processing systems.&quot; International Journal on Semantic Web and Information Systems (IJSWIS) 10.4 (2014): 17-44.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">S2ROperation</rdfs:label>
     </owl:Class>
     
@@ -504,7 +507,8 @@
 
     <owl:Class rdf:about="https://w3id.org/rsp/vocals-sd#TimeSemantics">
         <rdfs:subClassOf rdf:resource="https://w3id.org/rsp/vocals-sd#RDFStreamingFeature"/>
-        <rdfs:comment xml:lang="en">TimeSemantics are features that describe the type of time semantics provided by an RDF Stream Service.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An instance of TimeSemantics represent the time domain used by streaming service while handeling the data elements, e.g. event time, porcessing time</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The world beyond batch: Streaming 101 (https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-101)</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">TimeSemantics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/rsp/vocals-sd#RDFStreamService"/>
     </owl:Class>

@@ -50,16 +50,16 @@
         "value" : "2017-12-23T13:00:00",
         "type" : "label"
       } ],
-      "rights" : [ {
-        "identifier" : "rights",
-        "language" : "undefined",
-        "value" : "Copyright © 2017 Politecnico di Milano & HES-SO Valais-Wallis",
-        "type" : "label"
-      } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
         "value" : "vocals-sd",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright © 2017 Politecnico di Milano & HES-SO Valais-Wallis",
         "type" : "label"
       } ],
       "modified" : [ {
@@ -71,19 +71,13 @@
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "http://aislab.hevs.ch/",
+        "value" : "http://w3id.org/hes-so/aislab",
         "type" : "iri"
       }, {
         "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "http://w3id.org/hes-so/aislab",
+        "value" : "http://aislab.hevs.ch/",
         "type" : "iri"
-      } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#",
-        "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
@@ -91,15 +85,21 @@
         "value" : "0.1.1",
         "type" : "label"
       } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "VoCaLS-SD: A Vocabulary and Catalog for Linked Streams, Service Description Module",
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rsp/vocals-sd#",
         "type" : "label"
-      }, {
+      } ],
+      "title" : [ {
         "identifier" : "title",
         "language" : "fr",
         "value" : "VoCaLS: ontologie de representation de services pour données et metadonnées de streams RDF",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "VoCaLS-SD: A Vocabulary and Catalog for Linked Streams, Service Description Module",
         "type" : "label"
       }, {
         "identifier" : "title",
@@ -254,6 +254,14 @@
     "iri" : "https://w3id.org/rsp/vocals-sd#S2ROperation",
     "baseIri" : "https://w3id.org/rsp/vocals-sd",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "Dell'Aglio, Daniele, et al. \"RSP-QL semantics: a unifying query model to explain heterogeneity of RDF stream processing systems.\" International Journal on Semantic Web and Information Systems (IJSWIS) 10.4 (2014): 17-44.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "S2ROperation",
       "en" : "S2ROperation"
@@ -322,6 +330,12 @@
     "baseIri" : "https://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "The world beyond batch: Streaming 101 (https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-101)",
+        "type" : "label"
+      } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
@@ -353,7 +367,7 @@
       }
     } ],
     "comment" : {
-      "en" : "TimeSemantics are features that describe the type of time semantics provided by an RDF Stream Service."
+      "en" : "An instance of TimeSemantics represent the time domain used by streaming service while handeling the data elements, e.g. event time, porcessing time"
     },
     "id" : "28",
     "superClasses" : [ "4" ]
@@ -403,6 +417,14 @@
     "iri" : "https://w3id.org/rsp/vocals-sd#R2ROperation",
     "baseIri" : "https://w3id.org/rsp/vocals-sd",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "Dell'Aglio, Daniele, et al. \"RSP-QL semantics: a unifying query model to explain heterogeneity of RDF stream processing systems.\" International Journal on Semantic Web and Information Systems (IJSWIS) 10.4 (2014): 17-44.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "R2ROperation",
       "en" : "R2ROperation"
@@ -606,6 +628,14 @@
     "iri" : "https://w3id.org/rsp/vocals-sd#R2SOperation",
     "baseIri" : "https://w3id.org/rsp/vocals-sd",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "Dell'Aglio, Daniele, et al. \"RSP-QL semantics: a unifying query model to explain heterogeneity of RDF stream processing systems.\" International Journal on Semantic Web and Information Systems (IJSWIS) 10.4 (2014): 17-44.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "R2SOperation",
       "en" : "R2SOperation"
@@ -917,17 +947,17 @@
   }, {
     "range" : "4",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "25"
   }, {
     "range" : "4",
     "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
     "iri" : "https://w3id.org/rsp/vocals-sd#availableStream",
@@ -961,12 +991,12 @@
   }, {
     "range" : "35",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "34"
   }, {
     "range" : "9",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "36"
   }, {
     "iri" : "https://w3id.org/rsp/vocals-sd#defaultGraph",
@@ -985,42 +1015,42 @@
   }, {
     "range" : "4",
     "domain" : "28",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "38"
   }, {
     "range" : "9",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "39"
   }, {
     "range" : "13",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
     "range" : "9",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
     "range" : "9",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
     "range" : "29",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "45"
   }, {
     "range" : "6",
     "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "46"
   }, {
     "range" : "6",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "47"
   }, {
     "iri" : "https://w3id.org/rsp/vocals-sd#defaultStreamingDataset",
@@ -1039,12 +1069,12 @@
   }, {
     "range" : "8",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "49"
   }, {
     "range" : "43",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "50"
   }, {
     "iri" : "https://w3id.org/rsp/vocals-sd#rspEndpoint",
@@ -1063,27 +1093,27 @@
   }, {
     "range" : "1",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "53"
   }, {
     "range" : "1",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "54"
   }, {
     "range" : "1",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
     "range" : "35",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "56"
   }, {
     "range" : "31",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "57"
   }, {
     "iri" : "https://w3id.org/rsp/vocals-sd#hasFeature",

@@ -217,12 +217,14 @@
 <https://w3id.org/rsp/vocals-sd#R2ROperation> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/rsp/vocals-sd#S2ROperation> .
 <https://w3id.org/rsp/vocals-sd#R2ROperation> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/rsp/vocals-sd#S2SOperation> .
 <https://w3id.org/rsp/vocals-sd#R2ROperation> <http://www.w3.org/2000/01/rdf-schema#comment> "An R2ROperation represents a realtion-to-relation operation that an RDF Stream Service can perform, such as filtering, aggregation, projection, join, etc. It takes as input a relation (e.g. RDF data mappings) and outputs also a relation (e.g. RDF data mappings)."@en .
+<https://w3id.org/rsp/vocals-sd#R2ROperation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Dell'Aglio, Daniele, et al. \"RSP-QL semantics: a unifying query model to explain heterogeneity of RDF stream processing systems.\" International Journal on Semantic Web and Information Systems (IJSWIS) 10.4 (2014): 17-44." .
 <https://w3id.org/rsp/vocals-sd#R2ROperation> <http://www.w3.org/2000/01/rdf-schema#label> "R2ROperation"@en .
 # 
 # https://w3id.org/rsp/vocals-sd#R2SOperation
 <https://w3id.org/rsp/vocals-sd#R2SOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals-sd#R2SOperation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/rsp/vocals-sd#Operation> .
 <https://w3id.org/rsp/vocals-sd#R2SOperation> <http://www.w3.org/2000/01/rdf-schema#comment> "An R2SOperation represents a realtion-to-stream operation that an RDF Stream Service can perform. It takes as input a relation (e.g. RDF data mappings), and ouputs RDF Stream elements, e.g. for instance an operation that replays a static dataset as a stream, or an Istream, Rstream or Dstream operation."@en .
+<https://w3id.org/rsp/vocals-sd#R2SOperation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Dell'Aglio, Daniele, et al. \"RSP-QL semantics: a unifying query model to explain heterogeneity of RDF stream processing systems.\" International Journal on Semantic Web and Information Systems (IJSWIS) 10.4 (2014): 17-44." .
 <https://w3id.org/rsp/vocals-sd#R2SOperation> <http://www.w3.org/2000/01/rdf-schema#label> "R2SOperation"@en .
 # 
 # https://w3id.org/rsp/vocals-sd#RDFStreamService
@@ -248,6 +250,7 @@
 <https://w3id.org/rsp/vocals-sd#S2ROperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals-sd#S2ROperation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/rsp/vocals-sd#Operation> .
 <https://w3id.org/rsp/vocals-sd#S2ROperation> <http://www.w3.org/2000/01/rdf-schema#comment> "An S2ROperation represents a stream-to-relation operation that an RDFStreamService can perform. It takes as input an RDF steam and putputs RDF data mapping, for instance windowing operators."@en .
+<https://w3id.org/rsp/vocals-sd#S2ROperation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Dell'Aglio, Daniele, et al. \"RSP-QL semantics: a unifying query model to explain heterogeneity of RDF stream processing systems.\" International Journal on Semantic Web and Information Systems (IJSWIS) 10.4 (2014): 17-44." .
 <https://w3id.org/rsp/vocals-sd#S2ROperation> <http://www.w3.org/2000/01/rdf-schema#label> "S2ROperation"@en .
 # 
 # https://w3id.org/rsp/vocals-sd#S2SOperation
@@ -290,7 +293,8 @@
 # https://w3id.org/rsp/vocals-sd#TimeSemantics
 <https://w3id.org/rsp/vocals-sd#TimeSemantics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rsp/vocals-sd#TimeSemantics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/rsp/vocals-sd#RDFStreamingFeature> .
-<https://w3id.org/rsp/vocals-sd#TimeSemantics> <http://www.w3.org/2000/01/rdf-schema#comment> "TimeSemantics are features that describe the type of time semantics provided by an RDF Stream Service."@en .
+<https://w3id.org/rsp/vocals-sd#TimeSemantics> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of TimeSemantics represent the time domain used by streaming service while handeling the data elements, e.g. event time, porcessing time"@en .
+<https://w3id.org/rsp/vocals-sd#TimeSemantics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The world beyond batch: Streaming 101 (https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-101)" .
 <https://w3id.org/rsp/vocals-sd#TimeSemantics> <http://www.w3.org/2000/01/rdf-schema#label> "TimeSemantics"@en .
 <https://w3id.org/rsp/vocals-sd#TimeSemantics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/rsp/vocals-sd#RDFStreamService> .
 # 
