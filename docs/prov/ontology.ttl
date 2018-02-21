@@ -1,16 +1,16 @@
-@prefix : <https://w3id.org/rsp/vocals-prov##> .
+@prefix : <http://streamreasoning.org/ontologies/vocals-prov##> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/rsp/vocals-prov#> .
+@base <http://streamreasoning.org/ontologies/vocals-prov#> .
 
-<https://w3id.org/rsp/vocals-prov#> rdf:type owl:Ontology ;
-                                     owl:versionIRI <https://w3id.org/rsp/vocals-prov> ;
+<http://streamreasoning.org/ontologies/vocals-prov#> rdf:type owl:Ontology ;
+                                     owl:versionIRI <http://streamreasoning.org/ontologies/vocals-prov> ;
                                      <http://purl.org/dc/elements/1.1/creator> <http://w3id.org/people/jpcik/me> ,
-                                                                               <https://w3id.org/rsp/vocals#RiccardoTommasini> ,
-                                                                               <https://w3id.org/rsp/vocals#YehiaAboSedira> ;
+                                                                               <http://streamreasoning.org/ontologies/vocals#RiccardoTommasini> ,
+                                                                               <http://streamreasoning.org/ontologies/vocals#YehiaAboSedira> ;
                                      <http://purl.org/dc/elements/1.1/publisher> <http://aislab.hevs.ch/> ;
                                      <http://purl.org/dc/terms/created> "2017-12-23T13:00:00"^^xsd:dateTime ;
                                      <http://purl.org/dc/terms/description> "Cette ontologie a été conçue pour representer la provenance de données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr ,
@@ -25,7 +25,7 @@
                                                                       "VoCaLS-Prov: Vocabulario y catálogo para Streams enlazados, módulo de Provenance"@es ,
                                                                       "VoCaLS-Prov: ontologie de representation de provenance pour données et metadonnées de streams RDF"@fr ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "vocals-prov"^^xsd:string ;
-                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rsp/vocals-prov#"^^xsd:string ;
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "http://streamreasoning.org/ontologies/vocals-prov#"^^xsd:string ;
                                      rdfs:comment "Cette ontologie a été conçue pour representer la provenance de données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr ,
                                                   "Esta ontología has sido diseñada para representar provenance de Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ,
                                                   "This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
@@ -35,66 +35,66 @@
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/rsp/vocals-prov#containedIn
-<https://w3id.org/rsp/vocals-prov#containedIn> rdf:type owl:ObjectProperty ;
-                                               owl:inverseOf <https://w3id.org/rsp/vocals-prov#contains> ;
-                                               rdfs:domain <https://w3id.org/rsp/vocals-prov#Operator> ;
-                                               rdfs:range <https://w3id.org/rsp/vocals-prov#Task> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#containedIn
+<http://streamreasoning.org/ontologies/vocals-prov#containedIn> rdf:type owl:ObjectProperty ;
+                                               owl:inverseOf <http://streamreasoning.org/ontologies/vocals-prov#contains> ;
+                                               rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
+                                               rdfs:range <http://streamreasoning.org/ontologies/vocals-prov#Task> ;
                                                rdfs:comment "Relates an Operator to the containing Task."@en ;
                                                rdfs:label "containedIn"@en .
 
 
-###  https://w3id.org/rsp/vocals-prov#contains
-<https://w3id.org/rsp/vocals-prov#contains> rdf:type owl:ObjectProperty ;
-                                            rdfs:domain <https://w3id.org/rsp/vocals-prov#Task> ;
-                                            rdfs:range <https://w3id.org/rsp/vocals-prov#Operator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#contains
+<http://streamreasoning.org/ontologies/vocals-prov#contains> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#Task> ;
+                                            rdfs:range <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
                                             rdfs:comment "Relates a Task to Operator used to finish the task."@en ;
                                             rdfs:label "contains"@en .
 
 
-###  https://w3id.org/rsp/vocals-prov#endedAt
-<https://w3id.org/rsp/vocals-prov#endedAt> rdf:type owl:ObjectProperty ;
-                                           rdfs:domain <https://w3id.org/rsp/vocals-prov#Window> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#endedAt
+<http://streamreasoning.org/ontologies/vocals-prov#endedAt> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#Window> ;
                                            rdfs:range <http://www.w3.org/2006/time#Instant> .
 
 
-###  https://w3id.org/rsp/vocals-prov#followedBy
-<https://w3id.org/rsp/vocals-prov#followedBy> rdf:type owl:ObjectProperty ;
-                                              owl:inverseOf <https://w3id.org/rsp/vocals-prov#precededBy> ;
-                                              rdfs:domain <https://w3id.org/rsp/vocals-prov#Operator> ;
-                                              rdfs:range <https://w3id.org/rsp/vocals-prov#Operator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#followedBy
+<http://streamreasoning.org/ontologies/vocals-prov#followedBy> rdf:type owl:ObjectProperty ;
+                                              owl:inverseOf <http://streamreasoning.org/ontologies/vocals-prov#precededBy> ;
+                                              rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
+                                              rdfs:range <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
                                               rdfs:comment "Points to the following :operator to be applied after the current one in a :Task."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#hasOutput
-<https://w3id.org/rsp/vocals-prov#hasOutput> rdf:type owl:ObjectProperty ;
-                                             rdfs:domain <https://w3id.org/rsp/vocals-prov#Task> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#hasOutput
+<http://streamreasoning.org/ontologies/vocals-prov#hasOutput> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#Task> ;
                                              rdfs:range <http://www.w3.org/ns/prov#Entity> ;
                                              rdfs:comment "Points to the output of a :operator to be applied before the current one in a :Task."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#performs
-<https://w3id.org/rsp/vocals-prov#performs> rdf:type owl:ObjectProperty ;
-                                            rdfs:range <https://w3id.org/rsp/vocals-sd#Operation> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#performs
+<http://streamreasoning.org/ontologies/vocals-prov#performs> rdf:type owl:ObjectProperty ;
+                                            rdfs:range <http://streamreasoning.org/ontologies/vocals-sd#Operation> ;
                                             rdfs:isDefinedBy "Relate vsd:Operation to :Operator ."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#precededBy
-<https://w3id.org/rsp/vocals-prov#precededBy> rdf:type owl:ObjectProperty ;
-                                              rdfs:domain <https://w3id.org/rsp/vocals-prov#Operator> ;
-                                              rdfs:range <https://w3id.org/rsp/vocals-prov#Operator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#precededBy
+<http://streamreasoning.org/ontologies/vocals-prov#precededBy> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
+                                              rdfs:range <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
                                               rdfs:comment "Points to the preceding :operator to be applied before the current one in a :Task."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#startedAt
-<https://w3id.org/rsp/vocals-prov#startedAt> rdf:type owl:ObjectProperty ;
-                                             rdfs:domain <https://w3id.org/rsp/vocals-prov#Window> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#startedAt
+<http://streamreasoning.org/ontologies/vocals-prov#startedAt> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#Window> ;
                                              rdfs:range <http://www.w3.org/2006/time#Instant> .
 
 
-###  https://w3id.org/rsp/vocals-prov#startingTime
-<https://w3id.org/rsp/vocals-prov#startingTime> rdf:type owl:ObjectProperty ;
-                                                rdfs:domain <https://w3id.org/rsp/vocals-prov#WindowOperator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#startingTime
+<http://streamreasoning.org/ontologies/vocals-prov#startingTime> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#WindowOperator> ;
                                                 rdfs:range <http://www.w3.org/2006/time#Instant> .
 
 
@@ -102,22 +102,22 @@
 #    Data properties
 #################################################################
 
-###  https://w3id.org/rsp/vocals-prov#query
-<https://w3id.org/rsp/vocals-prov#query> rdf:type owl:DatatypeProperty ;
+###  http://streamreasoning.org/ontologies/vocals-prov#query
+<http://streamreasoning.org/ontologies/vocals-prov#query> rdf:type owl:DatatypeProperty ;
                                          rdfs:subPropertyOf owl:topDataProperty ;
-                                         rdfs:domain <https://w3id.org/rsp/vocals-prov#RSPQLOperator> .
+                                         rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#RSPQLOperator> .
 
 
-###  https://w3id.org/rsp/vocals-prov#range
-<https://w3id.org/rsp/vocals-prov#range> rdf:type owl:DatatypeProperty ;
+###  http://streamreasoning.org/ontologies/vocals-prov#range
+<http://streamreasoning.org/ontologies/vocals-prov#range> rdf:type owl:DatatypeProperty ;
                                          rdfs:subPropertyOf owl:topDataProperty ;
-                                         rdfs:domain <https://w3id.org/rsp/vocals-prov#WindowOperator> .
+                                         rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#WindowOperator> .
 
 
-###  https://w3id.org/rsp/vocals-prov#step
-<https://w3id.org/rsp/vocals-prov#step> rdf:type owl:DatatypeProperty ;
+###  http://streamreasoning.org/ontologies/vocals-prov#step
+<http://streamreasoning.org/ontologies/vocals-prov#step> rdf:type owl:DatatypeProperty ;
                                         rdfs:subPropertyOf owl:topDataProperty ;
-                                        rdfs:domain <https://w3id.org/rsp/vocals-prov#WindowOperator> .
+                                        rdfs:domain <http://streamreasoning.org/ontologies/vocals-prov#WindowOperator> .
 
 
 #################################################################
@@ -144,134 +144,134 @@
 <http://www.w3.org/ns/prov#SoftwareAgent> rdf:type owl:Class .
 
 
-###  https://w3id.org/rsp/vocals-prov#FilterOperator
-<https://w3id.org/rsp/vocals-prov#FilterOperator> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#S2SOperator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#FilterOperator
+<http://streamreasoning.org/ontologies/vocals-prov#FilterOperator> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#S2SOperator> ;
                                                   rdfs:comment "A :FilterOperator represents an operator that exclude data that doesn't match some specified criteria."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#Operator
-<https://w3id.org/rsp/vocals-prov#Operator> rdf:type owl:Class ;
+###  http://streamreasoning.org/ontologies/vocals-prov#Operator
+<http://streamreasoning.org/ontologies/vocals-prov#Operator> rdf:type owl:Class ;
                                             rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
                                             rdfs:comment "Operator that use a resource - stream, relation - to generate another resource."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#PhysicalWindow
-<https://w3id.org/rsp/vocals-prov#PhysicalWindow> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#Window> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#PhysicalWindow
+<http://streamreasoning.org/ontologies/vocals-prov#PhysicalWindow> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#Window> ;
                                                   rdfs:comment "Window defined by an interval size (in units of RDF elements)"^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#R2ROperator
-<https://w3id.org/rsp/vocals-prov#R2ROperator> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#Operator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#R2ROperator
+<http://streamreasoning.org/ontologies/vocals-prov#R2ROperator> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
                                                rdfs:comment "Operators that produce relations from other relations."^^xsd:string ;
                                                rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z"^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#R2SOperator
-<https://w3id.org/rsp/vocals-prov#R2SOperator> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#Operator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#R2SOperator
+<http://streamreasoning.org/ontologies/vocals-prov#R2SOperator> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
                                                rdfs:comment "Operators that produce a stream from a relation."^^xsd:string ;
                                                rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z"^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#RSPQLOperator
-<https://w3id.org/rsp/vocals-prov#RSPQLOperator> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#S2SOperator> ;
-                                                 owl:disjointWith <https://w3id.org/rsp/vocals-prov#SetOperator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#RSPQLOperator
+<http://streamreasoning.org/ontologies/vocals-prov#RSPQLOperator> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#S2SOperator> ;
+                                                 owl:disjointWith <http://streamreasoning.org/ontologies/vocals-prov#SetOperator> ;
                                                  rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream."^^xsd:string ;
                                                  rdfs:label "RSPQL operator"^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#Replay
-<https://w3id.org/rsp/vocals-prov#Replay> rdf:type owl:Class ;
-                                          rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#R2SOperator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#Replay
+<http://streamreasoning.org/ontologies/vocals-prov#Replay> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#R2SOperator> ;
                                           rdfs:comment "Replay operator produce a stream from a static RDF dataset"^^xsd:string ;
                                           rdfs:isDefinedBy "https://link.springer.com/chapter/10.1007%2F978-3-319-46547-0_15"^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#S2ROperator
-<https://w3id.org/rsp/vocals-prov#S2ROperator> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#Operator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#S2ROperator
+<http://streamreasoning.org/ontologies/vocals-prov#S2ROperator> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
                                                rdfs:comment "Operators that produce a relation from a stream."^^xsd:string ;
                                                rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z"^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#S2SOperator
-<https://w3id.org/rsp/vocals-prov#S2SOperator> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#Operator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#S2SOperator
+<http://streamreasoning.org/ontologies/vocals-prov#S2SOperator> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#Operator> ;
                                                rdfs:comment "Operators that produce a stream form another stream."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#SetOperator
-<https://w3id.org/rsp/vocals-prov#SetOperator> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#S2SOperator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#SetOperator
+<http://streamreasoning.org/ontologies/vocals-prov#SetOperator> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#S2SOperator> ;
                                                rdfs:comment "Operator that produce a stream by applying set algebra operator on other streams."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#StreamingAgent
-<https://w3id.org/rsp/vocals-prov#StreamingAgent> rdf:type owl:Class ;
+###  http://streamreasoning.org/ontologies/vocals-prov#StreamingAgent
+<http://streamreasoning.org/ontologies/vocals-prov#StreamingAgent> rdf:type owl:Class ;
                                                   rdfs:subClassOf <http://www.w3.org/ns/prov#SoftwareAgent> ;
                                                   rdfs:comment "An instance of a :StreamingAgent represent an actor that applies an :Operator that consums and/or produce a stream."^^xsd:string ;
                                                   rdfs:label "StreamingAgent"@en .
 
 
-###  https://w3id.org/rsp/vocals-prov#Task
-<https://w3id.org/rsp/vocals-prov#Task> rdf:type owl:Class ;
+###  http://streamreasoning.org/ontologies/vocals-prov#Task
+<http://streamreasoning.org/ontologies/vocals-prov#Task> rdf:type owl:Class ;
                                         rdfs:comment "A task contains one or more activity to be applied on a prov:Entity."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#TimeBasedWindow
-<https://w3id.org/rsp/vocals-prov#TimeBasedWindow> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#Window> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#TimeBasedWindow
+<http://streamreasoning.org/ontologies/vocals-prov#TimeBasedWindow> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#Window> ;
                                                    rdfs:comment "A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}"^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#TransformOperator
-<https://w3id.org/rsp/vocals-prov#TransformOperator> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#S2SOperator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#TransformOperator
+<http://streamreasoning.org/ontologies/vocals-prov#TransformOperator> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#S2SOperator> ;
                                                      rdfs:comment "An instance of :TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)"^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#Window
-<https://w3id.org/rsp/vocals-prov#Window> rdf:type owl:Class ;
+###  http://streamreasoning.org/ontologies/vocals-prov#Window
+<http://streamreasoning.org/ontologies/vocals-prov#Window> rdf:type owl:Class ;
                                           rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
                                           rdfs:comment "A window W(S) is a set of RDF statements extracted from a stream S."^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-prov#WindowOperator
-<https://w3id.org/rsp/vocals-prov#WindowOperator> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://w3id.org/rsp/vocals-prov#S2ROperator> ;
+###  http://streamreasoning.org/ontologies/vocals-prov#WindowOperator
+<http://streamreasoning.org/ontologies/vocals-prov#WindowOperator> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://streamreasoning.org/ontologies/vocals-prov#S2ROperator> ;
                                                   rdfs:comment "An instance of window operator represent an operator that use a stream and generate multiple windows according to a certain criteria"^^xsd:string .
 
 
-###  https://w3id.org/rsp/vocals-sd#Operation
-<https://w3id.org/rsp/vocals-sd#Operation> rdf:type owl:Class .
+###  http://streamreasoning.org/ontologies/vocals-sd#Operation
+<http://streamreasoning.org/ontologies/vocals-sd#Operation> rdf:type owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://w3id.org/rsp/vocals-prov#TripleWave
-<https://w3id.org/rsp/vocals-prov#TripleWave> rdf:type owl:NamedIndividual ,
-                                                       <https://w3id.org/rsp/vocals-prov#StreamingAgent> .
+###  http://streamreasoning.org/ontologies/vocals-prov#TripleWave
+<http://streamreasoning.org/ontologies/vocals-prov#TripleWave> rdf:type owl:NamedIndividual ,
+                                                       <http://streamreasoning.org/ontologies/vocals-prov#StreamingAgent> .
 
 
-###  https://w3id.org/rsp/vocals-prov#difference_operator
-<https://w3id.org/rsp/vocals-prov#difference_operator> rdf:type owl:NamedIndividual ,
-                                                                <https://w3id.org/rsp/vocals-prov#SetOperator> .
+###  http://streamreasoning.org/ontologies/vocals-prov#difference_operator
+<http://streamreasoning.org/ontologies/vocals-prov#difference_operator> rdf:type owl:NamedIndividual ,
+                                                                <http://streamreasoning.org/ontologies/vocals-prov#SetOperator> .
 
 
-###  https://w3id.org/rsp/vocals-prov#intersect_operator
-<https://w3id.org/rsp/vocals-prov#intersect_operator> rdf:type owl:NamedIndividual ,
-                                                               <https://w3id.org/rsp/vocals-prov#SetOperator> .
+###  http://streamreasoning.org/ontologies/vocals-prov#intersect_operator
+<http://streamreasoning.org/ontologies/vocals-prov#intersect_operator> rdf:type owl:NamedIndividual ,
+                                                               <http://streamreasoning.org/ontologies/vocals-prov#SetOperator> .
 
 
-###  https://w3id.org/rsp/vocals-prov#union_operator
-<https://w3id.org/rsp/vocals-prov#union_operator> rdf:type owl:NamedIndividual ,
-                                                           <https://w3id.org/rsp/vocals-prov#SetOperator> .
+###  http://streamreasoning.org/ontologies/vocals-prov#union_operator
+<http://streamreasoning.org/ontologies/vocals-prov#union_operator> rdf:type owl:NamedIndividual ,
+                                                           <http://streamreasoning.org/ontologies/vocals-prov#SetOperator> .
 
 
 ###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -2,13 +2,13 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "ar", "ja", "el", "en", "fr", "es", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/rsp/vocals", "http://www.w3.org/ns/dcat", "http://xmlns.com/foaf/0.1", "http://purl.org/dc/dcmitype", "http://www.w3.org/2006/vcard/ns", "http://www.w3.org/2004/02/skos/core" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://streamreasoning.org/ontologies/vocals", "http://www.w3.org/ns/dcat", "http://xmlns.com/foaf/0.1", "http://purl.org/dc/dcmitype", "http://www.w3.org/2006/vcard/ns", "http://www.w3.org/2004/02/skos/core" ],
     "title" : {
       "en" : "VoCaLS: A Vocabulary and Catalog for Linked Streams",
       "fr" : "VoCaLS: ontologie de representation de données et metadonnées de streams",
       "es" : "VoCaLS: Vocabulario y catálogo para Streams enlazados"
     },
-    "iri" : "https://w3id.org/rsp/vocals#",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#",
     "version" : "0.1.1",
     "author" : [ "http://streamreasoning.org/vois#YehiaAboSedira", "http://w3id.org/people/jpcik/me", "http://streamreasoning.org/vois#RiccardoTommasini" ],
     "description" : {
@@ -76,7 +76,7 @@
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -205,25 +205,25 @@
     "attributes" : [ "external" ],
     "id" : "3"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals#StreamPartition",
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#StreamPartition",
+    "baseIri" : "http://streamreasoning.org/ontologies/vocals",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#previous",
+        "value" : "http://streamreasoning.org/ontologies/vocals#previous",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#Stream",
+        "value" : "http://streamreasoning.org/ontologies/vocals#Stream",
         "type" : "iri"
       } ]
     },
@@ -330,21 +330,21 @@
     "attributes" : [ "external" ],
     "id" : "16"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals#StreamDistribution",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#StreamDistribution",
     "equivalent" : [ "21" ],
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "baseIri" : "http://streamreasoning.org/ontologies/vocals",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#Stream",
+        "value" : "http://streamreasoning.org/ontologies/vocals#Stream",
         "type" : "iri"
       } ]
     },
@@ -359,20 +359,20 @@
     "id" : "20",
     "superClasses" : [ "10" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals#Stream",
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#Stream",
+    "baseIri" : "http://streamreasoning.org/ontologies/vocals",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#StreamDistribution",
+        "value" : "http://streamreasoning.org/ontologies/vocals#StreamDistribution",
         "type" : "iri"
       } ]
     },
@@ -387,20 +387,20 @@
     "id" : "1",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals#RDFStream",
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#RDFStream",
+    "baseIri" : "http://streamreasoning.org/ontologies/vocals",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#Stream",
+        "value" : "http://streamreasoning.org/ontologies/vocals#Stream",
         "type" : "iri"
       } ]
     },
@@ -436,8 +436,8 @@
         "IRI-based" : "dcat"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals#",
-      "baseIri" : "https://w3id.org/rsp/vocals",
+      "iri" : "http://streamreasoning.org/ontologies/vocals#",
+      "baseIri" : "http://streamreasoning.org/ontologies/vocals",
       "labels" : { }
     } ],
     "attributes" : [ "external" ],
@@ -538,15 +538,15 @@
       "IRI-based" : "integer"
     }
   }, {
-    "iri" : "https://w3id.org/rsp/vocals#StreamEndpoint",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#StreamEndpoint",
     "equivalent" : [ "20" ],
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "baseIri" : "http://streamreasoning.org/ontologies/vocals",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "iri"
       } ]
     },
@@ -583,20 +583,20 @@
     "id" : "33",
     "superClasses" : [ "10" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals#StreamDescriptor",
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#StreamDescriptor",
+    "baseIri" : "http://streamreasoning.org/ontologies/vocals",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#Stream",
+        "value" : "http://streamreasoning.org/ontologies/vocals#Stream",
         "type" : "iri"
       } ]
     },
@@ -871,25 +871,25 @@
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://w3id.org/rsp/vocals#hasPartition",
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#hasPartition",
+    "baseIri" : "http://streamreasoning.org/ontologies/vocals",
     "range" : "2",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#StreamPartition",
+        "value" : "http://streamreasoning.org/ontologies/vocals#StreamPartition",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#Stream",
+        "value" : "http://streamreasoning.org/ontologies/vocals#Stream",
         "type" : "iri"
       } ]
     },
@@ -963,20 +963,20 @@
     "attributes" : [ "external", "object" ],
     "id" : "6"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals#previous",
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#previous",
+    "baseIri" : "http://streamreasoning.org/ontologies/vocals",
     "range" : "2",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#StreamPartition",
+        "value" : "http://streamreasoning.org/ontologies/vocals#StreamPartition",
         "type" : "iri"
       } ]
     },
@@ -1120,25 +1120,25 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "37"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals#hasEndpoint",
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "iri" : "http://streamreasoning.org/ontologies/vocals#hasEndpoint",
+    "baseIri" : "http://streamreasoning.org/ontologies/vocals",
     "range" : "21",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#",
+        "value" : "http://streamreasoning.org/ontologies/vocals#",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#StreamEndpoint",
+        "value" : "http://streamreasoning.org/ontologies/vocals#StreamEndpoint",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#Stream",
+        "value" : "http://streamreasoning.org/ontologies/vocals#Stream",
         "type" : "iri"
       } ]
     },

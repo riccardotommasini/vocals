@@ -1,4 +1,4 @@
-@prefix : <http://w3id.org/rsp/vocals#> .
+@prefix : <http://streamreasoning.org/ontologies/vocals#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,9 +6,9 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://w3id.org/rsp/vocals#> .
+@base <http://streamreasoning.org/ontologies/vocals#> .
 
-<http://w3id.org/rsp/vocals#> rdf:type owl:Ontology ;
+<http://streamreasoning.org/ontologies/vocals#> rdf:type owl:Ontology ;
                                owl:imports dcat: ;
                                <http://purl.org/dc/elements/1.1/publisher> <http://aislab.hevs.ch/> ;
                                <http://purl.org/dc/terms/creator> <http://streamreasoning.org/vois#RiccardoTommasini> ;
@@ -21,7 +21,7 @@
                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "vocals"^^xsd:string ;
                                <http://purl.org/dc/terms/title> "VoCaLS: Vocabulario y catálogo para Streams enlazados"@es ;
                                <http://purl.org/dc/terms/issued> "2017-12-01"^^xsd:date ;
-                               <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/rsp/vocals#"^^xsd:string ;
+                               <http://purl.org/vocab/vann/preferredNamespaceUri> "http://streamreasoning.org/ontologies/vocals#"^^xsd:string ;
                                rdfs:comment "Esta ontología has sido diseñada para representar Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
                                <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                <http://purl.org/dc/terms/publisher> <http://w3id.org/hes-so/aislab> ;
@@ -36,35 +36,35 @@
 #    Object Properties
 #################################################################
 
-###  http://w3id.org/rsp/vocals#hasEndpoint
+###  http://streamreasoning.org/ontologies/vocals#hasEndpoint
 :hasEndpoint rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf dcat:distribution ;
              rdfs:domain :Stream ;
              rdfs:range :StreamEndpoint ;
              rdfs:comment "A relationship between a Stream and a StreamEndpoint. A stream may have several endpoints through which its contents can be accessible."@en ;
-             rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+             rdfs:isDefinedBy <http://streamreasoning.org/ontologies/vocals#> ;
              rdfs:label "hasEndpoint"@en ;
              rdfs:seeAlso :Stream ,
                           :StreamEndpoint .
 
 
-###  http://w3id.org/rsp/vocals#hasPartition
+###  http://streamreasoning.org/ontologies/vocals#hasPartition
 :hasPartition rdf:type owl:ObjectProperty ;
               rdfs:domain :Stream ;
               rdfs:range :StreamPartition ;
               rdfs:comment "A relationship between a Stream and a partition, or portion of elements streamed"@en ;
-              rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+              rdfs:isDefinedBy <http://streamreasoning.org/ontologies/vocals#> ;
               rdfs:label "hasPartition"@en ;
               rdfs:seeAlso :Stream ,
                            :StreamPartition .
 
 
-###  http://w3id.org/rsp/vocals#previous
+###  http://streamreasoning.org/ontologies/vocals#previous
 :previous rdf:type owl:ObjectProperty ;
           rdfs:domain :StreamPartition ;
           rdfs:range :StreamPartition ;
           rdfs:comment "Relationship between a stream partition and the previous partition in the stream. it connects stream partitions in order"@en ;
-          rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+          rdfs:isDefinedBy <http://streamreasoning.org/ontologies/vocals#> ;
           rdfs:label "previous"@en ;
           rdfs:seeAlso :StreamPartition .
 
@@ -81,57 +81,57 @@ dcat:distribution rdf:type owl:ObjectProperty .
 <http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
 
 
-###  http://w3id.org/rsp/vocals#RDFStream
+###  http://streamreasoning.org/ontologies/vocals#RDFStream
 :RDFStream rdf:type owl:Class ;
            rdfs:subClassOf :Stream ;
            rdfs:comment "A stream composed of RDF data elements, i.e. RDF graphs and/or triples."@en ;
-           rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+           rdfs:isDefinedBy <http://streamreasoning.org/ontologies/vocals#> ;
            rdfs:label "RDFStream"@en ;
            rdfs:seeAlso :Stream .
 
 
-###  http://w3id.org/rsp/vocals#Stream
+###  http://streamreasoning.org/ontologies/vocals#Stream
 :Stream rdf:type owl:Class ;
         rdfs:subClassOf dcat:Dataset ;
         rdfs:comment "A potentially infinite sequence of data elements. A stream may be findable and accesible on the Web."@en ;
-        rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+        rdfs:isDefinedBy <http://streamreasoning.org/ontologies/vocals#> ;
         rdfs:label "Stream"@en ;
         rdfs:seeAlso :StreamDistribution .
 
 
-###  http://w3id.org/rsp/vocals#StreamDescriptor
+###  http://streamreasoning.org/ontologies/vocals#StreamDescriptor
 :StreamDescriptor rdf:type owl:Class ;
                   rdfs:subClassOf dcat:CatalogRecord ,
                                   foaf:Document ;
                   rdfs:comment "A Stream Descriptor is a Web document that contains the description of a Stream."@en ;
-                  rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+                  rdfs:isDefinedBy <http://streamreasoning.org/ontologies/vocals#> ;
                   rdfs:label "StreamDescriptor"@en ;
                   rdfs:seeAlso :Stream .
 
 
-###  http://w3id.org/rsp/vocals#StreamDistribution
+###  http://streamreasoning.org/ontologies/vocals#StreamDistribution
 :StreamDistribution rdf:type owl:Class ;
                     owl:equivalentClass :StreamEndpoint ;
                     rdfs:subClassOf dcat:Distribution ;
                     rdfs:comment "Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of distributions include a WebSocket endpoint, an HTTP endpoint, a Server-Sent Events endpoint, MQTT, etc."@en ;
-                    rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+                    rdfs:isDefinedBy <http://streamreasoning.org/ontologies/vocals#> ;
                     rdfs:label "StreamDistribution"@en ;
                     rdfs:seeAlso :Stream .
 
 
-###  http://w3id.org/rsp/vocals#StreamEndpoint
+###  http://streamreasoning.org/ontologies/vocals#StreamEndpoint
 :StreamEndpoint rdf:type owl:Class ;
                 rdfs:subClassOf dcat:Distribution ;
                 rdfs:comment "Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of endpoints include a WebSocket endpoint, an HTTP endpoint, a Server-Sent Events endpoint, MQTT, etc."@en ;
-                rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+                rdfs:isDefinedBy <http://streamreasoning.org/ontologies/vocals#> ;
                 rdfs:label "StreamEndpoint"@en .
 
 
-###  http://w3id.org/rsp/vocals#StreamPartition
+###  http://streamreasoning.org/ontologies/vocals#StreamPartition
 :StreamPartition rdf:type owl:Class ;
                  rdfs:subClassOf dcat:Dataset ;
                  rdfs:comment "A finite subset of the stream that are made available to be accessed and consumed by standard Linked Data services."@en ;
-                 rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+                 rdfs:isDefinedBy <http://streamreasoning.org/ontologies/vocals#> ;
                  rdfs:label "StreamPartition"@en ;
                  rdfs:seeAlso :Stream ,
                               :previous .
@@ -157,8 +157,8 @@ foaf:Document rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://w3id.org/rsp/vocals#
-<https://w3id.org/rsp/vocals#> rdf:type owl:NamedIndividual ,
+###  http://streamreasoning.org/ontologies/vocals#
+<http://streamreasoning.org/ontologies/vocals#> rdf:type owl:NamedIndividual ,
                                         <http://purl.org/vocommons/voaf#Vocabulary> .
 
 

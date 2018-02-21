@@ -6,9 +6,9 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX formats: <http://www.w3.org/ns/formats/>
 PREFIX : <http://www.example.org/vocals/examples>
-PREFIX v: <https://w3id.org/rsp/vocals#>
-PREFIX vsd: <https://w3id.org/rsp/vocals-sd#>
-PREFIX vprov: <https://w3id.org/rsp/vocals-prov#>
+PREFIX v: <http://streamreasoning.org/ontologies/vocals#>
+PREFIX vsd: <http://streamreasoning.org/ontologies/vocals-sd#>
+PREFIX vprov: <http://streamreasoning.org/ontologies/vocals-prov#>
 
 ###############################################################################
 # Available Streams
