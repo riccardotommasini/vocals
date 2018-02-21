@@ -16,7 +16,7 @@
 <http://w3id.org/rsp/vocals-prov#> rdf:type owl:Ontology ;
                                     owl:versionIRI <http://w3id.org/rsp/vocals-prov> ;
                                     dc:publisher <http://aislab.hevs.ch/> ;
-                                    dc:creator <https://w3id.org/rsp/vocals#RiccardoTommasini> ;
+                                    dc:creator <http://w3id.org/rsp/vocals#RiccardoTommasini> ;
                                     vann:preferredNamespaceUri "http://w3id.org/rsp/vocals-prov#" ;
                                     dcterms:modified "2017-12-30"^^xsd:date ;
                                     dc:creator <http://w3id.org/people/jpcik/me> ;
@@ -32,7 +32,7 @@
                                     dcterms:created "2017-12-23T13:00:00"^^xsd:dateTime ;
                                     dcterms:issued "2017-12-29"^^xsd:date ;
                                     rdfs:comment "This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
-                                    dc:creator <https://w3id.org/rsp/vocals#YehiaAboSedira> ;
+                                    dc:creator <http://w3id.org/rsp/vocals#YehiaAboSedira> ;
                                     dcterms:title "VoCaLS-Prov: ontologie de representation de provenance pour données et metadonnées de streams RDF"@fr ;
                                     vann:preferredNamespacePrefix "vocals-prov" ;
                                     owl:versionInfo "0.1.1"^^xsd:string ;

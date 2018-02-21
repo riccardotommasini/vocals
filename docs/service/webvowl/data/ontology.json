@@ -2,15 +2,15 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "fr", "es", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/ns/formats", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/rsp/vocals-sd", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/rsp/vocals", "http://www.w3.org/ns/dcat", "http://www.w3.org/2006/time" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/ns/formats", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/rsp/vocals-sd", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/rsp/vocals", "http://www.w3.org/ns/dcat", "http://www.w3.org/2006/time" ],
     "title" : {
       "en" : "VoCaLS-SD: A Vocabulary and Catalog for Linked Streams, Service Description Module",
       "fr" : "VoCaLS: ontologie de representation de services pour données et metadonnées de streams RDF",
       "es" : "VoCaLS-SD: Vocabulario y catálogo para Streams enlazados, módulo de descripción de servicios"
     },
-    "iri" : "https://w3id.org/rsp/vocals-sd#",
+    "iri" : "http://w3id.org/rsp/vocals-sd#",
     "version" : "0.1.1",
-    "author" : [ "https://w3id.org/rsp/vocals#YehiaAboSedira", "https://w3id.org/rsp/vocals#RiccardoTommasini", "http://w3id.org/people/jpcik/me" ],
+    "author" : [ "http://w3id.org/rsp/vocals#YehiaAboSedira", "http://w3id.org/rsp/vocals#RiccardoTommasini", "http://w3id.org/people/jpcik/me" ],
     "description" : {
       "en" : "This ontology aims to model Services for publishing and consuming RDF streams, their metadata, and access endpoints for publishing and consuming these streams",
       "fr" : "Cette ontologie a été conçue pour representer des services qui genèrent ou consomment données et meta-données de streams RDF, ainsi que leurs points d'accès.",
@@ -31,7 +31,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#RiccardoTommasini",
+        "value" : "http://w3id.org/rsp/vocals#RiccardoTommasini",
         "type" : "iri"
       }, {
         "identifier" : "creator",
@@ -41,7 +41,7 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#YehiaAboSedira",
+        "value" : "http://w3id.org/rsp/vocals#YehiaAboSedira",
         "type" : "iri"
       } ],
       "created" : [ {
@@ -88,7 +88,7 @@
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#",
+        "value" : "http://w3id.org/rsp/vocals-sd#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -205,14 +205,14 @@
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://w3id.org/rsp/vocals-sd#ReportingPolicy",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#ReportingPolicy",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#Window",
+        "value" : "http://w3id.org/rsp/vocals-sd#Window",
         "type" : "iri"
       } ]
     },
@@ -221,26 +221,26 @@
       "en" : "ReportingPolicy"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-sd#on_window_close",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#on_window_close",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "on_window_close"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#periodic",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#periodic",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "periodic"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#on_content_change",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#on_content_change",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "on_content_change"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#non_empty_content",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#non_empty_content",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "non_empty_content"
       }
@@ -251,8 +251,8 @@
     "id" : "3",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#S2ROperation",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#S2ROperation",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
@@ -267,8 +267,8 @@
       "en" : "S2ROperation"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-sd#windowing",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#windowing",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "windowing"
       }
@@ -279,8 +279,8 @@
     "id" : "8",
     "superClasses" : [ "9" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#TimeVaryingGraph",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#TimeVaryingGraph",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "label" : {
       "IRI-based" : "TimeVaryingGraph",
@@ -291,8 +291,8 @@
     },
     "id" : "10"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#RDFStreamService",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "label" : {
       "IRI-based" : "RDFStreamService",
@@ -305,14 +305,14 @@
     "id" : "1",
     "superClasses" : [ "13" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#TimeBasedWindow",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#TimeBasedWindow",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#Window",
+        "value" : "http://w3id.org/rsp/vocals-sd#Window",
         "type" : "iri"
       } ]
     },
@@ -326,8 +326,8 @@
     "id" : "17",
     "superClasses" : [ "6" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#TimeSemantics",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#TimeSemantics",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
@@ -339,7 +339,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
+        "value" : "http://w3id.org/rsp/vocals-sd#RDFStreamService",
         "type" : "iri"
       } ]
     },
@@ -348,20 +348,20 @@
       "en" : "TimeSemantics"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-sd#ingestion_time",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#ingestion_time",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "ingestion_time"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#processing_time",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#processing_time",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "processing_time"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#event_time",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#event_time",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "event_time"
       }
@@ -372,28 +372,28 @@
     "id" : "28",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#S2SOperation",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#S2SOperation",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "label" : {
       "IRI-based" : "S2SOperation",
       "en" : "S2SOperation"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-sd#filtering",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#filtering",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "filtering"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#RSPQL",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#RSPQL",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "RSPQL"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#transform",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#transform",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "transform"
       }
@@ -414,8 +414,8 @@
     "attributes" : [ "external" ],
     "id" : "12"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#R2ROperation",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#R2ROperation",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
@@ -430,14 +430,14 @@
       "en" : "R2ROperation"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-sd#count",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#count",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "count"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#sum",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#sum",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "sum"
       }
@@ -448,8 +448,8 @@
     "id" : "31",
     "superClasses" : [ "9" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#CatalogService",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#CatalogService",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
@@ -469,8 +469,8 @@
     "id" : "16",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#PublishingService",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#PublishingService",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "label" : {
       "IRI-based" : "PublishingService",
@@ -482,8 +482,8 @@
     "id" : "14",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals#RDFStream",
-    "baseIri" : "https://w3id.org/rsp/vocals",
+    "iri" : "http://w3id.org/rsp/vocals#RDFStream",
+    "baseIri" : "http://w3id.org/rsp/vocals",
     "instances" : 0,
     "label" : {
       "IRI-based" : "RDFStream"
@@ -491,14 +491,14 @@
     "attributes" : [ "external" ],
     "id" : "2"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#PhysicalWindow",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#PhysicalWindow",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#Window",
+        "value" : "http://w3id.org/rsp/vocals-sd#Window",
         "type" : "iri"
       } ]
     },
@@ -512,14 +512,14 @@
     "id" : "44",
     "superClasses" : [ "6" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#Window",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#Window",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#RDFStream",
+        "value" : "http://w3id.org/rsp/vocals#RDFStream",
         "type" : "iri"
       } ]
     },
@@ -534,19 +534,19 @@
     "id" : "6",
     "superClasses" : [ "35" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#StreamingDataset",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#StreamingDataset",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
+        "value" : "http://w3id.org/rsp/vocals-sd#RDFStreamService",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#TimeVaryingGraph",
+        "value" : "http://w3id.org/rsp/vocals-sd#TimeVaryingGraph",
         "type" : "iri"
       } ]
     },
@@ -559,28 +559,28 @@
     },
     "id" : "33"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#SetOperation",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#SetOperation",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "label" : {
       "IRI-based" : "SetOperation",
       "undefined" : "Set operation"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-sd#intersection",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#intersection",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "intersection"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#union",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#union",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "union"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#difference",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#difference",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "difference"
       }
@@ -598,8 +598,8 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#StreamingService",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#StreamingService",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "label" : {
       "IRI-based" : "StreamingService",
@@ -625,8 +625,8 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#R2SOperation",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#R2SOperation",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
@@ -641,8 +641,8 @@
       "en" : "R2SOperation"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-sd#replaying",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#replaying",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "replaying"
       }
@@ -653,14 +653,14 @@
     "id" : "43",
     "superClasses" : [ "9" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#Operation",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#Operation",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
+        "value" : "http://w3id.org/rsp/vocals-sd#RDFStreamService",
         "type" : "iri"
       } ]
     },
@@ -675,8 +675,8 @@
     "id" : "9",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#ProcessingService",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#ProcessingService",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ProcessingService",
@@ -707,14 +707,14 @@
     "attributes" : [ "external" ],
     "id" : "7"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#RDFStreamingFeature",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#RDFStreamingFeature",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-sd#RDFStreamService",
+        "value" : "http://w3id.org/rsp/vocals-sd#RDFStreamService",
         "type" : "iri"
       } ]
     },
@@ -728,22 +728,22 @@
     },
     "id" : "4"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#TimeControl",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#TimeControl",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "label" : {
       "IRI-based" : "TimeControl",
       "en" : "TimeControl"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-sd#internal_time_control",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#internal_time_control",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "internal_time_control"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-sd#external_time_control",
-      "baseIri" : "https://w3id.org/rsp/vocals-sd",
+      "iri" : "http://w3id.org/rsp/vocals-sd#external_time_control",
+      "baseIri" : "http://w3id.org/rsp/vocals-sd",
       "labels" : {
         "IRI-based" : "external_time_control"
       }
@@ -867,8 +867,8 @@
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://w3id.org/rsp/vocals-sd#registeredStreams",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#registeredStreams",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "2",
     "label" : {
       "IRI-based" : "registeredStreams",
@@ -881,8 +881,8 @@
     "attributes" : [ "object" ],
     "id" : "0"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#endedAt",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#endedAt",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "7",
     "label" : {
       "IRI-based" : "endedAt",
@@ -892,8 +892,8 @@
     "attributes" : [ "object" ],
     "id" : "5"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#resultFormat",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#resultFormat",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "12",
     "label" : {
       "IRI-based" : "resultFormat",
@@ -906,8 +906,8 @@
     "attributes" : [ "object" ],
     "id" : "11"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#describedBy",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#describedBy",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "16",
     "label" : {
       "IRI-based" : "describedBy",
@@ -920,8 +920,8 @@
     "attributes" : [ "object" ],
     "id" : "18"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#registerdTask",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#registerdTask",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "20",
     "label" : {
       "IRI-based" : "registerdTask",
@@ -960,8 +960,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#availableStream",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#availableStream",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "2",
     "label" : {
       "IRI-based" : "availableStream",
@@ -975,8 +975,8 @@
     "attributes" : [ "object" ],
     "id" : "23"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#namedTimeVaryingGraph",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "10",
     "label" : {
       "IRI-based" : "namedTimeVaryingGraph",
@@ -999,8 +999,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "36"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#defaultGraph",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#defaultGraph",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "10",
     "label" : {
       "IRI-based" : "defaultGraph",
@@ -1053,8 +1053,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "47"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#defaultStreamingDataset",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#defaultStreamingDataset",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "33",
     "label" : {
       "IRI-based" : "defaultStreamingDataset",
@@ -1077,8 +1077,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "50"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#rspEndpoint",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#rspEndpoint",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "20",
     "label" : {
       "IRI-based" : "rspEndpoint",
@@ -1116,8 +1116,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "57"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#hasFeature",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#hasFeature",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "4",
     "label" : {
       "IRI-based" : "hasFeature",
@@ -1130,8 +1130,8 @@
     "attributes" : [ "object" ],
     "id" : "58"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#registeredBy",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#registeredBy",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "15",
     "label" : {
       "IRI-based" : "registeredBy",
@@ -1144,8 +1144,8 @@
     "attributes" : [ "object" ],
     "id" : "59"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#startedAt",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#startedAt",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "7",
     "label" : {
       "IRI-based" : "startedAt",
@@ -1158,8 +1158,8 @@
     "attributes" : [ "object" ],
     "id" : "60"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#graph",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#graph",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "10",
     "label" : {
       "IRI-based" : "graph",
@@ -1172,8 +1172,8 @@
     "attributes" : [ "object" ],
     "id" : "61"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#availableGraph",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#availableGraph",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "10",
     "label" : {
       "IRI-based" : "availableGraph",
@@ -1186,8 +1186,8 @@
     "attributes" : [ "object" ],
     "id" : "62"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#publishedBy",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#publishedBy",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "range" : "14",
     "label" : {
       "IRI-based" : "publishedBy",

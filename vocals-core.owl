@@ -42,7 +42,7 @@
              rdfs:domain :Stream ;
              rdfs:range :StreamEndpoint ;
              rdfs:comment "A relationship between a Stream and a StreamEndpoint. A stream may have several endpoints through which its contents can be accessible."@en ;
-             rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+             rdfs:isDefinedBy <http://w3id.org/rsp/vocals#> ;
              rdfs:label "hasEndpoint"@en ;
              rdfs:seeAlso :Stream ,
                           :StreamEndpoint .
@@ -53,7 +53,7 @@
               rdfs:domain :Stream ;
               rdfs:range :StreamPartition ;
               rdfs:comment "A relationship between a Stream and a partition, or portion of elements streamed"@en ;
-              rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+              rdfs:isDefinedBy <http://w3id.org/rsp/vocals#> ;
               rdfs:label "hasPartition"@en ;
               rdfs:seeAlso :Stream ,
                            :StreamPartition .
@@ -64,7 +64,7 @@
           rdfs:domain :StreamPartition ;
           rdfs:range :StreamPartition ;
           rdfs:comment "Relationship between a stream partition and the previous partition in the stream. it connects stream partitions in order"@en ;
-          rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+          rdfs:isDefinedBy <http://w3id.org/rsp/vocals#> ;
           rdfs:label "previous"@en ;
           rdfs:seeAlso :StreamPartition .
 
@@ -85,7 +85,7 @@ dcat:distribution rdf:type owl:ObjectProperty .
 :RDFStream rdf:type owl:Class ;
            rdfs:subClassOf :Stream ;
            rdfs:comment "A stream composed of RDF data elements, i.e. RDF graphs and/or triples."@en ;
-           rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+           rdfs:isDefinedBy <http://w3id.org/rsp/vocals#> ;
            rdfs:label "RDFStream"@en ;
            rdfs:seeAlso :Stream .
 
@@ -94,7 +94,7 @@ dcat:distribution rdf:type owl:ObjectProperty .
 :Stream rdf:type owl:Class ;
         rdfs:subClassOf dcat:Dataset ;
         rdfs:comment "A potentially infinite sequence of data elements. A stream may be findable and accesible on the Web."@en ;
-        rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+        rdfs:isDefinedBy <http://w3id.org/rsp/vocals#> ;
         rdfs:label "Stream"@en ;
         rdfs:seeAlso :StreamDistribution .
 
@@ -104,7 +104,7 @@ dcat:distribution rdf:type owl:ObjectProperty .
                   rdfs:subClassOf dcat:CatalogRecord ,
                                   foaf:Document ;
                   rdfs:comment "A Stream Descriptor is a Web document that contains the description of a Stream."@en ;
-                  rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+                  rdfs:isDefinedBy <http://w3id.org/rsp/vocals#> ;
                   rdfs:label "StreamDescriptor"@en ;
                   rdfs:seeAlso :Stream .
 
@@ -114,7 +114,7 @@ dcat:distribution rdf:type owl:ObjectProperty .
                     owl:equivalentClass :StreamEndpoint ;
                     rdfs:subClassOf dcat:Distribution ;
                     rdfs:comment "Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of distributions include a WebSocket endpoint, an HTTP endpoint, a Server-Sent Events endpoint, MQTT, etc."@en ;
-                    rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+                    rdfs:isDefinedBy <http://w3id.org/rsp/vocals#> ;
                     rdfs:label "StreamDistribution"@en ;
                     rdfs:seeAlso :Stream .
 
@@ -123,7 +123,7 @@ dcat:distribution rdf:type owl:ObjectProperty .
 :StreamEndpoint rdf:type owl:Class ;
                 rdfs:subClassOf dcat:Distribution ;
                 rdfs:comment "Represents a specific available form of a stream. Each stream might be available in different forms, these forms might represent different access points of the stream. Examples of endpoints include a WebSocket endpoint, an HTTP endpoint, a Server-Sent Events endpoint, MQTT, etc."@en ;
-                rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+                rdfs:isDefinedBy <http://w3id.org/rsp/vocals#> ;
                 rdfs:label "StreamEndpoint"@en .
 
 
@@ -131,7 +131,7 @@ dcat:distribution rdf:type owl:ObjectProperty .
 :StreamPartition rdf:type owl:Class ;
                  rdfs:subClassOf dcat:Dataset ;
                  rdfs:comment "A finite subset of the stream that are made available to be accessed and consumed by standard Linked Data services."@en ;
-                 rdfs:isDefinedBy <https://w3id.org/rsp/vocals#> ;
+                 rdfs:isDefinedBy <http://w3id.org/rsp/vocals#> ;
                  rdfs:label "StreamPartition"@en ;
                  rdfs:seeAlso :Stream ,
                               :previous .
@@ -157,8 +157,8 @@ foaf:Document rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://w3id.org/rsp/vocals#
-<https://w3id.org/rsp/vocals#> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/rsp/vocals#
+<http://w3id.org/rsp/vocals#> rdf:type owl:NamedIndividual ,
                                         <http://purl.org/vocommons/voaf#Vocabulary> .
 
 

@@ -2,15 +2,15 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "fr", "es", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "https://w3id.org/rsp/vocals-sd", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/rsp/vocals-prov", "http://www.w3.org/ns/dcat", "http://www.w3.org/2006/time" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://w3id.org/rsp/vocals-sd", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/rsp/vocals-prov", "http://www.w3.org/ns/dcat", "http://www.w3.org/2006/time" ],
     "title" : {
       "en" : "VoCaLS-Prov: A Vocabulary and Catalog for Linked Streams, Provenance Module",
       "fr" : "VoCaLS-Prov: ontologie de representation de provenance pour données et metadonnées de streams RDF",
       "es" : "VoCaLS-Prov: Vocabulario y catálogo para Streams enlazados, módulo de Provenance"
     },
-    "iri" : "https://w3id.org/rsp/vocals-prov#",
+    "iri" : "http://w3id.org/rsp/vocals-prov#",
     "version" : "0.1.1",
-    "author" : [ "https://w3id.org/rsp/vocals#YehiaAboSedira", "https://w3id.org/rsp/vocals#RiccardoTommasini", "http://w3id.org/people/jpcik/me" ],
+    "author" : [ "http://w3id.org/rsp/vocals#YehiaAboSedira", "http://w3id.org/rsp/vocals#RiccardoTommasini", "http://w3id.org/people/jpcik/me" ],
     "description" : {
       "en" : "This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams",
       "fr" : "Cette ontologie a été conçue pour representer la provenance de données et meta-données de streams RDF, ainsi que leurs points d'accès.",
@@ -31,12 +31,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#YehiaAboSedira",
+        "value" : "http://w3id.org/rsp/vocals#YehiaAboSedira",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals#RiccardoTommasini",
+        "value" : "http://w3id.org/rsp/vocals#RiccardoTommasini",
         "type" : "iri"
       }, {
         "identifier" : "creator",
@@ -88,7 +88,7 @@
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "https://w3id.org/rsp/vocals-prov#",
+        "value" : "http://w3id.org/rsp/vocals-prov#",
         "type" : "label"
       } ],
       "issued" : [ {
@@ -208,8 +208,8 @@
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://w3id.org/rsp/vocals-prov#S2SOperator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#S2SOperator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "S2SOperator"
@@ -231,16 +231,16 @@
     "attributes" : [ "external" ],
     "id" : "6"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#StreamingAgent",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#StreamingAgent",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "StreamingAgent",
       "en" : "StreamingAgent"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-prov#TripleWave",
-      "baseIri" : "https://w3id.org/rsp/vocals-prov",
+      "iri" : "http://w3id.org/rsp/vocals-prov#TripleWave",
+      "baseIri" : "http://w3id.org/rsp/vocals-prov",
       "labels" : {
         "IRI-based" : "TripleWave"
       }
@@ -251,8 +251,8 @@
     "id" : "10",
     "superClasses" : [ "11" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#Task",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#Task",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Task"
@@ -271,8 +271,8 @@
     "attributes" : [ "external" ],
     "id" : "18"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#Window",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#Window",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Window"
@@ -284,8 +284,8 @@
     "id" : "14",
     "superClasses" : [ "31" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#PhysicalWindow",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#PhysicalWindow",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "PhysicalWindow"
@@ -306,8 +306,8 @@
     "attributes" : [ "external" ],
     "id" : "11"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#R2ROperator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#R2ROperator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
@@ -326,8 +326,8 @@
     "id" : "35",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#TimeBasedWindow",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#TimeBasedWindow",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "TimeBasedWindow"
@@ -338,8 +338,8 @@
     "id" : "33",
     "superClasses" : [ "14" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#TransformOperator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#TransformOperator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "TransformOperator"
@@ -350,8 +350,8 @@
     "id" : "3",
     "superClasses" : [ "0" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#Operator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#Operator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Operator"
@@ -363,8 +363,8 @@
     "id" : "1",
     "superClasses" : [ "6" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#S2ROperator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#S2ROperator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
@@ -419,8 +419,8 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#RSPQLOperator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#RSPQLOperator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "RSPQLOperator",
@@ -439,8 +439,8 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#WindowOperator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#WindowOperator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "WindowOperator"
@@ -451,8 +451,8 @@
     "id" : "21",
     "superClasses" : [ "38" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-sd#Operation",
-    "baseIri" : "https://w3id.org/rsp/vocals-sd",
+    "iri" : "http://w3id.org/rsp/vocals-sd#Operation",
+    "baseIri" : "http://w3id.org/rsp/vocals-sd",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Operation"
@@ -460,27 +460,27 @@
     "attributes" : [ "external" ],
     "id" : "9"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#SetOperator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#SetOperator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "SetOperator"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/rsp/vocals-prov#union_operator",
-      "baseIri" : "https://w3id.org/rsp/vocals-prov",
+      "iri" : "http://w3id.org/rsp/vocals-prov#union_operator",
+      "baseIri" : "http://w3id.org/rsp/vocals-prov",
       "labels" : {
         "IRI-based" : "union_operator"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-prov#difference_operator",
-      "baseIri" : "https://w3id.org/rsp/vocals-prov",
+      "iri" : "http://w3id.org/rsp/vocals-prov#difference_operator",
+      "baseIri" : "http://w3id.org/rsp/vocals-prov",
       "labels" : {
         "IRI-based" : "difference_operator"
       }
     }, {
-      "iri" : "https://w3id.org/rsp/vocals-prov#intersect_operator",
-      "baseIri" : "https://w3id.org/rsp/vocals-prov",
+      "iri" : "http://w3id.org/rsp/vocals-prov#intersect_operator",
+      "baseIri" : "http://w3id.org/rsp/vocals-prov",
       "labels" : {
         "IRI-based" : "intersect_operator"
       }
@@ -510,8 +510,8 @@
     "attributes" : [ "external" ],
     "id" : "15"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#FilterOperator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#FilterOperator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "label" : {
       "IRI-based" : "FilterOperator"
@@ -522,8 +522,8 @@
     "id" : "4",
     "superClasses" : [ "0" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#Replay",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#Replay",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
@@ -542,8 +542,8 @@
     "id" : "28",
     "superClasses" : [ "29" ]
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#R2SOperator",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#R2SOperator",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "instances" : 0,
     "annotations" : {
       "isDefinedBy" : [ {
@@ -652,8 +652,8 @@
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://w3id.org/rsp/vocals-prov#performs",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#performs",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
@@ -670,8 +670,8 @@
     "attributes" : [ "object" ],
     "id" : "7"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#startedAt",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#startedAt",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "15",
     "label" : {
       "IRI-based" : "startedAt"
@@ -680,9 +680,9 @@
     "attributes" : [ "object" ],
     "id" : "13"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#containedIn",
+    "iri" : "http://w3id.org/rsp/vocals-prov#containedIn",
     "inverse" : "17",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "12",
     "label" : {
       "IRI-based" : "containedIn",
@@ -695,8 +695,8 @@
     "attributes" : [ "object" ],
     "id" : "16"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#precededBy",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#precededBy",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "1",
     "label" : {
       "IRI-based" : "precededBy"
@@ -708,8 +708,8 @@
     "attributes" : [ "object" ],
     "id" : "19"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#startingTime",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#startingTime",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "15",
     "label" : {
       "IRI-based" : "startingTime"
@@ -728,8 +728,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "23"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#step",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#step",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "26",
     "label" : {
       "IRI-based" : "step"
@@ -788,8 +788,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "42"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#range",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#range",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "43",
     "label" : {
       "IRI-based" : "range"
@@ -818,9 +818,9 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#followedBy",
+    "iri" : "http://w3id.org/rsp/vocals-prov#followedBy",
     "inverse" : "19",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "1",
     "label" : {
       "IRI-based" : "followedBy"
@@ -832,8 +832,8 @@
     "attributes" : [ "object" ],
     "id" : "52"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#contains",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#contains",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "1",
     "label" : {
       "IRI-based" : "contains",
@@ -846,8 +846,8 @@
     "attributes" : [ "object" ],
     "id" : "17"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#endedAt",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#endedAt",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "15",
     "label" : {
       "IRI-based" : "endedAt"
@@ -856,8 +856,8 @@
     "attributes" : [ "object" ],
     "id" : "53"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#query",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#query",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "44",
     "label" : {
       "IRI-based" : "query"
@@ -876,8 +876,8 @@
     "attributes" : [ "external", "datatype" ],
     "id" : "55"
   }, {
-    "iri" : "https://w3id.org/rsp/vocals-prov#hasOutput",
-    "baseIri" : "https://w3id.org/rsp/vocals-prov",
+    "iri" : "http://w3id.org/rsp/vocals-prov#hasOutput",
+    "baseIri" : "http://w3id.org/rsp/vocals-prov",
     "range" : "18",
     "label" : {
       "IRI-based" : "hasOutput"

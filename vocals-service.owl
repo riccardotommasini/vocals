@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/rsp/vocals-sd#> .
+@prefix : <http://w3id.org/rsp/vocals-sd#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -19,7 +19,7 @@
                                   owl:versionIRI <http://w3id.org/rsp/vocals-sd> ;
                                   dc:publisher <http://aislab.hevs.ch/> ;
                                   rdfs:comment "Esta ontología has sido diseñada para representar servicios que proveen o manipulan Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
-                                  dc:creator <https://w3id.org/rsp/vocals#RiccardoTommasini> ;
+                                  dc:creator <http://w3id.org/rsp/vocals#RiccardoTommasini> ;
                                   dcterms:modified "2017-12-30"^^xsd:date ;
                                   dcterms:title "VoCaLS: ontologie de representation de services pour données et metadonnées de streams RDF"@fr ;
                                   dc:creator <http://w3id.org/people/jpcik/me> ;
@@ -32,7 +32,7 @@
                                   vann:preferredNamespacePrefix "vocals-sd" ;
                                   dcterms:created "2017-12-23T13:00:00"^^xsd:dateTime ;
                                   dcterms:issued "2017-12-29"^^xsd:date ;
-                                  dc:creator <https://w3id.org/rsp/vocals#YehiaAboSedira> ;
+                                  dc:creator <http://w3id.org/rsp/vocals#YehiaAboSedira> ;
                                   rdfs:comment "This ontology aims to model Services for publishing and consuming RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
                                   owl:versionInfo "0.1.1"^^xsd:string ;
                                   dcterms:description "Esta ontología has sido diseñada para representar servicios que proveen o manipulan Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
@@ -339,7 +339,7 @@ vocals-sd:Window rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
                  rdfs:comment "A Window represents a finite protion of a stream, consisting of a set of RDF statements. Formally, a window W(S) is a set of RDF statements extracted from a stream S."@en ;
                  rdfs:label "Window"@en ;
-                 rdfs:seeAlso <https://w3id.org/rsp/vocals#RDFStream> .
+                 rdfs:seeAlso <http://w3id.org/rsp/vocals#RDFStream> .
 
 
 ###  http://www.w3.org/2006/time#Instant
