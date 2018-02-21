@@ -1,48 +1,48 @@
-@prefix : <https://w3id.org/rsp/vocals-prov#> .
+@prefix : <http://w3id.org/rsp/vocals-prov#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix vsd: <https://w3id.org/rsp/vocals-sd#> .
+@prefix vsd: <http://w3id.org/rsp/vocals-sd#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix vocals: <https://w3id.org/rsp/vocals#> .
+@prefix vocals: <http://w3id.org/rsp/vocals#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/rsp/vocals-prov#> .
+@base <http://w3id.org/rsp/vocals-prov#> .
 
-<https://w3id.org/rsp/vocals-prov#> rdf:type owl:Ontology ;
-                                     owl:versionIRI <https://w3id.org/rsp/vocals-prov> ;
-                                     dc:publisher <http://aislab.hevs.ch/> ;
-                                     dc:creator vocals:RiccardoTommasini ;
-                                     dcterms:modified "2017-12-30"^^xsd:date ;
-                                     dc:creator <http://w3id.org/people/jpcik/me> ;
-                                     dcterms:rights "Copyright © 2017 Politecnico di Milano & HES-SO Valais-Wallis"^^xsd:string ;
-                                     dcterms:description "Cette ontologie a été conçue pour representer la provenance de données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr ;
-                                     dcterms:title "VoCaLS-Prov: Vocabulario y catálogo para Streams enlazados, módulo de Provenance"@es ;
-                                     vann:preferredNamespaceUri "https://w3id.org/rsp/vocals-prov#" ;
-                                     dcterms:title "VoCaLS-Prov: A Vocabulary and Catalog for Linked Streams, Provenance Module"@en ;
-                                     dcterms:description "Esta ontología has sido diseñada para representar provenance de Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
-                                     rdfs:comment "Cette ontologie a été conçue pour representer la provenance de données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr ,
-                                                  "Esta ontología has sido diseñada para representar provenance de Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
-                                     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                     dcterms:publisher <http://w3id.org/hes-so/aislab> ;
-                                     dcterms:created "2017-12-23T13:00:00"^^xsd:dateTime ;
-                                     dcterms:issued "2017-12-29"^^xsd:date ;
-                                     rdfs:comment "This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
-                                     dc:creator vocals:YehiaAboSedira ;
-                                     dcterms:title "VoCaLS-Prov: ontologie de representation de provenance pour données et metadonnées de streams RDF"@fr ;
-                                     vann:preferredNamespacePrefix "vocals-prov" ;
-                                     owl:versionInfo "0.1.1"^^xsd:string ;
-                                     dcterms:description "This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en .
+<http://w3id.org/rsp/vocals-prov#> rdf:type owl:Ontology ;
+                                    owl:versionIRI <http://w3id.org/rsp/vocals-prov> ;
+                                    dc:publisher <http://aislab.hevs.ch/> ;
+                                    dc:creator <https://w3id.org/rsp/vocals#RiccardoTommasini> ;
+                                    vann:preferredNamespaceUri "http://w3id.org/rsp/vocals-prov#" ;
+                                    dcterms:modified "2017-12-30"^^xsd:date ;
+                                    dc:creator <http://w3id.org/people/jpcik/me> ;
+                                    dcterms:rights "Copyright © 2017 Politecnico di Milano & HES-SO Valais-Wallis"^^xsd:string ;
+                                    dcterms:description "Cette ontologie a été conçue pour representer la provenance de données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr ;
+                                    dcterms:title "VoCaLS-Prov: Vocabulario y catálogo para Streams enlazados, módulo de Provenance"@es ,
+                                                  "VoCaLS-Prov: A Vocabulary and Catalog for Linked Streams, Provenance Module"@en ;
+                                    dcterms:description "Esta ontología has sido diseñada para representar provenance de Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
+                                    rdfs:comment "Cette ontologie a été conçue pour representer la provenance de données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr ,
+                                                 "Esta ontología has sido diseñada para representar provenance de Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
+                                    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                    dcterms:publisher <http://w3id.org/hes-so/aislab> ;
+                                    dcterms:created "2017-12-23T13:00:00"^^xsd:dateTime ;
+                                    dcterms:issued "2017-12-29"^^xsd:date ;
+                                    rdfs:comment "This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
+                                    dc:creator <https://w3id.org/rsp/vocals#YehiaAboSedira> ;
+                                    dcterms:title "VoCaLS-Prov: ontologie de representation de provenance pour données et metadonnées de streams RDF"@fr ;
+                                    vann:preferredNamespacePrefix "vocals-prov" ;
+                                    owl:versionInfo "0.1.1"^^xsd:string ;
+                                    dcterms:description "This ontology aims to model provenance of RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/rsp/vocals-prov#containedIn
+###  http://w3id.org/rsp/vocals-prov#containedIn
 :containedIn rdf:type owl:ObjectProperty ;
              owl:inverseOf :contains ;
              rdfs:domain :Operator ;
@@ -51,7 +51,7 @@
              rdfs:label "containedIn"@en .
 
 
-###  https://w3id.org/rsp/vocals-prov#contains
+###  http://w3id.org/rsp/vocals-prov#contains
 :contains rdf:type owl:ObjectProperty ;
           rdfs:domain :Task ;
           rdfs:range :Operator ;
@@ -59,13 +59,13 @@
           rdfs:label "contains"@en .
 
 
-###  https://w3id.org/rsp/vocals-prov#endedAt
+###  http://w3id.org/rsp/vocals-prov#endedAt
 :endedAt rdf:type owl:ObjectProperty ;
          rdfs:domain :Window ;
          rdfs:range time:Instant .
 
 
-###  https://w3id.org/rsp/vocals-prov#followedBy
+###  http://w3id.org/rsp/vocals-prov#followedBy
 :followedBy rdf:type owl:ObjectProperty ;
             owl:inverseOf :precededBy ;
             rdfs:domain :Operator ;
@@ -73,33 +73,33 @@
             rdfs:comment "Points to the following :operator to be applied after the current one in a :Task." .
 
 
-###  https://w3id.org/rsp/vocals-prov#hasOutput
+###  http://w3id.org/rsp/vocals-prov#hasOutput
 :hasOutput rdf:type owl:ObjectProperty ;
            rdfs:domain :Task ;
            rdfs:range prov:Entity ;
            rdfs:comment "Points to the output of a :operator to be applied before the current one in a :Task." .
 
 
-###  https://w3id.org/rsp/vocals-prov#performs
+###  http://w3id.org/rsp/vocals-prov#performs
 :performs rdf:type owl:ObjectProperty ;
           rdfs:range vsd:Operation ;
           rdfs:isDefinedBy "Relate vsd:Operation to :Operator ." .
 
 
-###  https://w3id.org/rsp/vocals-prov#precededBy
+###  http://w3id.org/rsp/vocals-prov#precededBy
 :precededBy rdf:type owl:ObjectProperty ;
             rdfs:domain :Operator ;
             rdfs:range :Operator ;
             rdfs:comment "Points to the preceding :operator to be applied before the current one in a :Task." .
 
 
-###  https://w3id.org/rsp/vocals-prov#startedAt
+###  http://w3id.org/rsp/vocals-prov#startedAt
 :startedAt rdf:type owl:ObjectProperty ;
            rdfs:domain :Window ;
            rdfs:range time:Instant .
 
 
-###  https://w3id.org/rsp/vocals-prov#startingTime
+###  http://w3id.org/rsp/vocals-prov#startingTime
 :startingTime rdf:type owl:ObjectProperty ;
               rdfs:domain :WindowOperator ;
               rdfs:range time:Instant .
@@ -109,19 +109,19 @@
 #    Data properties
 #################################################################
 
-###  https://w3id.org/rsp/vocals-prov#query
+###  http://w3id.org/rsp/vocals-prov#query
 :query rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
        rdfs:domain :RSPQLOperator .
 
 
-###  https://w3id.org/rsp/vocals-prov#range
+###  http://w3id.org/rsp/vocals-prov#range
 :range rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
        rdfs:domain :WindowOperator .
 
 
-###  https://w3id.org/rsp/vocals-prov#step
+###  http://w3id.org/rsp/vocals-prov#step
 :step rdf:type owl:DatatypeProperty ;
       rdfs:subPropertyOf owl:topDataProperty ;
       rdfs:domain :WindowOperator .
@@ -130,6 +130,112 @@
 #################################################################
 #    Classes
 #################################################################
+
+###  http://w3id.org/rsp/vocals-prov#FilterOperator
+:FilterOperator rdf:type owl:Class ;
+                rdfs:subClassOf :S2SOperator ;
+                rdfs:comment "A :FilterOperator represents an operator that exclude data that doesn't match some specified criteria." .
+
+
+###  http://w3id.org/rsp/vocals-prov#Operator
+:Operator rdf:type owl:Class ;
+          rdfs:subClassOf prov:Activity ;
+          rdfs:comment "Operator that use a resource - stream, relation - to generate another resource." .
+
+
+###  http://w3id.org/rsp/vocals-prov#PhysicalWindow
+:PhysicalWindow rdf:type owl:Class ;
+                rdfs:subClassOf :Window ;
+                rdfs:comment "Window defined by an interval size (in units of RDF elements)" .
+
+
+###  http://w3id.org/rsp/vocals-prov#R2ROperator
+:R2ROperator rdf:type owl:Class ;
+             rdfs:subClassOf :Operator ;
+             rdfs:comment "Operators that produce relations from other relations." ;
+             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
+
+
+###  http://w3id.org/rsp/vocals-prov#R2SOperator
+:R2SOperator rdf:type owl:Class ;
+             rdfs:subClassOf :Operator ;
+             rdfs:comment "Operators that produce a stream from a relation." ;
+             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
+
+
+###  http://w3id.org/rsp/vocals-prov#RSPQLOperator
+:RSPQLOperator rdf:type owl:Class ;
+               rdfs:subClassOf :S2SOperator ;
+               owl:disjointWith :SetOperator ;
+               rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream." ;
+               rdfs:label "RSPQL operator" .
+
+
+###  http://w3id.org/rsp/vocals-prov#Replay
+:Replay rdf:type owl:Class ;
+        rdfs:subClassOf :R2SOperator ;
+        rdfs:comment "Replay operator produce a stream from a static RDF dataset" ;
+        rdfs:isDefinedBy "https://link.springer.com/chapter/10.1007%2F978-3-319-46547-0_15" .
+
+
+###  http://w3id.org/rsp/vocals-prov#S2ROperator
+:S2ROperator rdf:type owl:Class ;
+             rdfs:subClassOf :Operator ;
+             rdfs:comment "Operators that produce a relation from a stream." ;
+             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
+
+
+###  http://w3id.org/rsp/vocals-prov#S2SOperator
+:S2SOperator rdf:type owl:Class ;
+             rdfs:subClassOf :Operator ;
+             rdfs:comment "Operators that produce a stream form another stream." .
+
+
+###  http://w3id.org/rsp/vocals-prov#SetOperator
+:SetOperator rdf:type owl:Class ;
+             rdfs:subClassOf :S2SOperator ;
+             rdfs:comment "Operator that produce a stream by applying set algebra operator on other streams." .
+
+
+###  http://w3id.org/rsp/vocals-prov#StreamingAgent
+:StreamingAgent rdf:type owl:Class ;
+                rdfs:subClassOf prov:SoftwareAgent ;
+                rdfs:comment "An instance of a :StreamingAgent represent an actor that applies an :Operator that consums and/or produce a stream." ;
+                rdfs:label "StreamingAgent"@en .
+
+
+###  http://w3id.org/rsp/vocals-prov#Task
+:Task rdf:type owl:Class ;
+      rdfs:comment "A task contains one or more activity to be applied on a prov:Entity." .
+
+
+###  http://w3id.org/rsp/vocals-prov#TimeBasedWindow
+:TimeBasedWindow rdf:type owl:Class ;
+                 rdfs:subClassOf :Window ;
+                 rdfs:comment "A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}" .
+
+
+###  http://w3id.org/rsp/vocals-prov#TransformOperator
+:TransformOperator rdf:type owl:Class ;
+                   rdfs:subClassOf :S2SOperator ;
+                   rdfs:comment "An instance of :TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)" .
+
+
+###  http://w3id.org/rsp/vocals-prov#Window
+:Window rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
+        rdfs:comment "A window W(S) is a set of RDF statements extracted from a stream S." .
+
+
+###  http://w3id.org/rsp/vocals-prov#WindowOperator
+:WindowOperator rdf:type owl:Class ;
+                rdfs:subClassOf :S2ROperator ;
+                rdfs:comment "An instance of window operator represent an operator that use a stream and generate multiple windows according to a certain criteria" .
+
+
+###  http://w3id.org/rsp/vocals-sd#Operation
+vsd:Operation rdf:type owl:Class .
+
 
 ###  http://www.w3.org/2006/time#Instant
 time:Instant rdf:type owl:Class .
@@ -151,132 +257,26 @@ prov:Entity rdf:type owl:Class .
 prov:SoftwareAgent rdf:type owl:Class .
 
 
-###  https://w3id.org/rsp/vocals-prov#FilterOperator
-:FilterOperator rdf:type owl:Class ;
-                rdfs:subClassOf :S2SOperator ;
-                rdfs:comment "A :FilterOperator represents an operator that exclude data that doesn't match some specified criteria." .
-
-
-###  https://w3id.org/rsp/vocals-prov#Operator
-:Operator rdf:type owl:Class ;
-          rdfs:subClassOf prov:Activity ;
-          rdfs:comment "Operator that use a resource - stream, relation - to generate another resource." .
-
-
-###  https://w3id.org/rsp/vocals-prov#PhysicalWindow
-:PhysicalWindow rdf:type owl:Class ;
-                rdfs:subClassOf :Window ;
-                rdfs:comment "Window defined by an interval size (in units of RDF elements)" .
-
-
-###  https://w3id.org/rsp/vocals-prov#R2ROperator
-:R2ROperator rdf:type owl:Class ;
-             rdfs:subClassOf :Operator ;
-             rdfs:comment "Operators that produce relations from other relations." ;
-             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
-
-
-###  https://w3id.org/rsp/vocals-prov#R2SOperator
-:R2SOperator rdf:type owl:Class ;
-             rdfs:subClassOf :Operator ;
-             rdfs:comment "Operators that produce a stream from a relation." ;
-             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
-
-
-###  https://w3id.org/rsp/vocals-prov#RSPQLOperator
-:RSPQLOperator rdf:type owl:Class ;
-               rdfs:subClassOf :S2SOperator ;
-               owl:disjointWith :SetOperator ;
-               rdfs:comment "RDF Stream Processing (RSP) Operators that produce a stream by appling a C-Sparql query to another stream." ;
-               rdfs:label "RSPQL operator" .
-
-
-###  https://w3id.org/rsp/vocals-prov#Replay
-:Replay rdf:type owl:Class ;
-        rdfs:subClassOf :R2SOperator ;
-        rdfs:comment "Replay operator produce a stream from a static RDF dataset" ;
-        rdfs:isDefinedBy "https://link.springer.com/chapter/10.1007%2F978-3-319-46547-0_15" .
-
-
-###  https://w3id.org/rsp/vocals-prov#S2ROperator
-:S2ROperator rdf:type owl:Class ;
-             rdfs:subClassOf :Operator ;
-             rdfs:comment "Operators that produce a relation from a stream." ;
-             rdfs:isDefinedBy "Arvind Arasu, Shivnath Babu, and Jennifer Widom. 2006. The CQL continuous query language: semantic foundations and query execution. The VLDB Journal 15, 2 (June 2006), 121-142. DOI=http://dx.doi.org/10.1007/s00778-004-0147-z" .
-
-
-###  https://w3id.org/rsp/vocals-prov#S2SOperator
-:S2SOperator rdf:type owl:Class ;
-             rdfs:subClassOf :Operator ;
-             rdfs:comment "Operators that produce a stream form another stream." .
-
-
-###  https://w3id.org/rsp/vocals-prov#SetOperator
-:SetOperator rdf:type owl:Class ;
-             rdfs:subClassOf :S2SOperator ;
-             rdfs:comment "Operator that produce a stream by applying set algebra operator on other streams." .
-
-
-###  https://w3id.org/rsp/vocals-prov#StreamingAgent
-:StreamingAgent rdf:type owl:Class ;
-                rdfs:subClassOf prov:SoftwareAgent ;
-                rdfs:comment "An instance of a :StreamingAgent represent an actor that applies an :Operator that consums and/or produce a stream." ;
-                rdfs:label "StreamingAgent"@en .
-
-
-###  https://w3id.org/rsp/vocals-prov#Task
-:Task rdf:type owl:Class ;
-      rdfs:comment "A task contains one or more activity to be applied on a prov:Entity." .
-
-
-###  https://w3id.org/rsp/vocals-prov#TimeBasedWindow
-:TimeBasedWindow rdf:type owl:Class ;
-                 rdfs:subClassOf :Window ;
-                 rdfs:comment "A time-based window is a window defined through two time instants o, c (respectively named opening and closing time instants) such that: W(S) = {d|(d, t) ∈ S ∧ t ∈ (o, c]}" .
-
-
-###  https://w3id.org/rsp/vocals-prov#TransformOperator
-:TransformOperator rdf:type owl:Class ;
-                   rdfs:subClassOf :S2SOperator ;
-                   rdfs:comment "An instance of :TransformOperator represent an operator that convert a stream from one form to another. (e.g. Convert a raw stream to and RDF stream)" .
-
-
-###  https://w3id.org/rsp/vocals-prov#Window
-:Window rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
-        rdfs:comment "A window W(S) is a set of RDF statements extracted from a stream S." .
-
-
-###  https://w3id.org/rsp/vocals-prov#WindowOperator
-:WindowOperator rdf:type owl:Class ;
-                rdfs:subClassOf :S2ROperator ;
-                rdfs:comment "An instance of window operator represent an operator that use a stream and generate multiple windows according to a certain criteria" .
-
-
-###  https://w3id.org/rsp/vocals-sd#Operation
-vsd:Operation rdf:type owl:Class .
-
-
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://w3id.org/rsp/vocals-prov#TripleWave
+###  http://w3id.org/rsp/vocals-prov#TripleWave
 :TripleWave rdf:type owl:NamedIndividual ,
                      :StreamingAgent .
 
 
-###  https://w3id.org/rsp/vocals-prov#difference_operator
+###  http://w3id.org/rsp/vocals-prov#difference_operator
 :difference_operator rdf:type owl:NamedIndividual ,
                               :SetOperator .
 
 
-###  https://w3id.org/rsp/vocals-prov#intersect_operator
+###  http://w3id.org/rsp/vocals-prov#intersect_operator
 :intersect_operator rdf:type owl:NamedIndividual ,
                              :SetOperator .
 
 
-###  https://w3id.org/rsp/vocals-prov#union_operator
+###  http://w3id.org/rsp/vocals-prov#union_operator
 :union_operator rdf:type owl:NamedIndividual ,
                          :SetOperator .
 
