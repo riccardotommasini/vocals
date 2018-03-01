@@ -11,7 +11,7 @@
 <http://w3id.org/rsp/vocals#> rdf:type owl:Ontology ;
                                owl:imports dcat: ;
                                <http://purl.org/dc/elements/1.1/publisher> <http://aislab.hevs.ch/> ;
-                               <http://purl.org/dc/terms/creator> <http://streamreasoning.org/vois#RiccardoTommasini> ;
+                               <http://purl.org/dc/terms/creator> <https://w3id.org/people/rictomm> ;
                                rdfs:comment "This ontology aims to model RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
                                <http://purl.org/dc/terms/title> "VoCaLS: ontologie de representation de données et metadonnées de streams"@fr ;
                                <http://purl.org/dc/terms/creator> <http://w3id.org/people/jpcik/me> ;
