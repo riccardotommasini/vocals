@@ -19,7 +19,7 @@
                                   owl:versionIRI <http://w3id.org/rsp/vocals-sd> ;
                                   dc:publisher <http://aislab.hevs.ch/> ;
                                   rdfs:comment "Esta ontología has sido diseñada para representar servicios que proveen o manipulan Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
-                                  dc:creator <http://w3id.org/rsp/vocals#RiccardoTommasini> ;
+                                  dc:creator <https://w3id.org/people/rictomm> ;
                                   dcterms:modified "2017-12-30"^^xsd:date ;
                                   dcterms:title "VoCaLS: ontologie de representation de services pour données et metadonnées de streams RDF"@fr ;
                                   dc:creator <http://w3id.org/people/jpcik/me> ;
