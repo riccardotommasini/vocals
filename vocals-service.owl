@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/rsp/vocals-sd#> .
+@prefix : <http://w3id.org/rsp/vocals-sd#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -226,6 +226,12 @@ vocals-sd:PublishingService rdf:type owl:Class ;
                             rdfs:label "PublishingService"@en .
 
 
+###  http://w3id.org/rsp/vocals-sd#QueryModel
+vocals-sd:QueryModel rdf:type owl:Class ;
+                     rdfs:subClassOf vocals-sd:RDFStreamingFeature ;
+                     rdfs:comment "The query model is the type of queries that an RSP enginer can evaluate and answer." .
+
+
 ###  http://w3id.org/rsp/vocals-sd#R2ROperation
 vocals-sd:R2ROperation rdf:type owl:Class ;
                        rdfs:subClassOf vocals-sd:Operation ;
@@ -363,9 +369,29 @@ vocals-sd:RSPQL rdf:type owl:NamedIndividual ,
                          vocals-sd:S2SOperation .
 
 
+###  http://w3id.org/rsp/vocals-sd#background_data_support
+vocals-sd:background_data_support rdf:type owl:NamedIndividual ,
+                                           vocals-sd:RDFStreamingFeature ;
+                                  rdfs:comment """An SFP system can either support or ignore
+background data; assume that such data is fixed and available ex-ante; or allow
+(infrequent) changes to this data.""" .
+
+
+###  http://w3id.org/rsp/vocals-sd#completeness
+vocals-sd:completeness rdf:type owl:NamedIndividual ,
+                                vocals-sd:RDFStreamingFeature ;
+                       rdfs:comment "Completeness measures whether the system guarantees a certain proportion of all correct answers" .
+
+
 ###  http://w3id.org/rsp/vocals-sd#count
 vocals-sd:count rdf:type owl:NamedIndividual ,
                          vocals-sd:R2ROperation .
+
+
+###  http://w3id.org/rsp/vocals-sd#declarative_languages
+vocals-sd:declarative_languages rdf:type owl:NamedIndividual ,
+                                         vocals-sd:QueryModel ;
+                                rdfs:comment "Conversely, systems like C-SPARQL [10] extend declarative languages like SQL, augmenting them with operators like windows to limit the scope of processing." .
 
 
 ###  http://w3id.org/rsp/vocals-sd#difference
@@ -403,6 +429,12 @@ vocals-sd:intersection rdf:type owl:NamedIndividual ,
                                 vocals-sd:SetOperation .
 
 
+###  http://w3id.org/rsp/vocals-sd#interval_based_semantics
+vocals-sd:interval_based_semantics rdf:type owl:NamedIndividual ,
+                                            vocals-sd:TimeSemantics ;
+                                   rdfs:comment "The interval-based semantics defines an interval of validity for the associated information." .
+
+
 ###  http://w3id.org/rsp/vocals-sd#non_empty_content
 vocals-sd:non_empty_content rdf:type owl:NamedIndividual ,
                                      vocals-sd:ReportingPolicy .
@@ -418,9 +450,28 @@ vocals-sd:on_window_close rdf:type owl:NamedIndividual ,
                                    vocals-sd:ReportingPolicy .
 
 
+###  http://w3id.org/rsp/vocals-sd#pattern_matching
+vocals-sd:pattern_matching rdf:type owl:NamedIndividual ,
+                                    vocals-sd:QueryModel ;
+                           rdfs:comment "Systems like EP-SPARQL define pattern matching queries through a set of primitive operators (e.g. sequences)." .
+
+
 ###  http://w3id.org/rsp/vocals-sd#periodic
 vocals-sd:periodic rdf:type owl:NamedIndividual ,
                             vocals-sd:ReportingPolicy .
+
+
+###  http://w3id.org/rsp/vocals-sd#periodic_evaluation
+vocals-sd:periodic_evaluation rdf:type owl:NamedIndividual ,
+                                       vocals-sd:QueryModel ;
+                              rdfs:comment "The query is executed at a specified interval of time" .
+
+
+###  http://w3id.org/rsp/vocals-sd#point_based_semantics
+vocals-sd:point_based_semantics rdf:type owl:NamedIndividual ,
+                                         vocals-sd:TimeSemantics ;
+                                rdfs:comment """The point based semantics associates each information
+item in the data-flow a single point in time""" .
 
 
 ###  http://w3id.org/rsp/vocals-sd#processing_time
@@ -428,9 +479,29 @@ vocals-sd:processing_time rdf:type owl:NamedIndividual ,
                                    vocals-sd:TimeSemantics .
 
 
+###  http://w3id.org/rsp/vocals-sd#reactive_evaluation
+vocals-sd:reactive_evaluation rdf:type owl:NamedIndividual ,
+                                       vocals-sd:QueryModel ;
+                              rdfs:comment "The query is triggered when new data arrives." .
+
+
+###  http://w3id.org/rsp/vocals-sd#reasoning
+vocals-sd:reasoning rdf:type owl:NamedIndividual ,
+                             vocals-sd:RDFStreamingFeature ;
+                    rdfs:comment """The usage of semantically annotated data allows
+the SFP system to infer implicit information. This process is broadly referred as inference or reasoning. The ability of performing inference is feature unique to SFP system and not available in IFP systems. We make, however, no assumption about the expressive power of the inference mechanism.""" .
+
+
 ###  http://w3id.org/rsp/vocals-sd#replaying
 vocals-sd:replaying rdf:type owl:NamedIndividual ,
                              vocals-sd:R2SOperation .
+
+
+###  http://w3id.org/rsp/vocals-sd#soundness
+vocals-sd:soundness rdf:type owl:NamedIndividual ,
+                             vocals-sd:RDFStreamingFeature ;
+                    rdfs:comment """soundness measures the number of incorrect results due, for ex-
+ample, to approximation.""" .
 
 
 ###  http://w3id.org/rsp/vocals-sd#sum
