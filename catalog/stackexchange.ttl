@@ -1,0 +1,39 @@
+@prefix : <http://www.example.org/vocals/stackexchange#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocals: <https://w3id.org/rsp/vocals#> .
+@prefix vprov: <https://w3id.org/rsp/vocals-prov#> .
+@prefix vsd: <https://w3id.org/rsp/vocals-sd#> .
+@prefix dcat: <http://www.w3.org/ns/dcat> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix frmt: <http://www.w3.org/ns/formats/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+@prefix dctype:	<http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+@base <http://www.example.org/vocals/stackexchange#> .
+
+
+
+<.> rdf:type vocals:StreamDescriptor ; 
+    vocals:stream <https://api.stackexchange.com/> .
+
+<https://api.stackexchange.com/> rdf:type vocals:Stream ;
+    dct:title "StackExchange Answers"@en;
+    dct:publisher :StackExchange; 
+    dct:description "Stack Exchange is a growing network of 89 question and answer sites on diverse topics from software programming to cooking to photography. Stack Exchange builds libraries of high-quality questions and answers focused on the most important topics in each area of expertise. The Stack Exchange API enables users to retrieve answers, comments, badges, events, questions, revisions, suggested edits, user information, and tags from the site. Users can also use the API to search the site or edit posts. The API uses REST calls issued in JSON and JSONP."@en ;
+    dcat:keyword "question and answers"@en, "reference"@en ;
+    vocals:hasEndpoint :StackExchangeStreamingAPI ;
+    dcat:landingPage "https://api.stackexchange.com/" . 
+    
+:StackExchangeStreamingAPI rdf:type vocals:StreamEndpoint ; 
+                    dct:description "Get all answers to questions on one of the Stack Exchange sites, such as StackOverflow."@en ;
+                    dcat:accessURL "https://api.stackexchange.com/2.2/answers?order=desc&sort=activity&site=stackoverflow";
+                    dcat:mediaType "application/json", "application/jsonp" .
+
+
+:StackExchange rdf:type foaf:Organization .

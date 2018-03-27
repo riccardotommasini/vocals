@@ -1,0 +1,22 @@
+@prefix : <http://www.example.org/vocals/streamdata#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocals: <https://w3id.org/rsp/vocals#> .
+@prefix vprov: <https://w3id.org/rsp/vocals-prov#> .
+@prefix vsd: <https://w3id.org/rsp/vocals-sd#> .
+@prefix dcat: <http://www.w3.org/ns/dcat> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix frmt: <http://www.w3.org/ns/formats/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+@prefix dctype:	<http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+@base <http://www.example.org/vocals/streamdata#> .
+
+
+<https://streamdata.io> rdf:type vsd:PublishingService ;
+    vsd:availableStreams <http://content.guardianapis.com/> ,  <https://api.stackexchange.com/> ,<https://feeds.citibikenyc.com> .

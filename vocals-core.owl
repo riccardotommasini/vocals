@@ -69,6 +69,13 @@
           rdfs:seeAlso :StreamPartition .
 
 
+###  http://w3id.org/rsp/vocals#vocals:stream
+:stream rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf dcat:dataset ;
+        rdfs:domain :StreamDescriptor ;
+        rdfs:range :Stream .
+
+
 ###  http://www.w3.org/ns/dcat#distribution
 dcat:distribution rdf:type owl:ObjectProperty .
 
