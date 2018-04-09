@@ -139,7 +139,7 @@
     <owl:ObjectProperty rdf:about="http://w3id.org/rsp/vocals-sd#endedAt">
         <rdfs:domain rdf:resource="http://w3id.org/rsp/vocals-sd#Window"/>
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
-        <rdfs:label xml:lang="en">Relates a window and the time instant when it ended</rdfs:label>
+        <rdfs:comment xml:lang="en">Relates a window and the time instant when it ended</rdfs:comment>
         <rdfs:label xml:lang="en">endedAt</rdfs:label>
     </owl:ObjectProperty>
     
