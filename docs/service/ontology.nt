@@ -85,7 +85,7 @@
 <http://w3id.org/rsp/vocals-sd#endedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://w3id.org/rsp/vocals-sd#endedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rsp/vocals-sd#Window> .
 <http://w3id.org/rsp/vocals-sd#endedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Instant> .
-<http://w3id.org/rsp/vocals-sd#endedAt> <http://www.w3.org/2000/01/rdf-schema#label> "Relates a window and the time instant when it ended"@en .
+<http://w3id.org/rsp/vocals-sd#endedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a window and the time instant when it ended"@en .
 <http://w3id.org/rsp/vocals-sd#endedAt> <http://www.w3.org/2000/01/rdf-schema#label> "endedAt"@en .
 # 
 # http://w3id.org/rsp/vocals-sd#graph
