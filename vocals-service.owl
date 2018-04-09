@@ -99,8 +99,8 @@ vocals-sd:describedBy rdf:type owl:ObjectProperty ;
 vocals-sd:endedAt rdf:type owl:ObjectProperty ;
                   rdfs:domain vocals-sd:Window ;
                   rdfs:range time:Instant ;
-                  rdfs:label "Relates a window and the time instant when it ended"@en ,
-                             "endedAt"@en .
+                  rdfs:label "endedAt"@en ;
+                  rdfs:comment "Relates a window and the time instant when it ended"@en .
 
 
 ###  http://w3id.org/rsp/vocals-sd#graph
