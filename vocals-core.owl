@@ -26,7 +26,7 @@
                                <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                <http://purl.org/dc/terms/publisher> <http://w3id.org/hes-so/aislab> ;
                                <http://purl.org/dc/terms/description> "This ontology aims to model RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
-                               <http://purl.org/dc/terms/creator> <http://streamreasoning.org/vois#YehiaAboSedira> ;
+                               <http://purl.org/dc/terms/creator> <http://w3id.org/people/ysedira> ;
                                <http://purl.org/dc/terms/description> "Esta ontología has sido diseñada para representar Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams y los meta datos correspondientes."@es ,
                                                                       "Cette ontologie a été conçue pour representer des données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr ;
                                rdfs:comment "Cette ontologie a été conçue pour representer des données et meta-données de streams RDF, ainsi que leurs points d'accès."@fr ;

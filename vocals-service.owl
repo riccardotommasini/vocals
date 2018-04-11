@@ -32,7 +32,7 @@
                                   vann:preferredNamespacePrefix "vocals-sd" ;
                                   dcterms:created "2017-12-23T13:00:00"^^xsd:dateTime ;
                                   dcterms:issued "2017-12-29"^^xsd:date ;
-                                  dc:creator <http://w3id.org/rsp/vocals#YehiaAboSedira> ;
+                                  dc:creator <http://w3id.org/people/ysedira> ;
                                   rdfs:comment "This ontology aims to model Services for publishing and consuming RDF streams, their metadata, and access endpoints for publishing and consuming these streams"@en ;
                                   owl:versionInfo "0.1.1"^^xsd:string ;
                                   dcterms:description "Esta ontología has sido diseñada para representar servicios que proveen o manipulan Streams de datos en RDF, así como los endpoints a través de los cuales se puede acceder a los datos de estos streams;  y los meta datos correspondientes."@es ;
