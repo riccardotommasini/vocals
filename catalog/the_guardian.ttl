@@ -31,7 +31,7 @@
     dcat:landingPage "http://www.theguardian.com/open-platform" . 
     
 :GuardianStreamingAPI rdf:type vocals:StreamEndpoint ; 
-                        dcat:accessURL "http://open-platform.theguardian.com/";
+                        dcat:accessURL "http://content.guardianapis.com/search?api-key=test";
                         dcat:mediaType "application/json", "application/xml" ,"application/atom+xml";
                         dct:rights "https://www.theguardian.com/open-platform/terms-and-conditions" .
 
